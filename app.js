@@ -48,6 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
         toggleTafsir.innerHTML = tafsirSection.classList.contains('hidden') ? '<i class="fas fa-book"></i> Tampilkan Tafsir' : '<i class="fas fa-book"></i> Sembunyikan Tafsir';
     }
 
+    function getRandomDelay(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
     async function performSearch() {
         const keyword = searchInput.value.toLowerCase().trim();
         if (keyword.length < 3) {
@@ -55,10 +59,17 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        resultsDiv.innerHTML = '<p>Mencari kata yang cocok....</p>';
+        resultsDiv.innerHTML = '<p>Memparsing Data...</p>';
+        await new Promise(resolve => setTimeout(resolve, getRandomDelay(2000, 5000)));
+
+        resultsDiv.innerHTML = '<p>Selesai memparsing Data.</p>';
+        await new Promise(resolve => setTimeout(resolve, getRandomDelay(2000, 5000)));
+
+        resultsDiv.innerHTML += '<p>Mencari kata yang cocok...</p>';
+        await new Promise(resolve => setTimeout(resolve, getRandomDelay(2000, 5000)));
+
+        resultsDiv.innerHTML += '<div class="loading-dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>';
         const results = await searchQuran(keyword);
-        resultsDiv.innerHTML += '<p>Pencarian Selesai.</p>';
-        resultsDiv.innerHTML += '<p>Selesai</p>';
         displayResults(results, keyword);
     }
 
@@ -137,13 +148,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (ayahData) {
                 const surahNameFormatted = `${surahData.id}. ${surahData.name} : ${ayahNumber}`;
-
                 surahName.innerText = surahNameFormatted;
                 ayahText.innerText = ayahData.text;
                 ayahLatin.innerText = ayahData.teksLatin;
                 ayahIndonesia.innerText = ayahData.teksIndonesia;
                 ayahTafsir.innerText = ayahData.tafsir || 'Tafsir tidak tersedia.';
-
                 ayahModal.classList.remove('hidden');
             }
         } catch (error) {

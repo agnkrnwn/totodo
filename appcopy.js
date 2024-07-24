@@ -13,66 +13,43 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleTafsir = document.getElementById('toggleTafsir');
     const toggleDarkMode = document.getElementById('toggleDarkMode');
 
-    let chapterData = null;
-
-    init();
-
-    function init() {
-        loadChapterData();
-        searchButton.addEventListener('click', performSearch);
-        closeModal.addEventListener('click', hideModal);
-        toggleTafsir.addEventListener('click', toggleTafsirSection);
-        toggleDarkMode.addEventListener('click', toggleDarkModeClass);
-    }
-
-    function toggleDarkModeClass() {
-        document.documentElement.classList.toggle('dark');
-    }
-
-    async function loadChapterData() {
-        try {
-            chapterData = await fetch('chapter.json').then(response => response.json());
-        } catch (error) {
-            console.error('Error loading chapter data:', error);
-        }
-    }
-
-    function hideModal() {
+    searchButton.addEventListener('click', performSearch);
+    closeModal.addEventListener('click', () => {
         ayahModal.classList.add('hidden');
         tafsirSection.classList.add('hidden');
         toggleTafsir.innerHTML = '<i class="fas fa-book"></i> Tampilkan Tafsir';
-    }
+    });
 
-    function toggleTafsirSection() {
+    toggleTafsir.addEventListener('click', () => {
         tafsirSection.classList.toggle('hidden');
         toggleTafsir.innerHTML = tafsirSection.classList.contains('hidden') ? '<i class="fas fa-book"></i> Tampilkan Tafsir' : '<i class="fas fa-book"></i> Sembunyikan Tafsir';
-    }
+    });
+
+    toggleDarkMode.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+    });
 
     async function performSearch() {
-        const keyword = searchInput.value.toLowerCase().trim();
+        const keyword = searchInput.value.toLowerCase();
         if (keyword.length < 3) {
             alert('Mohon masukkan minimal 3 karakter.');
             return;
         }
 
-        resultsDiv.innerHTML = '<p>Memparsing JSON...</p>';
+        resultsDiv.innerHTML = 'Mencari...';
         const results = await searchQuran(keyword);
-        resultsDiv.innerHTML += '<p>Selesai memparsing JSON.</p>';
-        resultsDiv.innerHTML += '<p>Mencari kata yang cocok...</p>';
         displayResults(results, keyword);
     }
 
     async function searchQuran(keyword) {
         const results = [];
-        if (!chapterData) {
-            console.error('Chapter data not loaded.');
-            return results;
-        }
+        const chapterData = await fetch('chapter.json').then(response => response.json());
 
         for (let i = 1; i <= 114; i++) {
             const surahNumber = i.toString().padStart(3, '0');
             try {
                 const surahData = await fetch(`quranupdate/${surahNumber}.json`).then(response => response.json());
+
                 if (surahData && surahData.ayah) {
                     surahData.ayah.forEach(ayah => {
                         if (ayah.teksIndonesia && ayah.teksIndonesia.toLowerCase().includes(keyword)) {
@@ -100,7 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        resultsDiv.innerHTML += '<p>Selesai mencari kata yang cocok.</p>';
         let html = `<h2 class="text-xl font-bold mb-4">Hasil Pencarian (${results.length} ayat ditemukan):</h2>`;
         html += '<ul class="space-y-4">';
         results.forEach(result => {
@@ -129,25 +105,28 @@ document.addEventListener('DOMContentLoaded', () => {
         const regex = new RegExp(`(${keyword})`, 'gi');
         return text.replace(regex, '<span class="bg-yellow-200 dark:bg-yellow-500">$1</span>');
     }
+    
 
     async function showAyahDetails(surahId, ayahNumber) {
         try {
             const surahData = await fetch(`quranupdate/${surahId}.json`).then(response => response.json());
             const ayahData = surahData.ayah.find(ayah => ayah.number === ayahNumber);
-
+    
             if (ayahData) {
+                // Find the corresponding Surah name and format the string
                 const surahNameFormatted = `${surahData.id}. ${surahData.name} : ${ayahNumber}`;
-
+    
                 surahName.innerText = surahNameFormatted;
                 ayahText.innerText = ayahData.text;
                 ayahLatin.innerText = ayahData.teksLatin;
                 ayahIndonesia.innerText = ayahData.teksIndonesia;
                 ayahTafsir.innerText = ayahData.tafsir || 'Tafsir tidak tersedia.';
-
+    
                 ayahModal.classList.remove('hidden');
             }
         } catch (error) {
             console.error('Error loading Ayah details:', error);
         }
     }
+    
 });
