@@ -13,56 +13,66 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleTafsir = document.getElementById('toggleTafsir');
     const toggleDarkMode = document.getElementById('toggleDarkMode');
 
-    searchButton.addEventListener('click', performSearch);
-    closeModal.addEventListener('click', () => {
+    let chapterData = null;
+
+    init();
+
+    function init() {
+        loadChapterData();
+        searchButton.addEventListener('click', performSearch);
+        closeModal.addEventListener('click', hideModal);
+        toggleTafsir.addEventListener('click', toggleTafsirSection);
+        toggleDarkMode.addEventListener('click', toggleDarkModeClass);
+    }
+
+    function toggleDarkModeClass() {
+        document.documentElement.classList.toggle('dark');
+    }
+
+    async function loadChapterData() {
+        try {
+            chapterData = await fetch('chapter.json').then(response => response.json());
+        } catch (error) {
+            console.error('Error loading chapter data:', error);
+        }
+    }
+
+    function hideModal() {
         ayahModal.classList.add('hidden');
         tafsirSection.classList.add('hidden');
         toggleTafsir.innerHTML = '<i class="fas fa-book"></i> Tampilkan Tafsir';
-    });
+    }
 
-    toggleTafsir.addEventListener('click', () => {
+    function toggleTafsirSection() {
         tafsirSection.classList.toggle('hidden');
         toggleTafsir.innerHTML = tafsirSection.classList.contains('hidden') ? '<i class="fas fa-book"></i> Tampilkan Tafsir' : '<i class="fas fa-book"></i> Sembunyikan Tafsir';
-    });
-
-    toggleDarkMode.addEventListener('click', () => {
-        document.documentElement.classList.toggle('dark');
-    });
+    }
 
     async function performSearch() {
-        const keyword = searchInput.value.toLowerCase();
+        const keyword = searchInput.value.toLowerCase().trim();
         if (keyword.length < 3) {
-            showNotification('Mohon masukkan minimal 3 karakter.', 'error');
+            alert('Mohon masukkan minimal 3 karakter.');
             return;
         }
 
-        resultsDiv.innerHTML = `
-            <p>Mencari di mulai...</p>
-            <div class="spinner"></div>
-            <div class="progress-bar" id="progressBar"></div>
-        `;
-        
-        const progressBar = document.getElementById('progressBar');
-        const startTime = Date.now();
-        const results = await searchQuran(keyword, progressBar);
-        const endTime = Date.now();
-        
-        const duration = ((endTime - startTime) / 1000).toFixed(2);
-        showNotification(`Pencarian selesai dalam ${duration} detik.`, 'success');
+        resultsDiv.innerHTML = '<p>Mencari kata yang cocok....</p>';
+        const results = await searchQuran(keyword);
+        resultsDiv.innerHTML += '<p>Pencarian Selesai.</p>';
+        resultsDiv.innerHTML += '<p>Selesai</p>';
         displayResults(results, keyword);
     }
 
-    async function searchQuran(keyword, progressBar) {
+    async function searchQuran(keyword) {
         const results = [];
-        const chapterData = await fetch('chapter.json').then(response => response.json());
-        const totalSurahs = 114;
-        let processedSurahs = 0;
+        if (!chapterData) {
+            console.error('Chapter data not loaded.');
+            return results;
+        }
 
-        for (let i = 1; i <= totalSurahs; i++) {
+        for (let i = 1; i <= 114; i++) {
             const surahNumber = i.toString().padStart(3, '0');
             try {
                 const surahData = await fetch(`quranupdate/${surahNumber}.json`).then(response => response.json());
-
                 if (surahData && surahData.ayah) {
                     surahData.ayah.forEach(ayah => {
                         if (ayah.teksIndonesia && ayah.teksIndonesia.toLowerCase().includes(keyword)) {
@@ -79,24 +89,18 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (error) {
                 console.error(`Error loading surah ${surahNumber}:`, error);
             }
-
-            // Update progress bar
-            processedSurahs++;
-            const progress = Math.round((processedSurahs / totalSurahs) * 100);
-            progressBar.style.width = `${progress}%`;
         }
 
         return results;
     }
 
     function displayResults(results, keyword) {
-        resultsDiv.innerHTML = '';
-
         if (results.length === 0) {
-            resultsDiv.innerHTML = '<p>Tidak ditemukan hasil.</p>';
+            resultsDiv.innerHTML = 'Tidak ditemukan hasil.';
             return;
         }
 
+        resultsDiv.innerHTML += '<p>Selesai mencari kata yang cocok.</p>';
         let html = `<h2 class="text-xl font-bold mb-4">Hasil Pencarian (${results.length} ayat ditemukan):</h2>`;
         html += '<ul class="space-y-4">';
         results.forEach(result => {
@@ -124,14 +128,6 @@ document.addEventListener('DOMContentLoaded', () => {
     function highlightKeyword(text, keyword) {
         const regex = new RegExp(`(${keyword})`, 'gi');
         return text.replace(regex, '<span class="bg-yellow-200 dark:bg-yellow-500">$1</span>');
-    }
-    
-    function showNotification(message, type) {
-        const notification = document.createElement('div');
-        notification.className = `notification ${type}`;
-        notification.innerText = message;
-        document.body.appendChild(notification);
-        setTimeout(() => notification.remove(), 3000);
     }
 
     async function showAyahDetails(surahId, ayahNumber) {
