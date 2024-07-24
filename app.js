@@ -62,10 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
         resultsDiv.innerHTML = '<p>Mengambil Data...</p>';
         await new Promise(resolve => setTimeout(resolve, getRandomDelay(2000, 5000)));
 
-        resultsDiv.innerHTML = '<p>Memparsing Data.</p>';
+        resultsDiv.innerHTML = '<p>Selesai.</p>';
+        await new Promise(resolve => setTimeout(resolve, getRandomDelay(1000, 2000)));
+
+        resultsDiv.innerHTML = '<p>Memparsing Data...</p>';
         await new Promise(resolve => setTimeout(resolve, getRandomDelay(2000, 5000)));
 
-        resultsDiv.innerHTML += '<p>Mencari kata yang cocok...</p>';
+        resultsDiv.innerHTML = '<p>Mencari kata yang cocok...</p>';
         await new Promise(resolve => setTimeout(resolve, getRandomDelay(2000, 5000)));
 
         resultsDiv.innerHTML += '<div class="loading-dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>';
