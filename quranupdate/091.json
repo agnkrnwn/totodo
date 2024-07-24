@@ -1,0 +1,344 @@
+{
+    "id": "91",
+    "nameArabic": "الشمس",
+    "name": "Asy-Syams",
+    "value": "091",
+    "jumlahAyat": 15,
+    "ayah": [
+        {
+            "number": "1",
+            "text": "وَالشَّمْسِ وَضُحٰىهَاۖ",
+            "teksLatin": "wasy-syamsi wa ḍuḥāhā.",
+            "teksIndonesia": "Demi matahari dan sinarnya pada pagi hari,",
+            "tafsir": "Allah bersumpah dengan matahari dan cahayanya pada waktu duha yang sangat terang dan kontras dengan sesaat sebelumnya di mana kegelapan menutup alam ini. Kemudian Allah bersumpah dengan bulan yang bertolak belakang dengan matahari, sebab ia bukan sumber cahaya tetapi hanya menerima cahaya dari matahari.\n\nMenurut kajian ilmiah, cahaya di pagi hari adalah yang paling lengkap kekayaan panjang gelombangnya. Oleh karena itu, cahaya matahari pagi paling baik khasiatnya bagi manusia. Matahari adalah sumber energi utama bagi manusia, sedang cahayanya terdiri dari cahaya tampak, inframerah, dan ultraviolet. Cahaya tampak memiliki tujuh spektrum yang berbeda dan masing-masing memiliki kegunaan yang berbeda bagi tubuh manusia. Adapun inframerah bermanfaat untuk mengurangi rasa sakit pada otot-otot, dan ultraviolet berfungsi sebagai fitokatalis yang mempercepat perubahan pro-vitamin D yang ada pada kulit manusia menjadi vitamin D.",
+            "tajweed": [
+                {
+                    "end": 42,
+                    "rule": "hamzat_wasl",
+                    "start": 41
+                },
+                {
+                    "end": 43,
+                    "rule": "lam_shamsiyyah",
+                    "start": 42
+                },
+                {
+                    "end": 59,
+                    "rule": "madd_2",
+                    "start": 58
+                }
+            ]
+        },
+        {
+            "number": "2",
+            "text": "وَالْقَمَرِ اِذَا تَلٰىهَاۖ",
+            "teksLatin": "wal-qamari iżā talāhā.",
+            "teksIndonesia": "demi bulan apabila mengiringinya,",
+            "tafsir": "Allah bersumpah dengan matahari dan cahayanya pada waktu duha yang sangat terang dan kontras dengan sesaat sebelumnya di mana kegelapan menutup alam ini. Kemudian Allah bersumpah dengan bulan yang bertolak belakang dengan matahari, sebab ia bukan sumber cahaya tetapi hanya menerima cahaya dari matahari.\n\nMenurut kajian ilmiah, cahaya di pagi hari adalah yang paling lengkap kekayaan panjang gelombangnya. Oleh karena itu, cahaya matahari pagi paling baik khasiatnya bagi manusia. Matahari adalah sumber energi utama bagi manusia, sedang cahayanya terdiri dari cahaya tampak, inframerah, dan ultraviolet. Cahaya tampak memiliki tujuh spektrum yang berbeda dan masing-masing memiliki kegunaan yang berbeda bagi tubuh manusia. Adapun inframerah bermanfaat untuk mengurangi rasa sakit pada otot-otot, dan ultraviolet berfungsi sebagai fitokatalis yang mempercepat perubahan pro-vitamin D yang ada pada kulit manusia menjadi vitamin D.",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 24,
+                    "rule": "madd_2",
+                    "start": 23
+                }
+            ]
+        },
+        {
+            "number": "3",
+            "text": "وَالنَّهَارِ اِذَا جَلّٰىهَاۖ",
+            "teksLatin": "wan-nahāri iżā jallāhā.",
+            "teksIndonesia": "demi siang apabila menampakkannya,",
+            "tafsir": "Selanjutnya Allah bersumpah dengan siang dan malam. Siang menampakkan matahari, sedangkan malam menyembunyikan matahari. Dengan ini, Allah memberikan isyarat tentang sistem perputaran bulan dan bumi terhadap matahari sebagai penanda waktu bagi manusia. Perputaran bumi terhadap matahari menimbulkan sistem penanda waktu syamsiah sedang perputaran bulan terhadap bumi menimbulkan penanda waktu qomariyah. Pergerakan ketiga benda langit ini yang begitu terstruktur tersebut menunjukkan betapa kuasa Allah.",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 4,
+                    "rule": "lam_shamsiyyah",
+                    "start": 3
+                },
+                {
+                    "end": 7,
+                    "rule": "ghunnah",
+                    "start": 4
+                },
+                {
+                    "end": 26,
+                    "rule": "madd_2",
+                    "start": 25
+                }
+            ]
+        },
+        {
+            "number": "4",
+            "text": "وَالَّيْلِ اِذَا يَغْشٰىهَاۖ",
+            "teksLatin": "wal-laili iżā yagsyāhā.",
+            "teksIndonesia": "demi malam apabila menutupinya (gelap gulita),",
+            "tafsir": "Selanjutnya Allah bersumpah dengan siang dan malam. Siang menampakkan matahari, sedangkan malam menyembunyikan matahari. Dengan ini, Allah memberikan isyarat tentang sistem perputaran bulan dan bumi terhadap matahari sebagai penanda waktu bagi manusia. Perputaran bumi terhadap matahari menimbulkan sistem penanda waktu syamsiah sedang perputaran bulan terhadap bumi menimbulkan penanda waktu qomariyah. Pergerakan ketiga benda langit ini yang begitu terstruktur tersebut menunjukkan betapa kuasa Allah.",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 25,
+                    "rule": "madd_2",
+                    "start": 24
+                }
+            ]
+        },
+        {
+            "number": "5",
+            "text": "وَالسَّمَاۤءِ وَمَا بَنٰىهَاۖ",
+            "teksLatin": "was-samā'i wa mā banāhā.",
+            "teksIndonesia": "demi langit serta pembinaannya (yang menakjubkan),",
+            "tafsir": "Selanjutnya lagi, Allah bersumpah dengan langit dan bumi. Langit, yaitu kosmos beserta segala isinya, menyangga langit itu sehingga tetap berfungsi sebagai atap bumi. Dan bumi itu terhampar sehingga menyediakan potensi-potensi yang dapat dimanfaatkan manusia untuk hidup di atasnya.",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 4,
+                    "rule": "lam_shamsiyyah",
+                    "start": 3
+                },
+                {
+                    "end": 11,
+                    "rule": "madd_muttasil",
+                    "start": 9
+                },
+                {
+                    "end": 26,
+                    "rule": "madd_2",
+                    "start": 25
+                }
+            ]
+        },
+        {
+            "number": "6",
+            "text": "وَالْاَرْضِ وَمَا طَحٰىهَاۖ",
+            "teksLatin": "wal-arḍi wa mā ṭaḥāhā.",
+            "teksIndonesia": "demi bumi serta penghamparannya,",
+            "tafsir": "Selanjutnya lagi, Allah bersumpah dengan langit dan bumi. Langit, yaitu kosmos beserta segala isinya, menyangga langit itu sehingga tetap berfungsi sebagai atap bumi. Dan bumi itu terhampar sehingga menyediakan potensi-potensi yang dapat dimanfaatkan manusia untuk hidup di atasnya.",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 24,
+                    "rule": "madd_2",
+                    "start": 23
+                }
+            ]
+        },
+        {
+            "number": "7",
+            "text": "وَنَفْسٍ وَّمَا سَوّٰىهَاۖ",
+            "teksLatin": "wa nafsiw wa mā sawwāhā.",
+            "teksIndonesia": "demi jiwa serta penyempurnaan (ciptaan)nya,",
+            "tafsir": "Terakhir, Allah bersumpah dengan diri manusia yang telah Ia ciptakan dengan kondisi fisik dan psikis yang sempurna. Setelah menciptakannya secara sempurna, Allah memasukkan ke dalam diri manusia potensi jahat dan baik.",
+            "tajweed": [
+                {
+                    "end": 11,
+                    "rule": "idghaam_ghunnah",
+                    "start": 7
+                },
+                {
+                    "end": 22,
+                    "rule": "madd_2",
+                    "start": 21
+                }
+            ]
+        },
+        {
+            "number": "8",
+            "text": "فَاَلْهَمَهَا فُجُوْرَهَا وَتَقْوٰىهَاۖ",
+            "teksLatin": "fa alhamahā fujūrahā wa taqwāhā.",
+            "teksIndonesia": "maka Dia mengilhamkan kepadanya (jalan) kejahatan dan ketakwaannya,",
+            "tafsir": "Terakhir, Allah bersumpah dengan diri manusia yang telah Ia ciptakan dengan kondisi fisik dan psikis yang sempurna. Setelah menciptakannya secara sempurna, Allah memasukkan ke dalam diri manusia potensi jahat dan baik.",
+            "tajweed": [
+                {
+                    "end": 31,
+                    "rule": "qalqalah",
+                    "start": 29
+                },
+                {
+                    "end": 35,
+                    "rule": "madd_2",
+                    "start": 34
+                }
+            ]
+        },
+        {
+            "number": "9",
+            "text": "قَدْ اَفْلَحَ مَنْ زَكّٰىهَاۖ",
+            "teksLatin": "qad aflaḥa man zakkāhā.",
+            "teksIndonesia": "sungguh beruntung orang yang menyucikannya (jiwa itu),",
+            "tafsir": "Dalam ayat-ayat ini, Allah menegaskan pesan yang begitu pentingnya sehingga untuk itu Ia perlu bersumpah. Pesan itu adalah bahwa orang yang membersihkan dirinya, yaitu mengendalikan dirinya sehingga hanya mengerjakan perbuatan-perbuatan baik, akan beruntung, yaitu bahagia di dunia dan terutama di akhirat. Sedangkan orang yang mengotori dirinya, yaitu mengikuti hawa nafsunya sehingga melakukan perbuatan-perbuatan dosa, akan celaka, yaitu tidak bahagia di dunia dan di akhirat masuk neraka.",
+            "tajweed": [
+                {
+                    "end": 4,
+                    "rule": "qalqalah",
+                    "start": 2
+                },
+                {
+                    "end": 20,
+                    "rule": "ikhfa",
+                    "start": 16
+                },
+                {
+                    "end": 25,
+                    "rule": "madd_2",
+                    "start": 24
+                }
+            ]
+        },
+        {
+            "number": "10",
+            "text": "وَقَدْ خَابَ مَنْ دَسّٰىهَاۗ",
+            "teksLatin": "wa qad khāba man dassāhā.",
+            "teksIndonesia": "dan sungguh rugi orang yang mengotorinya.",
+            "tafsir": "Dalam ayat-ayat ini, Allah menegaskan pesan yang begitu pentingnya sehingga untuk itu Ia perlu bersumpah. Pesan itu adalah bahwa orang yang membersihkan dirinya, yaitu mengendalikan dirinya sehingga hanya mengerjakan perbuatan-perbuatan baik, akan beruntung, yaitu bahagia di dunia dan terutama di akhirat. Sedangkan orang yang mengotori dirinya, yaitu mengikuti hawa nafsunya sehingga melakukan perbuatan-perbuatan dosa, akan celaka, yaitu tidak bahagia di dunia dan di akhirat masuk neraka.",
+            "tajweed": [
+                {
+                    "end": 6,
+                    "rule": "qalqalah",
+                    "start": 4
+                },
+                {
+                    "end": 19,
+                    "rule": "ikhfa",
+                    "start": 15
+                },
+                {
+                    "end": 24,
+                    "rule": "madd_2",
+                    "start": 23
+                }
+            ]
+        },
+        {
+            "number": "11",
+            "text": "كَذَّبَتْ ثَمُوْدُ بِطَغْوٰىهَآ  ۖ",
+            "teksLatin": "każżabat ṡamūdu biṭagwāhā.",
+            "teksIndonesia": "(Kaum) samud telah mendustakan (rasulnya) karena mereka melampaui batas (zalim),",
+            "tafsir": "Kaum Samud adalah umat Nabi Saleh. Mereka telah mendustakan dan mengingkari kenabian dan ajaran-ajaran yang dibawa Nabi Saleh dari Allah. Nabi Saleh diberi mukjizat oleh Allah sebagai ujian bagi kaumnya, yaitu seekor unta betina yang dijelmakan dari sebuah batu besar, untuk menandingi keahlian kaum itu yang sangat piawai dalam seni patung dari batu. Bila mereka piawai dalam seni patung sehingga patung itu terlihat bagaikan hidup, maka mukjizat Nabi Saleh adalah menjelmakan seekor unta betina yang benar-benar hidup dari sebuah batu. Akan tetapi, mereka tidak mengakuinya, dan berusaha membunuh unta itu.",
+            "tajweed": [
+                {
+                    "end": 28,
+                    "rule": "madd_2",
+                    "start": 27
+                }
+            ]
+        },
+        {
+            "number": "12",
+            "text": "اِذِ انْۢبَعَثَ اَشْقٰىهَاۖ",
+            "teksLatin": "iżimba‘aṡa asyqāhā.",
+            "teksIndonesia": "ketika bangkit orang yang paling celaka di antara mereka,",
+            "tafsir": "Awal kecelakaan bagi kaum Samud adalah ketika tampil seorang yang paling jahat dari mereka, yaitu Qudar bin Salif. Ia adalah seorang yang sangat berani, perkasa, dan bengis. Ia datang memprovokasi kaumnya untuk membunuh unta betina mukjizat Nabi Saleh.",
+            "tajweed": [
+                {
+                    "end": 6,
+                    "rule": "hamzat_wasl",
+                    "start": 5
+                },
+                {
+                    "end": 9,
+                    "rule": "iqlab",
+                    "start": 7
+                },
+                {
+                    "end": 23,
+                    "rule": "madd_2",
+                    "start": 22
+                }
+            ]
+        },
+        {
+            "number": "13",
+            "text": "فَقَالَ لَهُمْ رَسُوْلُ اللّٰهِ نَاقَةَ اللّٰهِ وَسُقْيٰهَاۗ",
+            "teksLatin": "fa qāla lahum rasūlullāhi nāqatallāhi wa suqyāhā.",
+            "teksIndonesia": "lalu Rasul Allah (Saleh) berkata kepada mereka, “(Biarkanlah) unta betina dari Allah ini dengan minumannya.”",
+            "tafsir": "Nabi Saleh memperingatkan kaumnya agar tidak mengganggu unta itu. Ia memperingatkan bahwa unta itu adalah mukjizat dari Allah, dan haknya untuk memperoleh minum berselang hari dengan mereka, harus dihormati. Ia memperingatkan pula bahwa bila mereka mengganggunya, mereka akan mendapat bahaya.",
+            "tajweed": [
+                {
+                    "end": 24,
+                    "rule": "hamzat_wasl",
+                    "start": 23
+                },
+                {
+                    "end": 40,
+                    "rule": "hamzat_wasl",
+                    "start": 39
+                },
+                {
+                    "end": 53,
+                    "rule": "qalqalah",
+                    "start": 51
+                },
+                {
+                    "end": 56,
+                    "rule": "madd_2",
+                    "start": 55
+                }
+            ]
+        },
+        {
+            "number": "14",
+            "text": "فَكَذَّبُوْهُ فَعَقَرُوْهَاۖ فَدَمْدَمَ عَلَيْهِمْ رَبُّهُمْ بِذَنْۢبِهِمْ فَسَوّٰىهَاۖ",
+            "teksLatin": "fa każżabūhu fa ‘aqarūhā fa damdama ‘alaihim rabbuhum biżambihim fa sawwāhā.",
+            "teksIndonesia": "Namun mereka mendustakannya dan menyembelihnya, karena itu Tuhan membinasakan mereka karena dosanya, lalu diratakan-Nya (dengan tanah),",
+            "tafsir": "Akan tetapi, kaumnya memandang Nabi Saleh bohong, begitu juga unta itu sebagai mukjizat, dan menganggap sepi peringatan Nabi Saleh tersebut. Unta itu mereka tangkap beramai-ramai, lalu Qudar bin Salif membunuhnya dengan cara memotong-motongnya. Akhirnya Allah meratakan negeri mereka dengan tanah, dengan mengirim petir yang menggelegar yang diiringi gempa yang dahsyat, sebagai balasan pembangkangan dan dosa-dosa mereka.",
+            "tajweed": [
+                {
+                    "end": 59,
+                    "rule": "ikhfa_shafawi",
+                    "start": 55
+                },
+                {
+                    "end": 64,
+                    "rule": "iqlab",
+                    "start": 62
+                },
+                {
+                    "end": 79,
+                    "rule": "madd_2",
+                    "start": 78
+                }
+            ]
+        },
+        {
+            "number": "15",
+            "text": "وَلَا يَخَافُ عُقْبٰهَا ࣖ",
+            "teksLatin": "wa lā yakhāfu ‘uqbāhā.",
+            "teksIndonesia": "dan Dia tidak takut terhadap akibatnya.",
+            "tafsir": "Allah tidak peduli bencana yang Ia timpakan kepada mereka dengan korban yang begitu besar. Hal itu karena pembangkangan mereka yang sudah sangat keterlaluan, yaitu membunuh unta betina (mukjizat) yang diturunkan-Nya kepada nabi-Nya.",
+            "tajweed": [
+                {
+                    "end": 18,
+                    "rule": "qalqalah",
+                    "start": 16
+                },
+                {
+                    "end": 21,
+                    "rule": "madd_2",
+                    "start": 20
+                }
+            ]
+        }
+    ]
+}

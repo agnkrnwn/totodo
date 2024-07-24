@@ -1,58 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" class="dark">
 <head>
     <meta charset="UTF-8">
-    <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="styles.css">
-    <title>To-Do List App</title>
+    <title>Pencarian Al-Quran</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js" defer></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#E6F6FF',
+                            200: '#BAE3FF',
+                            300: '#7CC4FA',
+                            400: '#47A3F3',
+                            500: '#2186EB',
+                            600: '#0967D2',
+                            700: '#0552B5',
+                            800: '#03449E',
+                            900: '#01337D',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <div class="d-flex flex-md-row flex-column">
-    <div class="container ">
-        <header class="header">
-    <h1 class="title">Aplikasi To-Do List</h1>
-    <p class="datetime" id="datetime"></p>
-</header>
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <div class="input-group mb-3">
-                    <input type="text" id="taskInput" class="form-control" placeholder="Tambahkan tugas baru...">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" id="addTaskBtn">Tambah</button>
-                    </div>
-                </div>
-                <ul id="taskList" class="list-group"></ul>
+<body class="bg-gray-100 dark:bg-gray-900 dark:text-white">
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-3xl font-bold">Pencarian Al-Quran</h1>
+            <button id="toggleDarkMode" class="bg-gray-300 dark:bg-gray-700 text-black dark:text-white px-4 py-2 rounded">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+        <div class="mb-4">
+            <input type="text" id="searchInput" placeholder="Masukkan kata kunci" class="w-full p-2 border rounded bg-white dark:bg-gray-800 dark:text-white">
+        </div>
+        <button id="searchButton" class="bg-blue-500 text-white px-4 py-2 rounded">
+            <i class="fas fa-search mr-2"></i>Cari</button>
+        <div id="results" class="mt-8"></div>
+    </div>
+    <div id="ayahModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex justify-center items-center z-50">
+        <div class="bg-white dark:bg-gray-800 text-black dark:text-white p-4 rounded-lg max-w-3xl w-full max-h-screen overflow-y-auto">
+            <button id="closeModal" class="text-right text-2xl mb-6"><i class="fas fa-close"></i></button>
+            <h2 id="surahName" class="text-2xl font-bold mb-5"></h2>
+            <p dir="rtl" id="ayahText" class="text-xl mb-6"></p>
+            <p id="ayahLatin" class="text-lg mb-2"></p>
+            <p id="ayahIndonesia" class="text-lg mb-4"></p>
+            <button id="toggleTafsir" class="text-blue-500 mb-4"><i class="fas fa-book"></i> Tampilkan Tafsir</button>
+            <div id="tafsirSection" class="hidden">
+                <p id="ayahTafsir" class="text-lg mb-2"></p>
             </div>
+            
         </div>
     </div>
-    <div class="modal fade" id="editTaskModal" tabindex="-1" aria-labelledby="editTaskModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="editTaskModalLabel">Edit Tugas</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <input type="text" id="editedTaskInput" class="form-control">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-                    <button type="button" class="btn btn-primary" id="saveEditedTaskBtn">Simpan Perubahan</button>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>

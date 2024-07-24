@@ -1,167 +1,132 @@
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then((registration) => {
-          console.log('Service Worker registered with scope:', registration.scope);
-        })
-        .catch((error) => {
-          console.error('Service Worker registration failed:', error);
-        });
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const resultsDiv = document.getElementById('results');
+    const ayahModal = document.getElementById('ayahModal');
+    const closeModal = document.getElementById('closeModal');
+    const surahName = document.getElementById('surahName');
+    const ayahText = document.getElementById('ayahText');
+    const ayahLatin = document.getElementById('ayahLatin');
+    const ayahIndonesia = document.getElementById('ayahIndonesia');
+    const tafsirSection = document.getElementById('tafsirSection');
+    const ayahTafsir = document.getElementById('ayahTafsir');
+    const toggleTafsir = document.getElementById('toggleTafsir');
+    const toggleDarkMode = document.getElementById('toggleDarkMode');
+
+    searchButton.addEventListener('click', performSearch);
+    closeModal.addEventListener('click', () => {
+        ayahModal.classList.add('hidden');
+        tafsirSection.classList.add('hidden');
+        toggleTafsir.innerHTML = '<i class="fas fa-book"></i> Tampilkan Tafsir';
     });
-  }
-  
 
-// Fungsi untuk memeriksa dukungan LocalStorage
-function isLocalStorageSupported() {
-    try {
-        return 'localStorage' in window && window['localStorage'] !== null;
-    } catch (e) {
-        return false;
-    }
-}
+    toggleTafsir.addEventListener('click', () => {
+        tafsirSection.classList.toggle('hidden');
+        toggleTafsir.innerHTML = tafsirSection.classList.contains('hidden') ? '<i class="fas fa-book"></i> Tampilkan Tafsir' : '<i class="fas fa-book"></i> Sembunyikan Tafsir';
+    });
 
-// Fungsi untuk mendapatkan daftar tugas dari LocalStorage
-function getTasksFromLocalStorage() {
-    if (isLocalStorageSupported()) {
-        const tasks = localStorage.getItem('tasks');
-        return tasks ? JSON.parse(tasks) : [];
-    }
-    return [];
-}
+    toggleDarkMode.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+    });
 
-// Fungsi untuk menyimpan daftar tugas ke LocalStorage
-function saveTasksToLocalStorage(tasks) {
-    if (isLocalStorageSupported()) {
-        localStorage.setItem('tasks', JSON.stringify(tasks));
-    }
-}
-
-// Fungsi untuk mengisi ul dengan tugas-tugas
-function populateTaskList() {
-    const tasks = getTasksFromLocalStorage();
-    const taskList = document.getElementById('taskList');
-    taskList.innerHTML = '';
-
-    tasks.forEach((task, index) => {
-        const taskItem = document.createElement('li');
-        taskItem.className = 'list-group-item';
-    
-        if (task.done) {
-            taskItem.classList.add('done');
+    async function performSearch() {
+        const keyword = searchInput.value.toLowerCase();
+        if (keyword.length < 3) {
+            alert('Mohon masukkan minimal 3 karakter.');
+            return;
         }
-    
-        taskItem.innerHTML = `
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="task-content">
-                    <div class="task-text">${task.text}</div>
-                    <div class="task-timestamp">${task.timestamp}</div>
-                    ${task.done ? `<div class="task-completedAt">Selesai pada: ${task.completedAt}</div>` : ''}
-                </div>
-                <div class="task-buttons">
-                    <button class="btn btn-success btn-sm mr-2" onclick="markTaskAsDone(${index})"><i class="bi bi-check"></i></button>
-                    <button class="btn btn-primary btn-sm mr-2" onclick="editTask(${index})"><i class="bi bi-pencil"></i></button>
-                    <button class="btn btn-danger btn-sm" onclick="deleteTask(${index})"><i class="bi bi-trash"></i></button>
-                </div>
-            </div>
-        `;
-        taskList.appendChild(taskItem);
-    });
-    
-    
-    
-}
 
-// Fungsi untuk menambah tugas baru
-function addTask(event) {
-    const taskInput = document.getElementById('taskInput');
-    const taskText = taskInput.value.trim();
-
-    if ((event.key === 'Enter' || event.target.id === 'addTaskBtn') && taskText !== '') {
-        const tasks = getTasksFromLocalStorage();
-        const now = new Date();
-        const formattedDate = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
-        tasks.push({ text: taskText, done: false, timestamp: formattedDate });
-        saveTasksToLocalStorage(tasks);
-        taskInput.value = '';
-        populateTaskList();
-    }
-}
-
-
-
-
-// Fungsi untuk menghapus tugas
-function deleteTask(index) {
-    const isConfirmed = window.confirm('Apakah Anda yakin ingin menghapus tugas ini?');
-    
-    if (isConfirmed) {
-        const tasks = getTasksFromLocalStorage();
-        tasks.splice(index, 1);
-        saveTasksToLocalStorage(tasks);
-        populateTaskList();
-    }
-}
-
-// Fungsi untuk menandai tugas sebagai selesai
-function markTaskAsDone(index) {
-    const tasks = getTasksFromLocalStorage();
-    tasks[index].done = true;
-    tasks[index].completedAt = new Date().toLocaleString(); // Menyimpan waktu selesai
-    saveTasksToLocalStorage(tasks);
-    populateTaskList();
-}
-
-
-// Fungsi untuk mengedit tugas
-function editTask(index) {
-    const tasks = getTasksFromLocalStorage();
-    const editedTaskInput = document.getElementById('editedTaskInput');
-    
-    // Mengisi input modal dengan teks tugas yang akan diedit
-    editedTaskInput.value = tasks[index].text;
-
-    // Menampilkan modal
-    $('#editTaskModal').modal('show');
-
-    // Menyimpan indeks tugas yang akan diedit sebagai atribut data pada tombol "Simpan Perubahan"
-    const saveEditedTaskBtn = document.getElementById('saveEditedTaskBtn');
-    saveEditedTaskBtn.setAttribute('data-task-index', index);
-
-    // Menambahkan event listener pada tombol "Simpan Perubahan"
-    saveEditedTaskBtn.addEventListener('click', saveEditedTask);
-}
-
-function saveEditedTask() {
-    const editedTaskInput = document.getElementById('editedTaskInput');
-    const editedTaskText = editedTaskInput.value.trim();
-    const index = parseInt(this.getAttribute('data-task-index'));
-
-    if (editedTaskText !== '') {
-        const tasks = getTasksFromLocalStorage();
-        tasks[index].text = editedTaskText;
-        saveTasksToLocalStorage(tasks);
-        populateTaskList();
+        resultsDiv.innerHTML = 'Mencari...';
+        const results = await searchQuran(keyword);
+        displayResults(results, keyword);
     }
 
-    // Menutup modal
-    $('#editTaskModal').modal('hide');
-}
+    async function searchQuran(keyword) {
+        const results = [];
+        const chapterData = await fetch('chapter.json').then(response => response.json());
 
+        for (let i = 1; i <= 114; i++) {
+            const surahNumber = i.toString().padStart(3, '0');
+            try {
+                const surahData = await fetch(`quranupdate/${surahNumber}.json`).then(response => response.json());
 
+                if (surahData && surahData.ayah) {
+                    surahData.ayah.forEach(ayah => {
+                        if (ayah.teksIndonesia && ayah.teksIndonesia.toLowerCase().includes(keyword)) {
+                            results.push({
+                                surah: chapterData.chapters[i - 1].surah,
+                                ayahNumber: ayah.number,
+                                text: ayah.teksIndonesia,
+                                surahId: surahNumber,
+                                ayah
+                            });
+                        }
+                    });
+                }
+            } catch (error) {
+                console.error(`Error loading surah ${surahNumber}:`, error);
+            }
+        }
 
-// Inisialisasi
-document.getElementById('addTaskBtn').addEventListener('click', addTask);
-document.getElementById('taskInput').addEventListener('keydown', addTask);
-populateTaskList();
+        return results;
+    }
 
+    function displayResults(results, keyword) {
+        if (results.length === 0) {
+            resultsDiv.innerHTML = 'Tidak ditemukan hasil.';
+            return;
+        }
 
-function updateDateTime() {
-    const datetimeElement = document.getElementById('datetime');
-    const now = new Date();
-    const formattedDateTime = `${now.toLocaleDateString()} ${now.toLocaleTimeString()}`;
-    datetimeElement.textContent = formattedDateTime;
-}
+        let html = `<h2 class="text-xl font-bold mb-4">Hasil Pencarian (${results.length} ayat ditemukan):</h2>`;
+        html += '<ul class="space-y-4">';
+        results.forEach(result => {
+            const highlightedText = highlightKeyword(result.text, keyword);
+            html += `
+                <li class="bg-white dark:bg-gray-700 p-4 rounded shadow cursor-pointer" data-surah="${result.surahId}" data-ayah="${result.ayahNumber}">
+                    <p class="font-bold">${result.surah} : ${result.ayahNumber}</p>
+                    <p>${highlightedText}</p>
+                </li>
+            `;
+        });
+        html += '</ul>';
 
-// Panggil fungsi updateDateTime setiap detik
-setInterval(updateDateTime, 1000);
+        resultsDiv.innerHTML = html;
 
+        document.querySelectorAll('#results li').forEach(item => {
+            item.addEventListener('click', () => {
+                const surahId = item.getAttribute('data-surah');
+                const ayahNumber = item.getAttribute('data-ayah');
+                showAyahDetails(surahId, ayahNumber);
+            });
+        });
+    }
+
+    function highlightKeyword(text, keyword) {
+        const regex = new RegExp(`(${keyword})`, 'gi');
+        return text.replace(regex, '<span class="bg-yellow-200 dark:bg-yellow-500">$1</span>');
+    }
+    
+
+    async function showAyahDetails(surahId, ayahNumber) {
+        try {
+            const surahData = await fetch(`quranupdate/${surahId}.json`).then(response => response.json());
+            const ayahData = surahData.ayah.find(ayah => ayah.number === ayahNumber);
+    
+            if (ayahData) {
+                // Find the corresponding Surah name and format the string
+                const surahNameFormatted = `${surahData.id}. ${surahData.name} : ${ayahNumber}`;
+    
+                surahName.innerText = surahNameFormatted;
+                ayahText.innerText = ayahData.text;
+                ayahLatin.innerText = ayahData.teksLatin;
+                ayahIndonesia.innerText = ayahData.teksIndonesia;
+                ayahTafsir.innerText = ayahData.tafsir || 'Tafsir tidak tersedia.';
+    
+                ayahModal.classList.remove('hidden');
+            }
+        } catch (error) {
+            console.error('Error loading Ayah details:', error);
+        }
+    }
+    
+});

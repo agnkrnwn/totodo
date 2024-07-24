@@ -1,0 +1,1690 @@
+{
+    "id": "52",
+    "nameArabic": "الطور",
+    "name": "At-Tur",
+    "value": "052",
+    "jumlahAyat": 49,
+    "ayah": [
+        {
+            "number": "1",
+            "text": "وَالطُّوْرِۙ  ",
+            "teksLatin": "waṭ-ṭūr(i).",
+            "teksIndonesia": "Demi gunung (Sinai),",
+            "tafsir": "Ayat ini mengutarakan bahwa Allah swt bersumpah dengan ath-thur yang tinggi kedudukannya karena di atas ath-thur itu Allah telah berbicara dengan Nabi Musa dan menurunkan kitab Taurat kepadanya yang berisikan hukum-hukum, hikmat, dan budi pekerti dan mudah dibaca manusia. Ath-thur berarti bukit yaitu Bukit thursina yakni sebuah bukit di Madyan tempat Nabi Musa mendengarkan kalam Allah swt. Ath-thur dalam bahasa Suryani berarti juga bukit yang banyak pohon-pohonnya, tempat di mana Tuhan berbicara langsung dengan Nabi Musa dan di tempat itu pula diangkat menjadi rasul. Dinamakan ath-thur karena banyak pohonnya, bila tidak ada pohonnya, maka tidaklah dinamakan ath-thur, akan tetapi Jabal (gunung). Allah menggunakan gunung sebagai sumpah-Nya tentunya karena pentingnya gunung dalam terjadinya kehidupan di bumi ini. Mengenai gunung dan peranannya, antara lain dapat dilihat pada bahasan beberapa ayat berikut, Luqman/31: 10 dan an-Naml/27: 88. Bahasan selanjutnya juga dapat dilihat pada an-Naba'/78: 6-7 dan an-Nazi'at/79: 30-32.",
+            "tajweed": [
+                {
+                    "end": 42,
+                    "rule": "hamzat_wasl",
+                    "start": 41
+                },
+                {
+                    "end": 43,
+                    "rule": "lam_shamsiyyah",
+                    "start": 42
+                },
+                {
+                    "end": 47,
+                    "rule": "madd_246",
+                    "start": 46
+                }
+            ]
+        },
+        {
+            "number": "2",
+            "text": "وَكِتٰبٍ مَّسْطُوْرٍۙ  ",
+            "teksLatin": "wa kitābim masṭūr(in).",
+            "teksIndonesia": "dan demi Kitab yang ditulis, ",
+            "tafsir": "Kemudian Allah swt bersumpah dengan sebuah kitab yang tertulis (bertulisan indah) dengan susunan huruf-hurufnya yang rapih. Ada yang berpendapat bahwa maksudnya ialah Lauh Mahfudz, dan ada pula yang berpendapat bahwa arti kitab yang tertulis indah, ialah yang diturunkan dan dibacakan kepada manusia dengan terang-terangan.",
+            "tajweed": [
+                {
+                    "end": 7,
+                    "rule": "madd_2",
+                    "start": 6
+                },
+                {
+                    "end": 13,
+                    "rule": "idghaam_ghunnah",
+                    "start": 8
+                },
+                {
+                    "end": 18,
+                    "rule": "madd_246",
+                    "start": 17
+                }
+            ]
+        },
+        {
+            "number": "3",
+            "text": "فِيْ رَقٍّ مَّنْشُوْرٍۙ  ",
+            "teksLatin": "fī raqqim mansyūr(in).",
+            "teksIndonesia": "pada lembaran yang terbuka,",
+            "tafsir": "Selanjutnya Allah swt menerangkan dalam ayat ini bahwa kitab-kitab itu mudah bagi setiap orang mempelajari isinya. Kitabkitab itu berisi hikmah-hikmah, hukum, kebudayaan dan budi pekerti (akhlak); karena itu ditulis pada lembaran-lembaran terbuka yang dapat dibaca. (",
+            "tajweed": [
+                {
+                    "end": 13,
+                    "rule": "idghaam_ghunnah",
+                    "start": 8
+                },
+                {
+                    "end": 16,
+                    "rule": "ikhfa",
+                    "start": 13
+                },
+                {
+                    "end": 17,
+                    "rule": "madd_246",
+                    "start": 16
+                }
+            ]
+        },
+        {
+            "number": "4",
+            "text": "وَّالْبَيْتِ الْمَعْمُوْرِۙ  ",
+            "teksLatin": "wal-baitil-ma‘mūr(i).",
+            "teksIndonesia": "demi Baitulma‘mur (Ka‘bah),",
+            "tafsir": "Dalam ayat ini Allah swt bersumpah dengan al-Baitul-Ma'mur yaitu sebuah rumah di langit yang ketujuh yang setiap harinya dimasuki oleh 70 ribu malaikat untuk tawaf atau salat. Mereka telah masuk ke sana tidak akan kembali untuk selamanya. Hal ini ditegaskan dalam hadis Isra' yaitu: \"Terdapat dalam Sahih al-Bukhari dan Sahih Muslim bahwa Rasulullah saw bersabda dalam hadis tentang Isra' sesudah melampaui langit ketujuh, kemudian aku diangkat ke Baitulma'mur, tiba-tiba di sana kulihat 70.000 malaikat masuk setiap hari dan mereka tidak akan kembali lagi setelah itu. (Riwayat al-Bukhari dan Muslim) \n\nMaksud hadis di atas bahwa para malaikat itu beribadat dan melakukan tawaf di sana (Baitulma'mur) seperti halnya manusia di bumi, melakukan tawaf di Ka'bah Mekah. Begitulah keadaan para malaikat itu. Kemudian Qatadah, Rabi' bin Anas dan as-Suddi berkata, bahwa Rasulullah saw pada suatu hari berkata kepada para sahabat: \n\n\"Tahukah kamu apakah Baitulma'mur itu? Mereka menjawab, \"Allah dan Rasul-Nya lebih mengetahui\" Rasulullah berkata, \"Baitulma'mur ialah sebuah masjid di langit yang searah dengan Ka'bah dan apabila (seseorang dari sana) jatuh, maka akan jatuh di atas Ka'bah, di sana salat 70.000 malaikat setiap hari; apabila mereka keluar dari sana, tidak akan kembali lagi.\" (Riwayat Ibnu Jarir)",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 13,
+                    "rule": "hamzat_wasl",
+                    "start": 12
+                },
+                {
+                    "end": 22,
+                    "rule": "madd_246",
+                    "start": 21
+                }
+            ]
+        },
+        {
+            "number": "5",
+            "text": "وَالسَّقْفِ الْمَرْفُوْعِۙ  ",
+            "teksLatin": "was-saqfil-marfū‘(i).",
+            "teksIndonesia": "demi atap yang ditinggikan (langit),",
+            "tafsir": "Dalam ayat ini Allah swt bersumpah dengan atap yang ditinggikan (langit) yaitu alam tinggi yang mempunyai beberapa matahari, beberapa bulan, bintang-bintang tetap, dan bintang-bintang beredar. Di sana juga terletak 'Arsy dan kursi-Nya; demikian juga malaikat-malaikat-Nya (yang tidak pernah menolak perintah Allah swt dan selalu patuh terhadap apa yang Allah perintahkan kepada mereka). Di sana juga ada benda-benda alam yang tak terhitung banyaknya hanya Allah swt yang mengetahuinya, dan balatentara Allah swt yang kita juga tak mengetahui hakikatnya kecuali Dia yang menciptakannya. Dalam firman Allah swt dijelaskan: \n\nDan tidak ada yang mengetahui bala tentara Tuhanmu kecuali Dia sendiri. (al-Muddatstsir/74: 31) \n\nSufyan ats-sauri, Syu'bah dan Abdul Ahwas meriwayatkan dari Simak dari Harb dari Khalid bin Ar'arah dari 'Ali bahwa As-Saqful Marfu' artinya 'langit. Sufyan membaca firman Allah sebagai berikut: \n\nDan Kami menjadikan langit sebagai atap yang terpelihara. (alAnbiya'/21: 32) \n\nMaksudnya ialah bahwa langit itu sebagai atap dan yang dimaksud dengan \"terpelihara\" ialah segala yang berada di langit itu dijaga oleh Allah swt dengan peraturan dan hukum-hukum yang menyebabkan semuanya berjalan dengan teratur dan tertib, sesuai sistem dan hukumnya.",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 4,
+                    "rule": "lam_shamsiyyah",
+                    "start": 3
+                },
+                {
+                    "end": 9,
+                    "rule": "qalqalah",
+                    "start": 7
+                },
+                {
+                    "end": 13,
+                    "rule": "hamzat_wasl",
+                    "start": 12
+                },
+                {
+                    "end": 22,
+                    "rule": "madd_246",
+                    "start": 21
+                }
+            ]
+        },
+        {
+            "number": "6",
+            "text": "وَالْبَحْرِ الْمَسْجُوْرِۙ ",
+            "teksLatin": "wal-baḥril-masjūr(i).",
+            "teksIndonesia": "demi lautan yang penuh gelombang, ",
+            "tafsir": "Dalam ayat ini Allah bersumpah, Demi al-Bahrul-Masjur (laut yang di dalamnya ada api) yakni laut yang tertahan dari banjir karena kalau laut itu dilepaskan, ia akan menenggelamkan semua yang ada di atas bumi sehingga hewan dan tumbuh-tumbuhan semuanya akan habis musnah. Maka rusaklah aturan alam dan tidaklah ada hikmah alam ini dijadikan. Sebagian ulama berpendapat dan menetapkan bahwa lapisan bumi itu seluruhnya seperti semangka, dan kulitnya seperti kulit semangka, itu artinya bahwa perbandingan kulit bumi dan api yang ada di dalam kulitnya itu seperti kulit semangka dengan isinya, yang dimakan itu. Sebab itu sekarang kita sebenarnya berada di atas api yang besar, yakni di atas laut yang dibawahnya penuh dengan api dan laut itu tertutup dengan kulit bumi dari segala penjurunya. Dari waktu ke waktu api itu naik ke atas laut yang tampak pada waktu gempa dan pada waktu gunung berapi meletus; seperti gunung berapi Visofius yang meletus di Italia pada tahun 1909 M yang telah menelan kota Mozaina, dan gempa ini yang telah terjadi di Jepang pada tahun 1952 M yang memusnahkan kota-kotanya sekaligus. Menurut Jumhur bahwa yang dimaksud dalam ayat ini ialah laut bumi. Akan tetapi mereka berbeda pendapat dalam kata \"masjur\" di antara pendapatnya ialah berarti: dinyalakan api di hari Kiamat seperti dalam Al-Qur'an: \n\nDan apabila lautan dijadikan meluap. (al-Infithar/82: 3) \n\nFirman-Nya yang lain: \n\nDan apabila lautan dipanaskan. (at-Takwir/81: 6)",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 13,
+                    "rule": "hamzat_wasl",
+                    "start": 12
+                },
+                {
+                    "end": 22,
+                    "rule": "madd_246",
+                    "start": 21
+                }
+            ]
+        },
+        {
+            "number": "7",
+            "text": "اِنَّ عَذَابَ رَبِّكَ لَوَاقِعٌۙ  ",
+            "teksLatin": "inna ‘ażāba rabbika lawāqi‘(un).",
+            "teksIndonesia": "sungguh, azab Tuhanmu pasti terjadi, ",
+            "tafsir": "Kemudian Allah swt menyebutkan isi sumpah bahwa azabazab hari Kiamat diperuntunkkan bagi semua yang mendustakan para rasul. Azab tersebut pasti akan terjadi, tanpa ragu sedikitpun. Penegasan tentang kepastian datangnya azab sangat penting untuk menghilangkan keraguan di kalangan manusia yang meragukan peristiwa terjadinya azab itu.",
+            "tajweed": [
+                {
+                    "end": 5,
+                    "rule": "ghunnah",
+                    "start": 2
+                },
+                {
+                    "end": 27,
+                    "rule": "madd_2",
+                    "start": 26
+                }
+            ]
+        },
+        {
+            "number": "8",
+            "text": "مَّا لَهٗ مِنْ دَافِعٍۙ  ",
+            "teksLatin": "mā lahū min dāfi‘(in).",
+            "teksIndonesia": "tidak sesuatu pun yang dapat menolaknya, ",
+            "tafsir": "Allah menerangkan bahwa azab tersebut tak seorang pun yang dapat menolaknya. Dan tidak pula ada jalan untuk keluar dari azab itu yang merupakan balasan bagi orang-orang yang telah menodai dirinya dengan perbuatan syirik dan dosa, dan yang telah menodai jiwanya dengan dusta terhadap para rasul dan hari kebangkitan. Kemudian diterangkan pula dalam ayat ini bahwa azab yang tidak dapat dihindarkan itu terjadi pada suatu hari tatkala langit berguncang di tempatnya.",
+            "tajweed": [
+                {
+                    "end": 10,
+                    "rule": "madd_2",
+                    "start": 9
+                },
+                {
+                    "end": 17,
+                    "rule": "ikhfa",
+                    "start": 13
+                }
+            ]
+        },
+        {
+            "number": "9",
+            "text": "يَّوْمَ تَمُوْرُ السَّمَاۤءُ مَوْرًاۙ ",
+            "teksLatin": "yauma tamūrus-samā'u maurā(n).",
+            "teksIndonesia": "pada hari (ketika) langit berguncang sekeras-kerasnya,",
+            "tafsir": "Allah menerangkan bahwa azab tersebut tak seorang pun yang dapat menolaknya. Dan tidak pula ada jalan untuk keluar dari azab itu yang merupakan balasan bagi orang-orang yang telah menodai dirinya dengan perbuatan syirik dan dosa, dan yang telah menodai jiwanya dengan dusta terhadap para rasul dan hari kebangkitan. Kemudian diterangkan pula dalam ayat ini bahwa azab yang tidak dapat dihindarkan itu terjadi pada suatu hari tatkala langit berguncang di tempatnya.",
+            "tajweed": [
+                {
+                    "end": 16,
+                    "rule": "hamzat_wasl",
+                    "start": 15
+                },
+                {
+                    "end": 17,
+                    "rule": "lam_shamsiyyah",
+                    "start": 16
+                },
+                {
+                    "end": 24,
+                    "rule": "madd_muttasil",
+                    "start": 22
+                }
+            ]
+        },
+        {
+            "number": "10",
+            "text": "وَّتَسِيْرُ الْجِبَالُ سَيْرًاۗ  ",
+            "teksLatin": "wa tasīrul-jibālu sairā(n).",
+            "teksIndonesia": "dan gunung berjalan (berpindah-pindah).",
+            "tafsir": "Dalam ayat ini Allah menambahkan penjelasannya bahwa pada hari Kiamat itu gunung-gunung berpindah dari tempatnya, berjalan seperti jalannya awan, dan terbang ke udara lalu jatuh ke bumi terpecah-pecah, kemudian hancur menjadi debu laksana bulu yang diterbangkan angin. Berguncangnya langit dan beterbangannya gunung-gunung ialah sebagai pemberitahuan dan peringatan kepada manusia bahwa mereka tidak akan dapat kembali ke dunia, karena ia telah musnah dan telah terjadi alam baru yaitu alam akhirat. Ayat di atas berkaitan dengan gambaran saat terjadinya kiamat, yang banyak pula disebut di ayat-ayat lainnya. Gunung yang mengekspresikan daratan atau kerak bumi, digambarkan berpindah tempat atau dengan kata lain gunung-gunung itu bergerak. Pergerakan gunung-gunung ini adalah manifestasi pergerakan lempeng bumi (lihat an-Naml/27: 88) dan dapat menimbulkan gempa bumi. Dalam Surah az-Zalzalah/99: 1-4 kejadian kiamat digambarkan dengan datangnya gempa yang dahsyat. Gempa dahsyat ini dapat menimbulkan retakan yang panjang dan dalam yang bukan mustahil memicu terjadinya letusan gunung api. Sebagai contoh adalah ketika terjadi gempa Nias pada tahun 2005 yang berkekuatan Mw=8,7, setelah gempa Aceh 2004, beberapa gunung api di Pulau Sumatra memperlihatkan kegiatan yang meningkat. \n\nFakta ilmiah memang menunjukkan bahwa gunung-gunung itu bergerak. Data Global Positioning Systems (GPS) merekam gerakangerakan tersebut dalam ukuran milimeter. Sebagai contoh adalah pulau-pulau terluar di sebelah barat Sumatra yang bergerak ke arah timurlaut sebesar 50-60 mm/tahun.",
+            "tajweed": [
+                {
+                    "end": 11,
+                    "rule": "hamzat_wasl",
+                    "start": 10
+                }
+            ]
+        },
+        {
+            "number": "11",
+            "text": "فَوَيْلٌ يَّوْمَىِٕذٍ لِّلْمُكَذِّبِيْنَۙ  ",
+            "teksLatin": "fawailuy yauma'iżil lil-mukażżibīn(a).",
+            "teksIndonesia": "Maka celakalah pada hari itu bagi orang-orang yang mendustakan.",
+            "tafsir": "Dalam ayat ini Allah menerangkan kepada siapa azab itu ditimpakan setelah terjadinya guncangan langit dan beterbangan gunung-gunung yaitu kepada orang-orang pendusta yang bergelimang dengan kebatilan dan selalu menolak kebenaran serta tidak ingat akan adanya hari perhitungan dan tidak pernah takut akan adanya siksaan Tuhan.",
+            "tajweed": [
+                {
+                    "end": 11,
+                    "rule": "idghaam_ghunnah",
+                    "start": 7
+                },
+                {
+                    "end": 23,
+                    "rule": "idghaam_no_ghunnah",
+                    "start": 18
+                },
+                {
+                    "end": 35,
+                    "rule": "madd_246",
+                    "start": 34
+                }
+            ]
+        },
+        {
+            "number": "12",
+            "text": "الَّذِيْنَ هُمْ فِيْ خَوْضٍ يَّلْعَبُوْنَۘ  ",
+            "teksLatin": "allażīna hum fī khauḍiy yal‘abūn(a).",
+            "teksIndonesia": "Orang-orang yang bermain-main dalam kebatilan (perbuatan dosa),",
+            "tafsir": "Dalam ayat ini Allah menerangkan kepada siapa azab itu ditimpakan setelah terjadinya guncangan langit dan beterbangan gunung-gunung yaitu kepada orang-orang pendusta yang bergelimang dengan kebatilan dan selalu menolak kebenaran serta tidak ingat akan adanya hari perhitungan dan tidak pernah takut akan adanya siksaan Tuhan.",
+            "tajweed": [
+                {
+                    "end": 28,
+                    "rule": "idghaam_ghunnah",
+                    "start": 24
+                },
+                {
+                    "end": 35,
+                    "rule": "madd_246",
+                    "start": 34
+                }
+            ]
+        },
+        {
+            "number": "13",
+            "text": "يَوْمَ يُدَعُّوْنَ اِلٰى نَارِ جَهَنَّمَ دَعًّاۗ",
+            "teksLatin": "yauma yuda‘‘ūna ilā nāri jahannama da‘‘ā(n).",
+            "teksIndonesia": "pada hari (ketika) itu mereka didorong ke neraka Jahanam dengan sekuat-kuatnya.",
+            "tafsir": "Dalam ayat ini Allah menerangkan bahwa orang-orang yang berbuat kejahatan tersebut, pada hari itu mereka dihardik dan didorong dengan paksa ke dalam neraka Jahanam, yang apinya selalu membakar dan menyala-nyala. (",
+            "tajweed": [
+                {
+                    "end": 38,
+                    "rule": "ghunnah",
+                    "start": 35
+                }
+            ]
+        },
+        {
+            "number": "14",
+            "text": "هٰذِهِ النَّارُ الَّتِيْ كُنْتُمْ بِهَا تُكَذِّبُوْنَ ",
+            "teksLatin": "hāżihin-nārul-latī kuntum bihā tukażżibūn(a).",
+            "teksIndonesia": "(Dikatakan kepada mereka), “Inilah neraka yang dahulu kamu mendustakannya.” ",
+            "tafsir": "Setelah mereka dekat dengan neraka, para penjaga menegaskan dengan ejekan, \"Inilah neraka, yang dahulu kamu dustakan di dunia.\" Pendustaan mereka terhadap neraka berarti dusta mereka terhadap rasul yang telah membawa berita tentang neraka itu, dengan wahyu yang telah diturunkan kepadanya.",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "madd_2",
+                    "start": 2
+                },
+                {
+                    "end": 9,
+                    "rule": "hamzat_wasl",
+                    "start": 8
+                },
+                {
+                    "end": 10,
+                    "rule": "lam_shamsiyyah",
+                    "start": 9
+                },
+                {
+                    "end": 13,
+                    "rule": "ghunnah",
+                    "start": 10
+                },
+                {
+                    "end": 18,
+                    "rule": "hamzat_wasl",
+                    "start": 17
+                },
+                {
+                    "end": 30,
+                    "rule": "ikhfa",
+                    "start": 27
+                },
+                {
+                    "end": 34,
+                    "rule": "ikhfa_shafawi",
+                    "start": 30
+                },
+                {
+                    "end": 48,
+                    "rule": "madd_246",
+                    "start": 47
+                }
+            ]
+        },
+        {
+            "number": "15",
+            "text": "اَفَسِحْرٌ هٰذَآ اَمْ اَنْتُمْ لَا تُبْصِرُوْنَ ",
+            "teksLatin": "afasiḥrun hāżā am antum lā tubṣirūn(a).",
+            "teksIndonesia": "Maka apakah ini sihir? Ataukah kamu tidak melihat?",
+            "tafsir": "Karena itu dalam ayat ini Allah mengejek mereka, yaitu orang-orang musyrik yang ketika di dunia menganggap Muhammad saw tukang sihir yang menyihir akal dan menutup mata mereka. Allah swt mengejek mereka ketika mereka diazab di akhirat. \"Apakah yang mereka lihat dengan mata kepala mereka sekarang ini, seperti azab yang diberitahukan kepada mereka di dunia itu, ataukah mereka masih terlena oleh sihir seperti dahulu mereka menganggap Muhammad saw menyihir mereka di dunia, ataukah mata mereka tidak melihat apa-apa?\" Sungguh azab itu telah menjadi kenyataan, mata mereka tidak kena sihir dan tidak pula ditutupi. \n\nJelasnya apakah dalam penglihatan mereka ada keraguan ataukah mata mereka sedang sakit? Tidak, kedua-duanya tidak, yang mereka lihat itu adalah kenyataan yang sebenarnya.",
+            "tajweed": [
+                {
+                    "end": 14,
+                    "rule": "madd_2",
+                    "start": 13
+                },
+                {
+                    "end": 18,
+                    "rule": "madd_munfasil",
+                    "start": 16
+                },
+                {
+                    "end": 29,
+                    "rule": "ikhfa",
+                    "start": 26
+                },
+                {
+                    "end": 40,
+                    "rule": "qalqalah",
+                    "start": 38
+                },
+                {
+                    "end": 45,
+                    "rule": "madd_246",
+                    "start": 44
+                }
+            ]
+        },
+        {
+            "number": "16",
+            "text": "اِصْلَوْهَا فَاصْبِرُوْٓا اَوْ لَا تَصْبِرُوْاۚ سَوَاۤءٌ عَلَيْكُمْۗ  اِنَّمَا تُجْزَوْنَ مَا كُنْتُمْ تَعْمَلُوْنَ ",
+            "teksLatin": "iṣlauhā faṣbirū au lā taṣbirū, sawā'un ‘alaikum, innamā tujzauna mā kuntum ta‘malūn(a).",
+            "teksIndonesia": "Masuklah ke dalamnya (rasakanlah panas apinya); baik kamu bersabar atau tidak, sama saja bagimu; sesungguhnya kamu hanya diberi balasan atas apa yang telah kamu kerjakan. ",
+            "tafsir": "Ketika mereka tidak dapat mengingkari kenyataan dan mengakui bahwa itu bukan sihir dan bukan pula akibat salah melihat, Allah swt memerintahkan kepada mereka supaya masuk ke dalam api neraka untuk merasakan panasnya api neraka. Kemudian Allah swt menjelaskan bahwa bersabar atau tidak, keadaannya serupa bagi mereka. Karena seorang yang tidak sabar akan sesuatu, maka ia berusaha untuk menolaknya baik dengan menjauhinya atau pun dengan mengatasinya. Namun, lain halnya dengan hari kebangkitan sebab azab di akhirat tidak sama dengan azab di dunia karena orang yang diazab di dunia, bila ia bersabar ia akan mendapat manfaat dari kesabarannya, baik manfaat yang berupa balasan di akhirat nanti maupun pujian di dunia berkenaan dengan kesabaran dan ketabahannya. Dan kalau dia tidak sabar dengan pengertian berkeluh-kesah tentulah ia dicela dan dianggap kekanak-kanakan. Akan tetapi kesabaran di akhirat tidak ada manfaatnya karena akhirat bukan tempat beramal tetapi untuk mendapat ganjaran dan pembalasan. Pada akhir ayat ini Allah swt menegaskan bahwa manusia itu akan menerima pembalasan dari Allah. Jika perbuatan mereka di dunia baik, mereka akan menerima balasan yang baik pula di akhirat. Dan jika perbuatan mereka di dunia jahat, mereka di akhirat akan menerima balasan setimpal dengan kejahatannya. Allah berfirman: \n\nDan Tuhanmu tidak menzalimi seorang jua pun. (al-Kahf/18: 49) \n\nTegasnya Allah akan membalas setiap orang sesuai dengan perbuatannya. Balasan itu akan diterima apakah bersabar atau tidak, pasti terlaksana.",
+            "tajweed": [
+                {
+                    "end": 14,
+                    "rule": "hamzat_wasl",
+                    "start": 13
+                },
+                {
+                    "end": 22,
+                    "rule": "madd_munfasil",
+                    "start": 20
+                },
+                {
+                    "end": 24,
+                    "rule": "silent",
+                    "start": 22
+                },
+                {
+                    "end": 45,
+                    "rule": "silent",
+                    "start": 43
+                },
+                {
+                    "end": 52,
+                    "rule": "madd_muttasil",
+                    "start": 50
+                },
+                {
+                    "end": 71,
+                    "rule": "ghunnah",
+                    "start": 68
+                },
+                {
+                    "end": 79,
+                    "rule": "qalqalah",
+                    "start": 77
+                },
+                {
+                    "end": 95,
+                    "rule": "ikhfa",
+                    "start": 92
+                },
+                {
+                    "end": 107,
+                    "rule": "madd_246",
+                    "start": 106
+                }
+            ]
+        },
+        {
+            "number": "17",
+            "text": "اِنَّ الْمُتَّقِيْنَ فِيْ جَنّٰتٍ وَّنَعِيْمٍۙ  ",
+            "teksLatin": "innal-muttaqīna fī jannātiw wa na‘īm(in).",
+            "teksIndonesia": "Sesungguhnya orang-orang yang bertakwa berada dalam surga dan kenikmatan,",
+            "tafsir": "Dalam ayat ini Allah menerangkan bahwa orang-orang yang takut akan murka Tuhannya, mereka melaksanakan ibadah kepadaNya baik dengan terang-terangan atau tidak, memenuhi kewajibankewajibannya terhadap Tuhan, dan menjalankan peraturanperaturan agama, tidak mengerjakan suatu perbuatan maksiat yakni tidak menodai dirinya dengan dosa dan tidak menodai jiwanya dengan kemunafikan. Kepada mereka Tuhan memberikan balasan surga, di dalamnya mereka bersenang-senang. Mereka mendapat apa yang belum pernah mereka lihat, belum pernah mereka dengar, dan belum pernah diterangkan oleh seorang manusia pun. Semuanya itu sebagai balasan atas perbuatan baik mereka selama hidup di dunia. Mereka menjauhi kemewahan duniawi yang membuat lalai pada ibadah serta bersabar atas cobaan-cobaan yang menimpa mereka dengan harapan agar mendapat rida Allah. (",
+            "tajweed": [
+                {
+                    "end": 5,
+                    "rule": "ghunnah",
+                    "start": 2
+                },
+                {
+                    "end": 7,
+                    "rule": "hamzat_wasl",
+                    "start": 6
+                },
+                {
+                    "end": 29,
+                    "rule": "ghunnah",
+                    "start": 26
+                },
+                {
+                    "end": 30,
+                    "rule": "madd_2",
+                    "start": 29
+                },
+                {
+                    "end": 35,
+                    "rule": "idghaam_ghunnah",
+                    "start": 31
+                },
+                {
+                    "end": 40,
+                    "rule": "madd_246",
+                    "start": 39
+                }
+            ]
+        },
+        {
+            "number": "18",
+            "text": "فٰكِهِيْنَ بِمَآ اٰتٰىهُمْ رَبُّهُمْۚ وَوَقٰىهُمْ رَبُّهُمْ عَذَابَ الْجَحِيْمِ",
+            "teksLatin": "fākihīna bimā ātāhum rabbuhum, wa waqāhum rabbuhum ‘ażābal-jaḥīm(i).",
+            "teksIndonesia": "mereka bersuka ria dengan apa yang diberikan Tuhan kepada mereka; dan Tuhan memelihara mereka dari azab neraka.",
+            "tafsir": "Dalam ayat ini digambarkan bahwa mereka merasakan suka cita dan kebahagiaan yang penuh karena anugerah dan hadiahhadiah yang dilimpahkan Allah kepadanya. Mereka tidak pernah terganggu oleh segala macam was-was atau dihinggapi oleh perasaan lelah. Mereka betul-betul berada dalam kesenangan dan kenikmatan serta kelezatan luar biasa, muka mereka berseri-seri, ceria, dan riang gembira. Mereka telah diselamatkan oleh Tuhannya dari azab. Mereka kini merasakan segala kenikmatan dan jauh dari kesengsaraan. Itulah kesenangan yang benar dan nikmat yang abadi.",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "madd_2",
+                    "start": 2
+                },
+                {
+                    "end": 17,
+                    "rule": "madd_munfasil",
+                    "start": 15
+                },
+                {
+                    "end": 25,
+                    "rule": "madd_2",
+                    "start": 24
+                },
+                {
+                    "end": 48,
+                    "rule": "madd_2",
+                    "start": 47
+                },
+                {
+                    "end": 72,
+                    "rule": "hamzat_wasl",
+                    "start": 71
+                },
+                {
+                    "end": 79,
+                    "rule": "madd_246",
+                    "start": 78
+                }
+            ]
+        },
+        {
+            "number": "19",
+            "text": "كُلُوْا وَاشْرَبُوْا هَنِيْۤـًٔا ۢبِمَا كُنْتُمْ تَعْمَلُوْنَۙ  ",
+            "teksLatin": "kulū wasyrabū hanī'am bimā kuntum ta‘malūn(a).",
+            "teksIndonesia": "(Dikatakan kepada mereka), “Makan dan minumlah dengan rasa nikmat sebagai balasan dari apa yang telah kamu kerjakan.” ",
+            "tafsir": "Dalam ayat ini Allah membolehkan mereka memakan dan meminum apa yang telah tersedia berupa segala makanan dan minuman yang lezat-lezat. Mereka tidak lagi khawatir akan bahaya yang akan menimpa seperti halnya apa yang mereka saksikan di dunia tentang adanya bahaya makanan dan minuman. Semua itu sebagai balasan terhadap segala amal baik mereka dan sebagai balasan atas kesungguhan mereka di dunia dalam berbakti kepada Allah swt. Mereka betul-betul merasa nikmat di akhirat itu. Diriwayatkan bahwa Rabi' bin Hisyam melakukan salat sepanjang malam. Lalu seorang bertanya kepadanya mengapa ia melelahkan dirinya seperti itu. Maka jawabannya bahwa ia memerlukan istirahat di akhirat nanti. Dalam ayat yang sama artinya Allah berfirman: \n\n(Kepada mereka dikatakan),\"Makan dan minumlah dengan nikmat karena amal yang telah kamu kerjakan pada hari-hari yang telah lalu.\" (al-hujurat/49: 17) \n\nPerkataan hani'an dalam ayat ini berarti kenikmatan makanan dan minuman dan terhindar dari segala apa yang membahayakan. Orang yang makan di dunia kadang-kadang mendatangkan penyakit dan lain-lain, sehingga ia kurang tenang dan kurang enak makan. Atau ia takut akan segera habisnya makanan itu sehingga ia harus mencarinya lagi. Atau karena habis, lalu kemudian harus memasak lagi hingga matang dan dapat dimakan. Hal-hal seperti ini tidak akan ditemui di surga. Perkataan \"bima kuntum ta'malun\" dalam ayat ini berarti sebagai balasan yang telah kamu perbuat di dunia, hal ini sebagai isyarat bahwa Allah telah memenuhi apa yang telah dijanjikan olehNya di dunia, sebab tidak ada nikmat di dunia yang bisa diperoleh tanpa adanya susah payah dahulu. Berlainan halnya dengan nikmat di akhirat. Nikmat di akhirat sebagai balasan atas iman dan amal saleh di dunia sebagaimana dijelaskan oleh Allah di dalam firmanNya: \n\nMereka merasa berjasa kepadamu dengan keislaman mereka. Katakanlah, \"Janganlah kamu merasa berjasa kepadaku dengan keislamanmu, sebenarnya Allah yang melimpahkan nikmat kepadamu dengan menunjukkan kamu kepada keimanan, jika kamu orang yang benar.\" (al-hujurat/49: 17)",
+            "tajweed": [
+                {
+                    "end": 7,
+                    "rule": "silent",
+                    "start": 5
+                },
+                {
+                    "end": 11,
+                    "rule": "hamzat_wasl",
+                    "start": 10
+                },
+                {
+                    "end": 20,
+                    "rule": "silent",
+                    "start": 18
+                },
+                {
+                    "end": 27,
+                    "rule": "madd_muttasil",
+                    "start": 25
+                },
+                {
+                    "end": 34,
+                    "rule": "iqlab",
+                    "start": 29
+                },
+                {
+                    "end": 44,
+                    "rule": "ikhfa",
+                    "start": 41
+                },
+                {
+                    "end": 56,
+                    "rule": "madd_246",
+                    "start": 55
+                }
+            ]
+        },
+        {
+            "number": "20",
+            "text": "مُتَّكِـِٕيْنَ عَلٰى سُرُرٍ مَّصْفُوْفَةٍۚ وَزَوَّجْنٰهُمْ بِحُوْرٍ عِيْنٍ",
+            "teksLatin": "muttaki'īna ‘alā sururim maṣfūfah(tin), wa zawwajnāhum biḥūrin ‘īn(in).",
+            "teksIndonesia": "Mereka bersandar di atas dipan-dipan yang tersusun dan Kami berikan kepada mereka pasangan bidadari yang bermata indah. ",
+            "tafsir": "Kemudian Allah menyebutkan apa yang mereka nikmati misalnya kasur-kasurnya (dipan-dipannya). Mereka duduk di sofa yang berjajar dengan santai tanpa suatu apapun yang membebani hati mereka. Tidak ada satu masalah pun yang mesti mereka hadapi waktu itu, sebab barang siapa yang duduk, sedangkan ia menghadapi suatu masalah atau di bebani pikiran oleh suatu masalah berarti pikiran dan hatinya tidak tenteram. Pada ayat ini dipergunakan kata-kata yajlis (duduk) bukan kata-kata yattaki'u (duduk santai). Dengan maksud untuk menjelaskan keadaan duduk seseorang yang diliputi kepuasan dan ketenteraman. Maka keadaan di surga itu menunjukkan suatu keadaan yang tenang, tanpa kesusahan, tanpa beban dan tanpa masalah. Dalam ayat yang sama artinya dikatakan: \n\nDuduk berhadap-hadapan di atas dipan-dipan. (al-hijr/15: 47) \n\nDuduk santai sekadar ungkapan sebagai salah satu contoh tentang kebebasan yang sebenarnya di dalam surga sebagaimana disabdakan oleh Nabi Muhammad saw: \"Seseorang di dalam surga duduk santai selama 40 (empat puluh) tahun tidak berpindah dan tidak membosankannya, datang kepadanya (tanpa diusahakan) apa-apa yang diingini oleh dirinya dan disenangi oleh matanya.\" (Riwayat Ibnu Abi hatim) Kemudian diterangkan bahwa mereka di sana menikmati pasangan-pasangan mereka. Allah telah memberi mereka istri-istri yang cantik yang bermata jeli.",
+            "tajweed": [
+                {
+                    "end": 31,
+                    "rule": "idghaam_ghunnah",
+                    "start": 26
+                },
+                {
+                    "end": 43,
+                    "rule": "idghaam_ghunnah",
+                    "start": 39
+                },
+                {
+                    "end": 50,
+                    "rule": "qalqalah",
+                    "start": 48
+                },
+                {
+                    "end": 53,
+                    "rule": "madd_2",
+                    "start": 52
+                },
+                {
+                    "end": 59,
+                    "rule": "ikhfa_shafawi",
+                    "start": 55
+                },
+                {
+                    "end": 68,
+                    "rule": "madd_246",
+                    "start": 67
+                }
+            ]
+        },
+        {
+            "number": "21",
+            "text": "وَالَّذِيْنَ اٰمَنُوْا وَاتَّبَعَتْهُمْ ذُرِّيَّتُهُمْ بِاِيْمَانٍ اَلْحَقْنَا بِهِمْ ذُرِّيَّتَهُمْ وَمَآ اَلَتْنٰهُمْ مِّنْ عَمَلِهِمْ مِّنْ شَيْءٍۗ  كُلُّ امْرِئٍ ۢبِمَا كَسَبَ رَهِيْنٌ ",
+            "teksLatin": "wal-lażīna āmanū wattaba‘athum żurriyyatuhum bi'īmānin alḥaqnā bihim żurriyyatahum wa mā alatnāhum min ‘amalihim min syai'(in), kullumri'im bimā kasaba rahīn(un).",
+            "teksIndonesia": "Dan orang-orang yang beriman, beserta anak cucu mereka yang mengikuti mereka dalam keimanan, Kami pertemukan mereka dengan anak cucu mereka (di dalam surga), dan Kami tidak mengurangi sedikit pun pahala amal (kebajikan) mereka. Setiap orang terikat dengan apa yang dikerjakannya. ",
+            "tafsir": "Dalam ayat ini, Allah swt menerangkan bahwa orang-orang yang beriman yang diikuti oleh anak cucu mereka dalam keimanan, akan dipertemukan Allah dalam satu tingkatan dan kedudukan yang sama sebagai karunia Allah kepada mereka meskipun para keturunan itu ternyata belum mencapai derajat tersebut dalam amal mereka. Sehingga orang tua mereka menjadi senang, maka sempurnalah kegembiraan mereka karena dapat berkumpul semua bersama-sama. Ketika membaca ayat 21 ini Ibnu 'Abbas berkata bahwa keturunan anak cucu orang-orang beriman akan ditingkatkan oleh Allah swt derajatnya bila ternyata tingkatan mereka lebih rendah dari derajat orang tua mereka. Kemudian Allah swt memberikan gambaran tentang situasi surga penuh kenikmatan seperti tersedianya makanan mereka di dalam surga. Setiap buah-buahan atau makanan yang mereka inginkan pasti mereka peroleh sesuai dengan selera mereka. Kemudian digambarkan bagaimana mereka hidup senang di sana. Mereka saling berebutan minum, minum tetap dalam kesopanan, berbicara tentang hal lucu, di sana mereka dilayani oleh pelayanpelayan yang sangat ramah dan cantik. Mereka juga membicarakan hal ihwal mereka di dunia dahulu sebelum mereka berada di dalam kesenangan dan kemewahan surgawi. Diriwayatkan bahwasanya Rasulullah bersabda: Apabila seseorang memasuki surga, menanyakan kedua orang tuanya, istrinya, dan anaknya, maka dikatakan kepadanya: \"Mereka belum sampai pada derajat dan amalanmu.\" Maka ia berkata: \"Ya Tuhanku, aku telah beramal untukku dan untuk mereka\". Maka (permohonannya dikabulkan Tuhan) disuruhlah mereka (orang tua, istri, anak) untuk bergabung dengan dia.\" (Riwayat Ibnu Mardawaih dan ath-thabrani dari Ibnu 'Abbas) \n\nIni merupakan karunia Allah swt terhadap anak cucu yang beriman dan berkat amal bapak-bapak mereka sebab bapak pun memperoleh karunia Allah swt dengan berkat anak cucu mereka sebagaimana sabda Nabi Muhammad saw:Sesungguhnya Allah swt niscaya mengangkat derajat seorang hamba, lalu ia bertanya, \"Ya Tuhanku, bagaimana aku memperoleh derajat ini?\" Allah menjawab, \"Kamu memperolehnya sebab doa anakmu.\" (Riwayat Ahmad dan al-Baihaqi dari Abu Hurairah) Dari Abu Hurairah bahwasanya Rasulullah saw bersabda, \"Apabila mati seorang anak Adam, maka terputuslah amalnya kecuali tiga: amal jariah, atau ilmu yang bermanfaat atau anak yang saleh yang mendoakannya.\"(Riwayat Muslim dari Abu Hurairah) \n\nKemudian pada ayat ini Allah menjelaskan lagi bahwa pahala dari amal saleh para bapak yang saleh tidak dikurangi meskipun kedudukan anak dan isteri mereka yang beriman diangkat derajat mereka menjadi sama dengan suami/bapak mereka sebagai karunia Allah swt. Pada akhir ayat ini Allah menegaskan bahwa setiap orang memang hanya bertanggungjawab terhadap amal dan perbuatan masing-masing. Perbuatan dosa istri atau anak tidak menjadi tanggung jawab ayah/suami, demikian pula perbuatan dosa agar tidak dibebankan pada anak atau istrinya. Hal ini perlu ditegaskan bahwa hal itu merupakan prinsip dasar. Tetapi Allah memberi karunia banyak kepada orang tua yang beriman dan beramal saleh dengan menambah kebahagiaan orang tua untuk memenuhi keinginan orang tua berkumpul di surga bersama anak, istri dan cucu-cucunya, selama mereka beriman, meskipun derajat mereka lebih rendah, tetapi Allah mengangkat mereka menjadi sama dengan bapak yang mukmin dan saleh tadi. Apabila si anak berbahagia masuk surga dan merindukan bersama orang tuanya maka Allah melimpahkan karunia-Nya, mengangkat bapak ibunya yang beriman untuk mendapat kebahagiaan bersama anak mereka di surga. Karunia Allah yang demikian tidak mengubah prinsip setiap orang hanya bertanggungjawab atas perbuatan masing-masing, meskipun tetap masih ada pengecualian yang lain seperti firman Allah swt: \n\nSetiap orang bertanggung jawab atas apa yang telah dilakukannya, kecuali golongan kanan. (al-Muddatstsir/74: 38-39) Setiap orang akan diminta pertanggungjawaban atas perbuatannya di hadapan Allah swt. Tanggung jawab itu tidak akan terlepas dari mereka kecuali golongan kanan yaitu orang-orang yang berbuat baik. Mereka inilah yang akan terlepas dari tanggung jawab disebabkan oleh ketaatan mereka beribadah kepada Allah swt.",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 22,
+                    "rule": "silent",
+                    "start": 20
+                },
+                {
+                    "end": 26,
+                    "rule": "hamzat_wasl",
+                    "start": 25
+                },
+                {
+                    "end": 56,
+                    "rule": "ikhfa_shafawi",
+                    "start": 52
+                },
+                {
+                    "end": 62,
+                    "rule": "madd_2",
+                    "start": 61
+                },
+                {
+                    "end": 73,
+                    "rule": "qalqalah",
+                    "start": 71
+                },
+                {
+                    "end": 105,
+                    "rule": "madd_munfasil",
+                    "start": 103
+                },
+                {
+                    "end": 115,
+                    "rule": "madd_2",
+                    "start": 114
+                },
+                {
+                    "end": 122,
+                    "rule": "idghaam_shafawi",
+                    "start": 117
+                },
+                {
+                    "end": 138,
+                    "rule": "idghaam_shafawi",
+                    "start": 133
+                },
+                {
+                    "end": 142,
+                    "rule": "ikhfa",
+                    "start": 138
+                },
+                {
+                    "end": 149,
+                    "rule": "ikhfa",
+                    "start": 145
+                },
+                {
+                    "end": 154,
+                    "rule": "hamzat_wasl",
+                    "start": 153
+                },
+                {
+                    "end": 163,
+                    "rule": "iqlab",
+                    "start": 159
+                },
+                {
+                    "end": 180,
+                    "rule": "madd_246",
+                    "start": 179
+                }
+            ]
+        },
+        {
+            "number": "22",
+            "text": "وَاَمْدَدْنٰهُمْ بِفَاكِهَةٍ وَّلَحْمٍ مِّمَّا يَشْتَهُوْنَ ",
+            "teksLatin": "wa amdadnāhum bifākihatiw wa laḥmim mimmā yasytahūn(a).",
+            "teksIndonesia": "Dan Kami berikan kepada mereka tambahan berupa buah-buahan dan daging dari segala jenis yang mereka ingini. ",
+            "tafsir": "Selanjutnya pada ayat ini Allah menyebutkan bahwa Dia menambahkan kesenangan penghuni surga tersebut dari waktu ke waktu dengan apa yang mereka inginkan, seperti disediakannya berbagai macam buah-buahan dan daging yang lezat, sekalipun mereka tidak memintanya. Mengapa Allah swt menyebutkan buah-buahan dan daging, tidak menyebutkan berbagai macam makanan yang lain karena buahbuahan dan daging merupakan makanan yang disenangi dan mengandung gizi yang diperlukan bagi tubuh dan sangat disenangi di dunia. Jadi Allah memberi semua yang menjadi kesenangan manusia",
+            "tajweed": [
+                {
+                    "end": 10,
+                    "rule": "qalqalah",
+                    "start": 8
+                },
+                {
+                    "end": 13,
+                    "rule": "madd_2",
+                    "start": 12
+                },
+                {
+                    "end": 19,
+                    "rule": "ikhfa_shafawi",
+                    "start": 15
+                },
+                {
+                    "end": 22,
+                    "rule": "madd_2",
+                    "start": 21
+                },
+                {
+                    "end": 31,
+                    "rule": "idghaam_ghunnah",
+                    "start": 27
+                },
+                {
+                    "end": 41,
+                    "rule": "idghaam_ghunnah",
+                    "start": 36
+                },
+                {
+                    "end": 44,
+                    "rule": "ghunnah",
+                    "start": 41
+                },
+                {
+                    "end": 55,
+                    "rule": "madd_246",
+                    "start": 54
+                }
+            ]
+        },
+        {
+            "number": "23",
+            "text": "يَتَنَازَعُوْنَ فِيْهَا كَأْسًا لَّا لَغْوٌ فِيْهَا وَلَا تَأْثِيْمٌ ",
+            "teksLatin": "yatanāza‘ūna fīhā ka'sal lā lagwun fīhā wa lā ta'ṡīm(un).",
+            "teksIndonesia": "(Di dalam surga itu) mereka saling mengulurkan gelas yang isinya tidak (menimbulkan) ucapan yang tidak berfaedah ataupun perbuatan dosa. ",
+            "tafsir": "Dalam ayat ini Allah swt menggambarkan tentang kegembiraan mereka di surga yaitu mereka masing-masing mengambil gelas minuman mereka. Mereka duduk sambil bersulang dengan teman-teman mereka, bersenda-gurau seperti terjadi dalam suatu kelompok sahabat, sebagai gambaran betapa riang-gembiranya mereka. Minuman khamar di akhirat tidak memabukkan seperti halnya dengan khamar di dunia, dan tidak pula menyebabkan orang berbicara melantur tak tentu arah atau mabuk seperti peminum di dunia. Allah swt telah menjelaskan dalam ayat lain, yakni tentang khamar di akhirat dan sedap rasa makanan yaitu ayat yang berbunyi dalam firman-Nya: \n\n(warnanya) putih bersih, sedap rasanya bagi orang-orang yang minum. Tidak ada di dalamnya (unsur) yang memabukkan dan mereka tidak mabuk karenanya. (as-shaffat/37: 46-47) \n\nDan firman-Nya: \n\nMereka tidak pening karenanya dan tidak pula mabuk. (alWaqi'ah/56: 19)",
+            "tajweed": [
+                {
+                    "end": 7,
+                    "rule": "madd_2",
+                    "start": 6
+                },
+                {
+                    "end": 33,
+                    "rule": "idghaam_no_ghunnah",
+                    "start": 27
+                },
+                {
+                    "end": 44,
+                    "rule": "ikhfa",
+                    "start": 40
+                },
+                {
+                    "end": 62,
+                    "rule": "madd_246",
+                    "start": 61
+                }
+            ]
+        },
+        {
+            "number": "24",
+            "text": "۞ وَيَطُوْفُ عَلَيْهِمْ غِلْمَانٌ لَّهُمْ كَاَنَّهُمْ لُؤْلُؤٌ مَّكْنُوْنٌۚ  ",
+            "teksLatin": "wa yaṭūfu ‘alaihim gilmānul lahum ka'annahum lu'lu'um maknūn(un).",
+            "teksIndonesia": "Dan di sekitar mereka ada anak-anak muda yang berkeliling untuk (melayani) mereka, seakan-akan mereka itu mutiara yang tersimpan. ",
+            "tafsir": "Ayat ini menjelaskan bahwa penghuni surga dikelilingi oleh pelayan-pelayan yang muda belia yang membawa minuman. Pelayan-pelayan itu selalu siap diperintah. Mereka tampan dan cantik seperti mutiara yang berkilauan indah dan tersimpan dalam tempat yang tersembunyi. Dalam ayat yang sama artinya Allah menjelaskan: Mereka dikelilingi oleh anak-anak muda yang tetap muda, dengan membawa gelas, cerek dan sloki (piala) berisi minuman yang diambil dari air yang mengalir. (al-Waqi'ah/56: 17-18) Terkait dengan ayat ini Qatadah berkata, \"Saya mendengar kabar Rasulullah ditanya tentang pelayan surga yang seperti mutiara, maka bagaimana dengan yang dilayani?\" Rasulullah bersabda: \"Demi Allah bahwa perbedaan kelebihan antara mereka, seperti kelebihan malam bulan purnama atas semua bintang.\" (Riwayat Ibnu Jarir dan Ibnu Mundhir) \n\nDiriwayatkan bahwa derajat yang paling rendah di surga ialah orang yang bilamana ia memanggil pelayannya, maka datanglah seribu pelayan berdiri di pintunya, dengan menjawab. Labbaik, labbaik (ya . . . ya . . . ).\"",
+            "tajweed": [
+                {
+                    "end": 34,
+                    "rule": "idghaam_no_ghunnah",
+                    "start": 29
+                },
+                {
+                    "end": 46,
+                    "rule": "ghunnah",
+                    "start": 43
+                },
+                {
+                    "end": 63,
+                    "rule": "idghaam_ghunnah",
+                    "start": 58
+                },
+                {
+                    "end": 68,
+                    "rule": "madd_246",
+                    "start": 67
+                }
+            ]
+        },
+        {
+            "number": "25",
+            "text": "وَاَقْبَلَ بَعْضُهُمْ عَلٰى بَعْضٍ يَّتَسَاۤءَلُوْنَ ",
+            "teksLatin": "wa aqbala ba‘ḍuhum ‘alā ba‘ḍiy yatasā'alūn(a).",
+            "teksIndonesia": "Dan sebagian mereka berhadap-hadapan satu sama lain saling bertegur sapa. ",
+            "tafsir": "Pada ayat ini Allah swt menerangkan bahwa penghuni surga itu saling mendatangi penghuni yang lain baik antara bapak, ibu dan keluarga mereka yang seiman di dunia dan juga dengan penghuni surga yang lain, bertanya tentang keadaan mereka di dunia dahulu yaitu meliputi ibadah atau seputar berbagai upaya nahi munkar karena takutnya mereka akan azab Allah swt ketika hidup di dunia. Kemudian mereka memuji Allah swt yang telah menghilangkan sedih, pilu, duka dan kegelisahan mereka. Mereka di surga tidak lagi merasakan kesusahan dan kesukaran mencari nafkah hidup atau mencari rezeki dan segala hal yang berkenaan dengan kehidupan. Mereka hanya tinggal menikmati berbagai kesenangan saja. Diriwayatkan bahwa Anas berkata sebagai berikut:Bersabda Rasulullah saw, \"Apabila penghuni surga telah memasuki surga dan mereka rindu kepada kawan-kawan mereka, lalu datanglah sofa seseorang mendekat hingga berhadapanlah dengan sofa yang lainnya keduanya duduk santai sambil bercakap-cakap dan membicarakan amal mereka di dunia dahulu. Maka berkatalah seseorang dari mereka, \"Hai fulan, tahukah engkau pada hari apa Tuhan mengampuni kita? Pada hari di tempat, di mana kita berdoa kepada Allah kemudian kita diampuni-Nya.\" (Riwayat al-Bazzar)",
+            "tajweed": [
+                {
+                    "end": 6,
+                    "rule": "qalqalah",
+                    "start": 4
+                },
+                {
+                    "end": 38,
+                    "rule": "idghaam_ghunnah",
+                    "start": 34
+                },
+                {
+                    "end": 44,
+                    "rule": "madd_muttasil",
+                    "start": 42
+                },
+                {
+                    "end": 49,
+                    "rule": "madd_246",
+                    "start": 48
+                }
+            ]
+        },
+        {
+            "number": "26",
+            "text": "قَالُوْٓا اِنَّا كُنَّا قَبْلُ فِيْٓ اَهْلِنَا مُشْفِقِيْنَ ",
+            "teksLatin": "qālū innā kunnā qablu fī ahlinā musyfiqīn(a).",
+            "teksIndonesia": "Mereka berkata, “Sesungguhnya kami dahulu, sewaktu berada di tengah-tengah keluarga kami merasa takut (akan diazab). ",
+            "tafsir": "Kemudian dalam ayat ini Allah swt merinci tanya jawab atas berbagai kesenangan yang mereka nikmati. Mereka berkata bahwa sesungguhnya mereka sewaktu di dunia, pada waktu itu di tengah-tengah keluarga mereka timbul rasa takut akan azab Allah dan siksanya. Kemudian Allah menghilangkan rasa takut itu dengan mengaruniakan nikmat-Nya kepada mereka yaitu mereka terpelihara dari api neraka yang disebut as-samum. Perasaan takut mereka di dunia akan azab Allah mendorong mereka mengerjakan segala perintah Allah dan menjauhi segala larangan-Nya meskipun ketika itu mereka berada di tengah-tengah keluarga, mereka memperoleh ketenangan. Diriwayatkan bahwasanya Aisyah berkata, \"Andaikata Allah membukakan neraka di bumi ini seujung jari saja, maka akan terbakarlah bumi dan seluruh isinya.\"",
+            "tajweed": [
+                {
+                    "end": 7,
+                    "rule": "madd_munfasil",
+                    "start": 5
+                },
+                {
+                    "end": 9,
+                    "rule": "silent",
+                    "start": 7
+                },
+                {
+                    "end": 15,
+                    "rule": "ghunnah",
+                    "start": 12
+                },
+                {
+                    "end": 22,
+                    "rule": "ghunnah",
+                    "start": 19
+                },
+                {
+                    "end": 28,
+                    "rule": "qalqalah",
+                    "start": 26
+                },
+                {
+                    "end": 35,
+                    "rule": "madd_munfasil",
+                    "start": 33
+                },
+                {
+                    "end": 55,
+                    "rule": "madd_246",
+                    "start": 54
+                }
+            ]
+        },
+        {
+            "number": "27",
+            "text": "فَمَنَّ اللّٰهُ عَلَيْنَا وَوَقٰىنَا عَذَابَ السَّمُوْمِ ",
+            "teksLatin": "fa mannallāhu ‘alainā wa waqānā ‘ażābas-samūm(i).",
+            "teksIndonesia": "Maka Allah memberikan karunia kepada kami dan memelihara kami dari azab neraka. ",
+            "tafsir": "Kemudian dalam ayat ini Allah swt merinci tanya jawab atas berbagai kesenangan yang mereka nikmati. Mereka berkata bahwa sesungguhnya mereka sewaktu di dunia, pada waktu itu di tengah-tengah keluarga mereka timbul rasa takut akan azab Allah dan siksanya. Kemudian Allah menghilangkan rasa takut itu dengan mengaruniakan nikmat-Nya kepada mereka yaitu mereka terpelihara dari api neraka yang disebut as-samum. Perasaan takut mereka di dunia akan azab Allah mendorong mereka mengerjakan segala perintah Allah dan menjauhi segala larangan-Nya meskipun ketika itu mereka berada di tengah-tengah keluarga, mereka memperoleh ketenangan. Diriwayatkan bahwasanya Aisyah berkata, \"Andaikata Allah membukakan neraka di bumi ini seujung jari saja, maka akan terbakarlah bumi dan seluruh isinya.\"",
+            "tajweed": [
+                {
+                    "end": 7,
+                    "rule": "ghunnah",
+                    "start": 4
+                },
+                {
+                    "end": 9,
+                    "rule": "hamzat_wasl",
+                    "start": 8
+                },
+                {
+                    "end": 34,
+                    "rule": "madd_2",
+                    "start": 33
+                },
+                {
+                    "end": 47,
+                    "rule": "hamzat_wasl",
+                    "start": 46
+                },
+                {
+                    "end": 48,
+                    "rule": "lam_shamsiyyah",
+                    "start": 47
+                },
+                {
+                    "end": 54,
+                    "rule": "madd_246",
+                    "start": 53
+                }
+            ]
+        },
+        {
+            "number": "28",
+            "text": "اِنَّا كُنَّا مِنْ قَبْلُ نَدْعُوْهُۗ اِنَّهٗ هُوَ الْبَرُّ الرَّحِيْمُ ࣖ",
+            "teksLatin": "innā kunnā min qablu nad‘ūh(u), innahū huwal-barrur-raḥīm(u).",
+            "teksIndonesia": "Sesungguhnya kami menyembah-Nya sejak dahulu. Dialah Yang Maha Melimpahkan Kebaikan, Maha Penyayang.” ",
+            "tafsir": "Dalam ayat ini Allah swt menerangkan bahwa penghunipenghuni surga itu telah memenuhi persyaratan seruan Allah dan Rasul-Nya sehingga mereka mendapat kemuliaan itu. Mereka berkata bahwa mereka dahulu menyembah Allah dan memohon kepada-Nya. Maka Allah memperkenankan dan mengabulkan permintaan mereka dan menerima ibadah mereka, karena Allah yang melimpahkan kebaikan, dan pemberi karunia, lagi Maha Penyayang. Setiap orang yang beriman dan setiap orang kafir tidak akan pernah lupa, akan apa yang telah mereka perbuat di dunia, kenikmatan orang-orang yang beriman akan bertambah bila mereka melihat bahwa mereka telah berpindah dari penjara dunia ke alam kesenangan akhirat, dan dari kesempitan kepada kelapangan. Sebaliknya bertambahlah siksa orang kafir bilamana ia melihat bahwa dirinya telah berpindah dari kemewahan dunia ke alam penderitaan, dan kesengsaraan neraka Jahanam di akhirat.",
+            "tajweed": [
+                {
+                    "end": 5,
+                    "rule": "ghunnah",
+                    "start": 2
+                },
+                {
+                    "end": 12,
+                    "rule": "ghunnah",
+                    "start": 9
+                },
+                {
+                    "end": 20,
+                    "rule": "ikhfa",
+                    "start": 16
+                },
+                {
+                    "end": 22,
+                    "rule": "qalqalah",
+                    "start": 20
+                },
+                {
+                    "end": 29,
+                    "rule": "qalqalah",
+                    "start": 27
+                },
+                {
+                    "end": 40,
+                    "rule": "ghunnah",
+                    "start": 37
+                },
+                {
+                    "end": 43,
+                    "rule": "madd_2",
+                    "start": 42
+                },
+                {
+                    "end": 50,
+                    "rule": "hamzat_wasl",
+                    "start": 49
+                },
+                {
+                    "end": 59,
+                    "rule": "hamzat_wasl",
+                    "start": 58
+                },
+                {
+                    "end": 60,
+                    "rule": "lam_shamsiyyah",
+                    "start": 59
+                },
+                {
+                    "end": 66,
+                    "rule": "madd_246",
+                    "start": 65
+                }
+            ]
+        },
+        {
+            "number": "29",
+            "text": "فَذَكِّرْ فَمَآ اَنْتَ بِنِعْمَتِ رَبِّكَ بِكَاهِنٍ وَّلَا مَجْنُوْنٍۗ ",
+            "teksLatin": "fa żakkir famā anta bini‘mati rabbika bikāhiniw wa lā majnūn(in).",
+            "teksIndonesia": "Maka peringatkanlah, karena dengan nikmat Tuhanmu engkau (Muhammad) bukanlah seorang tukang tenung dan bukan pula orang gila.",
+            "tafsir": "Pada ayat 29 Allah swt memerintahkan kepada Nabi Muhammad saw untuk tetap memberikan peringatan kepada kaumnya, dengan mengajarkan kepada mereka ayat-ayat Allah tanpa menghiraukan perbuatan-perbuatan mereka yang tidak mengandung kebenaran. Allah menegaskan bahwa hamba-Nya yang bernama Muhammad saw bukanlah tukang tenung dan bukan orang gila. Adapun orang-orang kafir menuduh Nabi Muhammad saw sebagai tukang tenung karena beliau banyak memberikan berita-berita gaib tentang masa lalu. Umat-umat yang diperjuangkan nabi-nabi sebelumnya juga memberikan berita hal-hal yang akan datang seperti hari Kiamat, hari kebangkitan dan hari pengadilan (yaumulhisab) dan tentang surga serta neraka. Berita-berita gaib ini merupakan sebuah kebenaran yang diterima dari Allah. Jadi jelaslah bahwa Nabi bukan tukang tenung yang menyampaikan hal-hal yang tidak benar. Orang kafir juga menuduh Rasulullah sebagai orang gila karena beliau menyatakan dan mengajarkan bahwa Tuhan itu hanya satu, sedangkan mereka menganggap Tuhan mereka yang berjumlah empat saja banyak persoalan dunia yang tidak selesai. Jika Tuhan hanya satu maka dunia tidak terpelihara lagi, kata mereka. Beberapa orientalis Barat menyatakan Nabi punya penyakit epilepsi (ayan) seperti ketika beliau menerima wahyu tiba-tiba diam dan tidak menghiraukan keadaan sekeliling seperti orang terjangkit penyakit ayan. Tetapi pada ayat 29 ini Allah menegaskan bahwa Muhammad saw tidaklah gila sebagimana dituduhkan orang-orang kafir. Nabi Muhammad saw adalah hamba Allah yang diangkat jadi rasul, memiliki akal yang sehat, cita-cita yang tinggi, akhlak dan perilaku yang mulia. Sedangkan pada ayat 30 orang-orang kafir masih menuduh Nabi sebagai penyair karena ayat-ayat Al-Qur'an sangat indah bahasanya, susunan kalimat dan pilihan katanya sangat luar biasa. Para penyair biasa memiliki kemampuan bahasa yang indah dan biasa menyusun kalimat dan memilih kata-katanya tidak seperti manusia biasa. Menurut mereka para penyair sering menemui kematian karena kecelakaan. Oleh karena itu mereka selalu menunggu-nunggu kecelakaan yang akan menimpa Muhammad saw. Pada ayat ini Allah swt menegaskan bahwa Nabi bukanlah penyair. Bahasa yang indah, susunan kalimat dan pilihan bahasa yang luar biasa pada ayat-ayat Al-Qur'an karena ayat-ayat itu merupakan firman Allah yang diwahyukan kepada Nabi Muhammad saw dan Allah akan selalu melindungi Nabi-Nya. Firman Allah: \n\nWahai Rasul! Sampaikanlah apa yang diturunkan Tuhanmu kepadamu. Jika tidak engkau lakukan (apa yang diperintahkan itu) berarti engkau tidak menyampaikan amanat-Nya. Dan Allah memelihara engkau dari (gangguan) manusia. Sungguh, Allah tidak memberi petunjuk kepada orang-orang kafir. (al-Ma'idah/5: 67)",
+            "tajweed": [
+                {
+                    "end": 16,
+                    "rule": "madd_munfasil",
+                    "start": 14
+                },
+                {
+                    "end": 22,
+                    "rule": "ikhfa",
+                    "start": 19
+                },
+                {
+                    "end": 54,
+                    "rule": "idghaam_ghunnah",
+                    "start": 50
+                },
+                {
+                    "end": 62,
+                    "rule": "qalqalah",
+                    "start": 60
+                },
+                {
+                    "end": 65,
+                    "rule": "madd_246",
+                    "start": 64
+                }
+            ]
+        },
+        {
+            "number": "30",
+            "text": "اَمْ يَقُوْلُوْنَ شَاعِرٌ نَّتَرَبَّصُ بِهٖ رَيْبَ الْمَنُوْنِ ",
+            "teksLatin": "am yaqūlūna syā‘irin natarabbaṣu bihī raibal-manūn(i).",
+            "teksIndonesia": "Bahkan mereka berkata, “Dia adalah seorang penyair yang kami tunggu-tunggu kecelakaan menimpanya.” ",
+            "tafsir": "Pada ayat 29 Allah swt memerintahkan kepada Nabi Muhammad saw untuk tetap memberikan peringatan kepada kaumnya, dengan mengajarkan kepada mereka ayat-ayat Allah tanpa menghiraukan perbuatan-perbuatan mereka yang tidak mengandung kebenaran. Allah menegaskan bahwa hamba-Nya yang bernama Muhammad saw bukanlah tukang tenung dan bukan orang gila. Adapun orang-orang kafir menuduh Nabi Muhammad saw sebagai tukang tenung karena beliau banyak memberikan berita-berita gaib tentang masa lalu. Umat-umat yang diperjuangkan nabi-nabi sebelumnya juga memberikan berita hal-hal yang akan datang seperti hari Kiamat, hari kebangkitan dan hari pengadilan (yaumulhisab) dan tentang surga serta neraka. Berita-berita gaib ini merupakan sebuah kebenaran yang diterima dari Allah. Jadi jelaslah bahwa Nabi bukan tukang tenung yang menyampaikan hal-hal yang tidak benar. Orang kafir juga menuduh Rasulullah sebagai orang gila karena beliau menyatakan dan mengajarkan bahwa Tuhan itu hanya satu, sedangkan mereka menganggap Tuhan mereka yang berjumlah empat saja banyak persoalan dunia yang tidak selesai. Jika Tuhan hanya satu maka dunia tidak terpelihara lagi, kata mereka. Beberapa orientalis Barat menyatakan Nabi punya penyakit epilepsi (ayan) seperti ketika beliau menerima wahyu tiba-tiba diam dan tidak menghiraukan keadaan sekeliling seperti orang terjangkit penyakit ayan. Tetapi pada ayat 29 ini Allah menegaskan bahwa Muhammad saw tidaklah gila sebagimana dituduhkan orang-orang kafir. Nabi Muhammad saw adalah hamba Allah yang diangkat jadi rasul, memiliki akal yang sehat, cita-cita yang tinggi, akhlak dan perilaku yang mulia. Sedangkan pada ayat 30 orang-orang kafir masih menuduh Nabi sebagai penyair karena ayat-ayat Al-Qur'an sangat indah bahasanya, susunan kalimat dan pilihan katanya sangat luar biasa. Para penyair biasa memiliki kemampuan bahasa yang indah dan biasa menyusun kalimat dan memilih kata-katanya tidak seperti manusia biasa. Menurut mereka para penyair sering menemui kematian karena kecelakaan. Oleh karena itu mereka selalu menunggu-nunggu kecelakaan yang akan menimpa Muhammad saw. Pada ayat ini Allah swt menegaskan bahwa Nabi bukanlah penyair. Bahasa yang indah, susunan kalimat dan pilihan bahasa yang luar biasa pada ayat-ayat Al-Qur'an karena ayat-ayat itu merupakan firman Allah yang diwahyukan kepada Nabi Muhammad saw dan Allah akan selalu melindungi Nabi-Nya. Firman Allah: \n\nWahai Rasul! Sampaikanlah apa yang diturunkan Tuhanmu kepadamu. Jika tidak engkau lakukan (apa yang diperintahkan itu) berarti engkau tidak menyampaikan amanat-Nya. Dan Allah memelihara engkau dari (gangguan) manusia. Sungguh, Allah tidak memberi petunjuk kepada orang-orang kafir. (al-Ma'idah/5: 67)",
+            "tajweed": [
+                {
+                    "end": 27,
+                    "rule": "idghaam_ghunnah",
+                    "start": 22
+                },
+                {
+                    "end": 42,
+                    "rule": "madd_2",
+                    "start": 41
+                },
+                {
+                    "end": 51,
+                    "rule": "hamzat_wasl",
+                    "start": 50
+                },
+                {
+                    "end": 58,
+                    "rule": "madd_246",
+                    "start": 57
+                }
+            ]
+        },
+        {
+            "number": "31",
+            "text": "قُلْ تَرَبَّصُوْا فَاِنِّيْ مَعَكُمْ مِّنَ الْمُتَرَبِّصِيْنَۗ  ",
+            "teksLatin": "qul tarabbaṣū fa innī ma‘akum minal-mutarabbiṣīn(a).",
+            "teksIndonesia": "Katakanlah (Muhammad), “Tunggulah! Sesungguhnya aku pun termasuk orang yang sedang menunggu bersama kamu.” ",
+            "tafsir": "Dalam ayat ini Allah swt menegaskan kepada Muhammad saw supaya ia mengancam mereka dengan mengajak menunggu hari kehancuran mereka. Muhammad saw juga menyatakan bahwa ia juga menunggu seperti mereka mengenai akan datangnya ketentuan dari Tuhan supaya mereka mengetahui siapa yang berakhir dengan kebaikan dan siapa pula yang mendapat kemenangan di dunia dan di akhirat. Sikap orang-orang kafir yang sombong memang kadang-kadang perlu dihadapi dengan tegas. Apalagi tuduhan mereka memang sudah keterlaluan dengan menyatakan Nabi sebagai tukang tenung, sebagai orang gila dan sebagainya, padahal pendapat-pendapat mereka hanya didasarkan pada prasangka yang tidak berdasar sama sekali. Maka perlu ditegaskan bahwa risalah Nabi adalah dari Allah yang Mahakuasa, oleh karena itu Nabi tidak perlu takut membuktikan semuanya sampai di hari akhirat nanti. (",
+            "tajweed": [
+                {
+                    "end": 17,
+                    "rule": "silent",
+                    "start": 15
+                },
+                {
+                    "end": 25,
+                    "rule": "ghunnah",
+                    "start": 22
+                },
+                {
+                    "end": 38,
+                    "rule": "idghaam_shafawi",
+                    "start": 33
+                },
+                {
+                    "end": 42,
+                    "rule": "hamzat_wasl",
+                    "start": 41
+                },
+                {
+                    "end": 56,
+                    "rule": "madd_246",
+                    "start": 55
+                }
+            ]
+        },
+        {
+            "number": "32",
+            "text": "اَمْ تَأْمُرُهُمْ اَحْلَامُهُمْ بِهٰذَآ اَمْ هُمْ قَوْمٌ طَاغُوْنَۚ ",
+            "teksLatin": "am ta'muruhum aḥlāmuhum bihāżā am hum qaumun ṭāgūn(a).",
+            "teksIndonesia": "Apakah mereka diperintah oleh pikiran-pikiran mereka untuk mengucapkan (tuduhan-tuduhan) ini ataukah mereka kaum yang melampaui batas?",
+            "tafsir": "Kemudian pada ayat ini Allah swt mempertanyakan apakah orang-orang kafir itu mempergunakan akal sehat mereka atau hanya mempertaruhkan hawa nafsu dan angan-angan belaka dalam melemparkan tuduhan-tuduhan mereka yang aneh dan tidak ada dasarnya sama sekali. Nabi memang bukan penyair, juga bukan tukang tenung dan bukan orang gila. Tuduhan-tuduhan mereka semata-mata didasarkan pada rasa benci yang berlebih-lebihan, sehingga tidak memperhatikan akal sehat sama sekali.",
+            "tajweed": [
+                {
+                    "end": 25,
+                    "rule": "madd_2",
+                    "start": 24
+                },
+                {
+                    "end": 33,
+                    "rule": "ikhfa_shafawi",
+                    "start": 29
+                },
+                {
+                    "end": 36,
+                    "rule": "madd_2",
+                    "start": 35
+                },
+                {
+                    "end": 40,
+                    "rule": "madd_munfasil",
+                    "start": 38
+                },
+                {
+                    "end": 60,
+                    "rule": "ikhfa",
+                    "start": 56
+                },
+                {
+                    "end": 64,
+                    "rule": "madd_246",
+                    "start": 63
+                }
+            ]
+        },
+        {
+            "number": "33",
+            "text": "اَمْ يَقُوْلُوْنَ تَقَوَّلَهٗۚ بَلْ لَّا يُؤْمِنُوْنَۚ ",
+            "teksLatin": "am yaqūlūna taqawwalah(ū), bal lā yu'minūn(a).",
+            "teksIndonesia": "Ataukah mereka berkata, “Dia (Muhammad) mereka-rekanya.” Tidak! Merekalah yang tidak beriman. ",
+            "tafsir": "Pada ayat ini dengan menggunakan bentuk kalimat pertanyaan, Allah menerangkan tuduhan orang-orang kafir bahwa Nabi dianggap mengada-ada, menyatakan sesuatu yang dikarangkarang sendiri oleh Nabi Muhammad saw. Bentuk pertanyaan ini merupakan suatu dorongan agar mereka berpikir untuk mencari jawaban dengan menggunakan akal sehat. Ayat-ayat Al-Qur'an memang memesona mereka, baik rangkaian bahasanya maupun isi kandungannya, sehingga mereka mengatakan Muhammad adalah penyair atau tukang tenung bahkan mereka anggap sebagai orang gila, sebetulnya mereka terkagum-kagum pada ayat Al-Qur'an, tetapi karena mereka tidak beriman, mereka menolak dan mengingkari firman-firman Allah dan kenabian Nabi Muhammad maka mereka asal tuduh saja. Memang mereka menghadapi dilema dengan kehebatan Al-Qur'an tetapi juga benci kepada Nabi Muhammad saw. Demikianlah jika seseorang tidak mendapat hidayah dari Allah swt, menderita batin di dunia, dan menderita lahir batin di akhirat nanti.",
+            "tajweed": [
+                {
+                    "end": 28,
+                    "rule": "madd_2",
+                    "start": 27
+                },
+                {
+                    "end": 47,
+                    "rule": "madd_246",
+                    "start": 46
+                }
+            ]
+        },
+        {
+            "number": "34",
+            "text": "فَلْيَأْتُوْا بِحَدِيْثٍ مِّثْلِهٖٓ اِنْ كَانُوْا صٰدِقِيْنَۗ  ",
+            "teksLatin": "falya'tū biḥadīṡim miṡlihī in kānū ṣādiqīn(a).",
+            "teksIndonesia": "Maka cobalah mereka membuat yang semisal dengannya (Al-Qur'an) jika mereka orang-orang yang benar. ",
+            "tafsir": "Kemudian dalam ayat ini Allah menjawab berbagi tuduhan mereka terhadap Nabi Muhammad saw dengan tantangan untuk mencoba membuat seperti apa yang telah disampaikan oleh Nabi. Kalau Muhammad saw itu dituduh penyair, maka di tengah-tengah mereka itu banyak penyair yang fasih. Kalau Nabi dituduh tukang tenung, bukankah di tengah-tengah mereka juga banyak tukang tenung yang ahli. Atau kalau ia dituduh mengada-adakan, bukankah di tengah-tengah mereka itu juga banyak ahli pidato, lancar berbicara dengan keindahan tutur katanya, dan sebagainya. Maka mengapakah mereka, tidak sanggup membuat suatu ungkapan seperti Al-Qur'an bila mereka memang orang-orang yang benar dalam tuduhan mereka. Bahkan mereka mempunyai tokoh-tokoh ahli yang punya kemampuan besar dalam berpidato, bersyair, dan telah banyak pengalaman bekerja dengan menggunakan gaya bahasa puisi atau prosa. Mereka mengetahui benar sejarah bangsa Arab lebih dari pengetahuan Muhammad saw? Walaupun demikian, nyatanya mereka masih tidak mampu membuat suatu surah pun seperti Al-Qur'an meskipun mereka semua bekerja sama secara kelompok.",
+            "tajweed": [
+                {
+                    "end": 13,
+                    "rule": "silent",
+                    "start": 11
+                },
+                {
+                    "end": 27,
+                    "rule": "idghaam_ghunnah",
+                    "start": 22
+                },
+                {
+                    "end": 35,
+                    "rule": "madd_munfasil",
+                    "start": 33
+                },
+                {
+                    "end": 42,
+                    "rule": "ikhfa",
+                    "start": 38
+                },
+                {
+                    "end": 48,
+                    "rule": "silent",
+                    "start": 46
+                },
+                {
+                    "end": 52,
+                    "rule": "madd_2",
+                    "start": 51
+                },
+                {
+                    "end": 57,
+                    "rule": "madd_246",
+                    "start": 56
+                }
+            ]
+        },
+        {
+            "number": "35",
+            "text": "اَمْ خُلِقُوْا مِنْ غَيْرِ شَيْءٍ اَمْ هُمُ الْخٰلِقُوْنَۗ  ",
+            "teksLatin": "am khuliqū min gairi syai'in am humul-khāliqūn(a).",
+            "teksIndonesia": "Atau apakah mereka tercipta tanpa asal-usul ataukah mereka yang menciptakan (diri mereka sendiri)?",
+            "tafsir": "Dalam ayat ini Allah menegaskan apakah orang-orang kafir itu mengingkari Allah sebagai Pencipta yang menjadikan semesta alam ini, atau mereka menganggap bahwa mereka itu diciptakan sebagus itu tanpa adanya pencipta. Namun, akal menetapkan bahwa setiap yang ada berasal dari tiada. Ini menunjukkan suatu bukti bahwa ada sesuatu yang mengadakannya pasti ada yang menciptakannya. Ataukah mereka menganggap bahwa diri mereka sendiri yang menciptakan mereka. Anggapan mereka seperti ini tentulah bertentangan dengan akal yang sehat, sebab setiap sesuatu itu harus ada yang menyebabkan adanya dan yang mengadakannya.",
+            "tajweed": [
+                {
+                    "end": 14,
+                    "rule": "silent",
+                    "start": 12
+                },
+                {
+                    "end": 45,
+                    "rule": "hamzat_wasl",
+                    "start": 44
+                },
+                {
+                    "end": 50,
+                    "rule": "madd_2",
+                    "start": 49
+                },
+                {
+                    "end": 55,
+                    "rule": "madd_246",
+                    "start": 54
+                }
+            ]
+        },
+        {
+            "number": "36",
+            "text": "اَمْ خَلَقُوا السَّمٰوٰتِ وَالْاَرْضَۚ بَلْ لَّا يُوْقِنُوْنَۗ  ",
+            "teksLatin": "am khalaqus-samāwāti wal-arḍ(a), bal lā yūqinūn(a).",
+            "teksIndonesia": "Ataukah mereka telah menciptakan langit dan bumi? Sebenarnya mereka tidak meyakini (apa yang mereka katakan).",
+            "tafsir": "Kemudian dalam ayat ini Allah menegaskan pula dengan menyatakan kalau mereka itu menciptakan diri mereka sendiri, apakah juga mereka berani berkata bahwa mereka menciptakan alam semesta ini (langit dan bumi), sedangkan pada keduanya terdapat segala penyebab kehidupan mereka? Mereka pasti tidak dapat meyakinkan diri sendiri dan tidak konsekuen terhadap apa yang mereka katakan, karena bila ditanyai siapa yang menjadikannya dan yang menjadikan langit dan bumi, pasti mereka akan berkata, \"Allahlah yang menjadikan itu.\" Sesungguhnya bila mereka meyakini, mereka tidak akan mengingkari keesaan Allah.",
+            "tajweed": [
+                {
+                    "end": 14,
+                    "rule": "silent",
+                    "start": 12
+                },
+                {
+                    "end": 16,
+                    "rule": "hamzat_wasl",
+                    "start": 15
+                },
+                {
+                    "end": 17,
+                    "rule": "lam_shamsiyyah",
+                    "start": 16
+                },
+                {
+                    "end": 23,
+                    "rule": "madd_2",
+                    "start": 22
+                },
+                {
+                    "end": 26,
+                    "rule": "madd_2",
+                    "start": 25
+                },
+                {
+                    "end": 32,
+                    "rule": "hamzat_wasl",
+                    "start": 31
+                },
+                {
+                    "end": 58,
+                    "rule": "madd_246",
+                    "start": 57
+                }
+            ]
+        },
+        {
+            "number": "37",
+            "text": "اَمْ عِنْدَهُمْ خَزَاۤىِٕنُ رَبِّكَ اَمْ هُمُ الْمُصَۣيْطِرُوْنَۗ  ",
+            "teksLatin": "am ‘indahum khazā'inu rabbika am humul-musaiṭirūn(a).",
+            "teksIndonesia": "Ataukah di sisi mereka ada perbendaharaan Tuhanmu ataukah mereka yang berkuasa?",
+            "tafsir": "Selanjutnya dinyatakan pada ayat ini dalam bentuk pertanyaan, apakah mereka bertindak selaku penguasa dan di tangan mereka perbendaharaan Tuhan. Kemudian mereka menganugerahkan jabatan kenabian kepada siapa yang mereka kehendaki dan memilih orang-orang yang mereka senangi? Ataukah mereka itu orang-orang yang berkuasa sehingga mereka mengatur urusan alam semesta, kemudian mereka menjadikan sesuatu atas kehendak dan kemauan mereka? Kenyataannya tidak demikian. Akan tetapi Allah-lah Yang Mahakuasa, yang mengatur dan menjadikan semuanya yang dikehendaki-Nya. Diriwayatkan oleh Imam al-Bukhari dari az-Zuhri, dari Muhammad bin Jubair bin Muth'im bapaknya berkata, \"Saya mendengar Nabi Muhammad saw membaca Surah ath-thur ketika salat Magrib. Ketika telah sampai pada ayat 35-37 ini, jantungku hampir terasa melayang. Dan Jubair bin Muth'im telah datang kepada Nabi Muhammad saw setelah Perang Badar dalam tahanan. Saat itu dia masih seorang musyrik. Kemudian dia mendengarkan ayat ini yang akhirnya ia masuk Islam.\"",
+            "tajweed": [
+                {
+                    "end": 10,
+                    "rule": "ikhfa",
+                    "start": 7
+                },
+                {
+                    "end": 21,
+                    "rule": "madd_muttasil",
+                    "start": 19
+                },
+                {
+                    "end": 45,
+                    "rule": "hamzat_wasl",
+                    "start": 44
+                },
+                {
+                    "end": 59,
+                    "rule": "madd_246",
+                    "start": 58
+                }
+            ]
+        },
+        {
+            "number": "38",
+            "text": "اَمْ لَهُمْ سُلَّمٌ يَّسْتَمِعُوْنَ فِيْهِۚ فَلْيَأْتِ مُسْتَمِعُهُمْ بِسُلْطٰنٍ مُّبِيْنٍۗ  ",
+            "teksLatin": "am lahum sullamuy yastami‘ūna fīh(i), falya'ti mustami‘uhum bisulṭānim mubīn(in).",
+            "teksIndonesia": "Atau apakah mereka mempunyai tangga (ke langit) untuk mendengarkan (hal-hal yang gaib)? Maka hendaklah orang yang mendengarkan di antara mereka itu datang membawa keterangan yang nyata. ",
+            "tafsir": "Dalam ayat ini Allah swt menyatakan dengan nada pertanyaan, apakah mereka mempunyai tangga untuk naik ke langit, kemudian mereka dapat mendengarkan perkataan malaikat tentang masalah-masalah gaib yang diwahyukan Allah. Sebenarnya mereka hanya berpegang kepada hawa nafsu saja. Mereka mengakui hal itu, maka cobalah mereka mengemukakan suatu bukti yang nyata, yang menerangkan kebenaran pengakuan mereka itu yang menolak risalah seperti pembuktian yang dibawa oleh Muhammad saw dari Tuhannya.",
+            "tajweed": [
+                {
+                    "end": 22,
+                    "rule": "idghaam_ghunnah",
+                    "start": 18
+                },
+                {
+                    "end": 67,
+                    "rule": "ikhfa_shafawi",
+                    "start": 63
+                },
+                {
+                    "end": 74,
+                    "rule": "madd_2",
+                    "start": 73
+                },
+                {
+                    "end": 80,
+                    "rule": "idghaam_ghunnah",
+                    "start": 75
+                },
+                {
+                    "end": 83,
+                    "rule": "madd_246",
+                    "start": 82
+                }
+            ]
+        },
+        {
+            "number": "39",
+            "text": "اَمْ لَهُ الْبَنٰتُ وَلَكُمُ الْبَنُوْنَۗ  ",
+            "teksLatin": "am lahul-banātu wa lakumul-banūn(a).",
+            "teksIndonesia": "Ataukah (pantas) untuk Dia anak-anak perempuan sedangkan untuk kamu anak-anak laki-laki?",
+            "tafsir": "Dalam ayat ini Allah swt bertanya kepada mereka dengan mengatakan apakah menurut mereka Tuhan mempunyai anak-anak perempuan yang dinamakan malaikat, sedangkan mereka mempunyai anak laki-laki, padahal mereka tahu anak laki-laki lebih diinginkan dari pada anak perempuan. Dalam ayat ini Allah berfirman: \n\nYang demikian itu tentulah suatu pembagian yang tidak adil. (anNajm/53: 2) \n\nIni merupakan kelengkapan penjelasan bahwa barang siapa yang berpendapat seperti itu, jelaslah bahwa dia tidak termasuk orangorang yang mempunyai pikiran yang sehat.",
+            "tajweed": [
+                {
+                    "end": 11,
+                    "rule": "hamzat_wasl",
+                    "start": 10
+                },
+                {
+                    "end": 18,
+                    "rule": "madd_2",
+                    "start": 17
+                },
+                {
+                    "end": 31,
+                    "rule": "hamzat_wasl",
+                    "start": 30
+                },
+                {
+                    "end": 38,
+                    "rule": "madd_246",
+                    "start": 37
+                }
+            ]
+        },
+        {
+            "number": "40",
+            "text": "اَمْ تَسْـَٔلُهُمْ اَجْرًا فَهُمْ مِّنْ مَّغْرَمٍ مُّثْقَلُوْنَۗ  ",
+            "teksLatin": "am tas'aluhum ajran fahum mim magramim muṡqalūn(a).",
+            "teksIndonesia": "Ataukah engkau (Muhamamd) meminta imbalan kepada mereka sehingga mereka dibebani dengan utang?",
+            "tafsir": "Pada ayat ini Allah swt bertanya kepada mereka, perlukah Muhammad saw meminta upah kepada orang-orang musyrik, sedangkan dia diutus Allah swt kepada mereka untuk mengajak, mengesakan Tuhan dan taat kepada-Nya? Andaikata demikian, tidaklah upah yang diminta Muhammad saw itu memberatkan beban mereka sehingga mereka tidak dapat memenuhi seruan Muhammad? Pertanyaan ini mematahkan tuduhan mereka, apalagi jika Nabi Muhammad meminta upah kepada mereka.",
+            "tajweed": [
+                {
+                    "end": 23,
+                    "rule": "qalqalah",
+                    "start": 21
+                },
+                {
+                    "end": 29,
+                    "rule": "ikhfa",
+                    "start": 24
+                },
+                {
+                    "end": 36,
+                    "rule": "idghaam_shafawi",
+                    "start": 31
+                },
+                {
+                    "end": 41,
+                    "rule": "idghaam_ghunnah",
+                    "start": 36
+                },
+                {
+                    "end": 51,
+                    "rule": "idghaam_ghunnah",
+                    "start": 46
+                },
+                {
+                    "end": 58,
+                    "rule": "madd_246",
+                    "start": 57
+                }
+            ]
+        },
+        {
+            "number": "41",
+            "text": "اَمْ عِنْدَهُمُ الْغَيْبُ فَهُمْ يَكْتُبُوْنَۗ ",
+            "teksLatin": "am ‘indahumul-gaibu fahum yaktubūn(a).",
+            "teksIndonesia": "Ataukah di sisi mereka mempunyai (pengetahuan) tentang yang gaib lalu mereka menuliskannya?",
+            "tafsir": "Selanjutnya dalam ayat ini Allah bertanya kepada mereka apakah mereka mempunyai ilmu gaib yang tidak diketahui manusia, yang mereka tulis untuk keperluan manusia? Kemudian mereka memberitahukannya kepada manusia semau mereka? Tidaklah mungkin mereka mempunyai ilmu gaib karena tidak ada yang mengetahui kegaiban langit dan bumi kecuali Allah. Qatadah berkata, ayat ini merupakan jawaban terhadap perkataan mereka bahwa mereka menunggu perputaran masa (kematian Muhammad sebelum mereka). Maka Allah menegaskan, apakah ada pada mereka pengetahuan tentang yang gaib sehingga mereka mengetahui bahwa Muhammad saw akan wafat sebelum mereka",
+            "tajweed": [
+                {
+                    "end": 10,
+                    "rule": "ikhfa",
+                    "start": 7
+                },
+                {
+                    "end": 16,
+                    "rule": "hamzat_wasl",
+                    "start": 15
+                },
+                {
+                    "end": 41,
+                    "rule": "madd_246",
+                    "start": 40
+                }
+            ]
+        },
+        {
+            "number": "42",
+            "text": "اَمْ يُرِيْدُوْنَ كَيْدًاۗ فَالَّذِيْنَ كَفَرُوْا هُمُ الْمَكِيْدُوْنَۗ  ",
+            "teksLatin": "am yurīdūna kaidā(n), fal-lażīna kafarū humul-makīdūn(a).",
+            "teksIndonesia": "Ataukah mereka hendak melakukan tipu daya? Tetapi orang-orang yang kafir itu, justru merekalah yang terkena tipu daya.",
+            "tafsir": "Kemudian dalam ayat ini Allah swt berkata kepada mereka apakah mereka (orang-orang musyrik) hendak menipu manusia dan Rasul dengan perkataan mereka tentang rasul dan agama? Kalau memang ini yang mereka kehendaki, maka tipu daya mereka akan kembali kepada mereka sendiri.",
+            "tajweed": [
+                {
+                    "end": 26,
+                    "rule": "ikhfa",
+                    "start": 21
+                },
+                {
+                    "end": 27,
+                    "rule": "hamzat_wasl",
+                    "start": 26
+                },
+                {
+                    "end": 45,
+                    "rule": "silent",
+                    "start": 43
+                },
+                {
+                    "end": 52,
+                    "rule": "hamzat_wasl",
+                    "start": 51
+                },
+                {
+                    "end": 62,
+                    "rule": "madd_246",
+                    "start": 61
+                }
+            ]
+        },
+        {
+            "number": "43",
+            "text": "اَمْ لَهُمْ اِلٰهٌ غَيْرُ اللّٰهِ ۗسُبْحٰنَ اللّٰهِ عَمَّا يُشْرِكُوْنَ  ",
+            "teksLatin": "am lahum ilāhun gairullāh(i), subḥānallāhi ‘ammā yusyrikūn(a).",
+            "teksIndonesia": "Ataukah mereka mempunyai tuhan selain Allah? Mahasuci Allah dari apa yang mereka persekutukan.",
+            "tafsir": "Selanjutnya, pada ayat ini Allah berkata kepada mereka, apakah mereka mempunyai Tuhan selain Allah yang membantu dan menghindarkan mereka dari siksa Allah swt. Mahasuci Allah dari apa yang mereka persekutukan dan dari yang mereka sembah selain Dia. Pertanyaan-pertanyaan ini adalah menyinggung orang-orang kafir untuk menemukan jawaban yang benar yang didasarkan pada akal sehat. Ini merupakan kecaman keras kepada orang-orang musyrik, terhadap penyembahan mereka kepada berhala sebagai yang dipersekutukan mereka terhadap Allah.",
+            "tajweed": [
+                {
+                    "end": 17,
+                    "rule": "madd_2",
+                    "start": 16
+                },
+                {
+                    "end": 28,
+                    "rule": "hamzat_wasl",
+                    "start": 27
+                },
+                {
+                    "end": 39,
+                    "rule": "qalqalah",
+                    "start": 37
+                },
+                {
+                    "end": 42,
+                    "rule": "madd_2",
+                    "start": 41
+                },
+                {
+                    "end": 46,
+                    "rule": "hamzat_wasl",
+                    "start": 45
+                },
+                {
+                    "end": 58,
+                    "rule": "ghunnah",
+                    "start": 55
+                },
+                {
+                    "end": 69,
+                    "rule": "madd_246",
+                    "start": 68
+                }
+            ]
+        },
+        {
+            "number": "44",
+            "text": "وَاِنْ يَّرَوْا كِسْفًا مِّنَ السَّمَاۤءِ سَاقِطًا يَّقُوْلُوْا سَحَابٌ مَّرْكُوْمٌ ",
+            "teksLatin": "wa iy yarau kisfam minas-samā'i sāqiṭay yaqūlū saḥābum markūm(un).",
+            "teksIndonesia": "Dan jika mereka melihat gumpalan-gumpalan awan berjatuhan dari langit, mereka berkata, “Itu adalah awan yang bertumpuk-tumpuk.” ",
+            "tafsir": "Dalam ayat ini digambarkan bahwa orang-orang musyrik itu adalah kaum yang berwatak sombong dan keras kepala. Walaupun kepada mereka diperlihatkan tanda-tanda azab yang akan menimpa mereka dengan datangnya sekumpulan awan yang akan membawa bencana bagi mereka. Tetapi mereka menganggap ringan dan hanya memandang sebagai gumpalan awan yang sedang bermain-main dan saling bertumpuk. Hal ini disebabkan hati mereka sudah tertutup dan bersikap menyepelekan persoalan penting telah membutakan pandangan mereka. Mereka tetap mengingkari apa yang mereka lihat dengan mata kepala mereka sendiri. Dalam ayat yang sama artinya Allah berfirman: \n\nDan kalau Kami bukakan kepada mereka salah satu pintu langit, lalu mereka terus menerus naik ke atasnya, tentulah mereka berkata, \"Sesungguhnya pandangan kamilah yang dikaburkan, bahkan kami adalah orang yang terkena sihir.\" (al-hijr/15: 14-15)",
+            "tajweed": [
+                {
+                    "end": 8,
+                    "rule": "idghaam_ghunnah",
+                    "start": 4
+                },
+                {
+                    "end": 14,
+                    "rule": "silent",
+                    "start": 12
+                },
+                {
+                    "end": 26,
+                    "rule": "idghaam_ghunnah",
+                    "start": 20
+                },
+                {
+                    "end": 30,
+                    "rule": "hamzat_wasl",
+                    "start": 29
+                },
+                {
+                    "end": 31,
+                    "rule": "lam_shamsiyyah",
+                    "start": 30
+                },
+                {
+                    "end": 38,
+                    "rule": "madd_muttasil",
+                    "start": 36
+                },
+                {
+                    "end": 52,
+                    "rule": "idghaam_ghunnah",
+                    "start": 47
+                },
+                {
+                    "end": 60,
+                    "rule": "silent",
+                    "start": 58
+                },
+                {
+                    "end": 72,
+                    "rule": "idghaam_ghunnah",
+                    "start": 67
+                },
+                {
+                    "end": 77,
+                    "rule": "madd_246",
+                    "start": 76
+                }
+            ]
+        },
+        {
+            "number": "45",
+            "text": "فَذَرْهُمْ حَتّٰى يُلٰقُوْا يَوْمَهُمُ الَّذِيْ فِيْهِ يُصْعَقُوْنَۙ  ",
+            "teksLatin": "fażarhum ḥattā yulāqū yaumahumul-lażī fīhi yuṣ‘aqūn(a).",
+            "teksIndonesia": "Maka biarkanlah mereka hingga mereka menemui hari (yang dijanjikan kepada) mereka, pada hari itu mereka dibinasakan, ",
+            "tafsir": "Kemudian Allah memerintahkan kepada Rasul-Nya untuk membiarkan mereka dalam keadaan keras kepala seperti itu, dan tidak mengacuhkan mereka hingga datangnya suatu hari dimana mereka akan dibalas dengan kehancuran disebabkan oleh kejahatan mereka, yaitu pada Perang Badar seperti yang dikatakan oleh alBiqa'i menurut dzahir ayat ini, atau sampai datang hari kebangkitan manusia di akhirat, sebagaimana firman Allah: \n\nDan sangkakala pun ditiup, maka matilah semua (makhluk) yang di langit dan di bumi kecuali mereka yang dikehendaki Allah. Kemudian ditiup sekali lagi (sangkakala itu) maka seketika itu mereka bangun (dari kuburnya) menunggu (keputusan Allah). (azZumar/39: 68)",
+            "tajweed": [
+                {
+                    "end": 24,
+                    "rule": "madd_2",
+                    "start": 23
+                },
+                {
+                    "end": 29,
+                    "rule": "silent",
+                    "start": 27
+                },
+                {
+                    "end": 42,
+                    "rule": "hamzat_wasl",
+                    "start": 41
+                },
+                {
+                    "end": 64,
+                    "rule": "madd_246",
+                    "start": 63
+                }
+            ]
+        },
+        {
+            "number": "46",
+            "text": "يَوْمَ لَا يُغْنِيْ عَنْهُمْ كَيْدُهُمْ شَيْـًٔا وَّلَا هُمْ يُنْصَرُوْنَۗ  ",
+            "teksLatin": "yauma lā yugnī ‘anhum kaiduhum syai'aw wa lā hum yunṣarūn(a).",
+            "teksIndonesia": "(yaitu) pada hari (ketika) tipu daya mereka tidak berguna sedikit pun bagi mereka dan mereka tidak akan diberi pertolongan.",
+            "tafsir": "Dalam ayat ini Allah menerangkan bahwa pada hari itu tidaklah berguna bagi mereka tipu daya yang telah mereka atur terhadap Muhammad saw untuk membangkitkan api permusuhan kepadanya. Dan mereka tidak akan mendapat bantuan atau pertolongan yang dapat menghalangi azab Allah yang menimpa mereka",
+            "tajweed": [
+                {
+                    "end": 50,
+                    "rule": "idghaam_ghunnah",
+                    "start": 45
+                },
+                {
+                    "end": 64,
+                    "rule": "ikhfa",
+                    "start": 61
+                },
+                {
+                    "end": 67,
+                    "rule": "madd_246",
+                    "start": 66
+                }
+            ]
+        },
+        {
+            "number": "47",
+            "text": "وَاِنَّ لِلَّذِيْنَ ظَلَمُوْا عَذَابًا دُوْنَ ذٰلِكَ وَلٰكِنَّ اَكْثَرَهُمْ لَا يَعْلَمُوْنَ ",
+            "teksLatin": "wa inna lil-lażīna ẓalamū ‘ażāban dūna żālika wa lākinna akṡarahum lā ya‘lamūn(a).",
+            "teksIndonesia": "Dan sesungguhnya bagi orang-orang yang zalim masih ada azab selain itu. Tetapi kebanyakan mereka tidak mengetahui.",
+            "tafsir": "Allah swt menjelaskan bahwa orang-orang kafir yang menganiaya diri mereka sendiri dengan kekufuran dan kemaksiatan mereka, akan mendapatkan azab yang pedih di akhirat. Di samping itu di dunia pun mereka memperoleh azab berupa kelaparan selama tujuh tahun sebelum terjadinya Perang Badar, dan kekalahan besar pada perang tersebut. Namun, kebanyakan mereka tidak mengetahui bahwasanya Allah akan menimpakan azab-Nya kepada mereka baik di dunia maupun di akhirat. Dalam ayat yang sama artinya Allah berfirman: \n\nDan pasti Kami timpakan kepada mereka sebagian siksa yang dekat (di dunia) sebelum azab yang lebih besar (di akhirat); agar mereka kembali (ke jalan yang benar). (as-Sajdah/32: 21)",
+            "tajweed": [
+                {
+                    "end": 7,
+                    "rule": "ghunnah",
+                    "start": 4
+                },
+                {
+                    "end": 28,
+                    "rule": "silent",
+                    "start": 26
+                },
+                {
+                    "end": 40,
+                    "rule": "ikhfa",
+                    "start": 35
+                },
+                {
+                    "end": 47,
+                    "rule": "madd_2",
+                    "start": 46
+                },
+                {
+                    "end": 57,
+                    "rule": "madd_2",
+                    "start": 56
+                },
+                {
+                    "end": 62,
+                    "rule": "ghunnah",
+                    "start": 59
+                },
+                {
+                    "end": 89,
+                    "rule": "madd_246",
+                    "start": 88
+                }
+            ]
+        },
+        {
+            "number": "48",
+            "text": "وَاصْبِرْ لِحُكْمِ رَبِّكَ فَاِنَّكَ بِاَعْيُنِنَا وَسَبِّحْ بِحَمْدِ رَبِّكَ حِيْنَ تَقُوْمُۙ  ",
+            "teksLatin": "waṣbir liḥukmi rabbika fa innaka bi'a‘yuninā wa sabbiḥ biḥamdi rabbika ḥīna taqūm(u).",
+            "teksIndonesia": "Dan bersabarlah (Muhammad) menunggu ketetapan Tuhanmu, karena sesungguhnya engkau berada dalam pengawasan Kami, dan bertasbihlah dengan memuji Tuhanmu ketika engkau bangun, ",
+            "tafsir": "Setelah menjelaskan berbagai situasi yang besar, menyedihkan hati rasul, akibat tindakan membangkang dan keras kepala orang-orang kafir dan musyrik yang menolak beriman kepada Allah dan rasulnya. Maka dalam hal ini, Allah memerintahkan kepada Muhamamd saw supaya bersabar terhadap gangguan kaumnya dan tidak lagi menghiraukan mereka, serta tetap menyampaikan perintah-Nya dan memperingatkan larangan-Nya, dan menyampaikan apa yang telah diwahyukan kepadanya, sebab Allah selalu melihatnya dan memperhatikan pekerjaannya serta menjaga dan melindunginya dari gangguan dan rintangan musuhnya. Perihal bertasbih dan memuji Tuhan ketika bangun dan berdiri, meliputi tiga keadaan, yaitu: 1. Ketika bangun dari tidur 2. Ketika bangun dari duduk 3. Ketika bangun akan salat Hal ini mengandung hikmah supaya orang mukmin selalu bertasbih setiap saat, dalam situasi dan kondisi bagaimanapun, terutama perubahan dari suatu keadaan ke keadaan yang lain. Atha', Sa'id, Sufyan ats-sauri, dan Abul Ahwas berkata: bahwa Nabi Muhammad saw bertasbih tatkala ia bangkit dari tempat duduknya. Sebagian hadis: Dari Abu Barzah al-Aslami berkata, Rasulullah saw pada akhir hayatnya, apabila beliau bangun dari tempat duduknya beliau mengucapkan, \"Subhanaka Allahumma wabihamdika asyahadu an la ilaha illa anta astagfiruka wa atubu ilaika! Engkau mengucapkan suatu ucapan yang belum pernah engkau ucapkan sebelumnya. Rasulullah saw bersabda, \"Ucapan ini penghapus dosa dari kesalahan-kesalahan yang mungkin terjadi di majlis.\" (Riwayat Abu Dawud dan an-Nasa'i) \n\nDiriwayatkan bahwasanya Jibril telah mengajarkan kepada Nabi Muhammad saw agar ucapan tersebut dibaca ketika hendak bangkit dan duduk dalam satu majlis yaitu: \"Mahasuci engkau, wahai Allah, dengan memuji-Mu, aku bersaksi bahwa tiada Tuhan selain Engkau, aku mohon pengampunan-Mu dan aku bertobat kepada-Mu.\" (Riwayat Abu Dawud dan an-Nasa'i)",
+            "tajweed": [
+                {
+                    "end": 3,
+                    "rule": "hamzat_wasl",
+                    "start": 2
+                },
+                {
+                    "end": 34,
+                    "rule": "ghunnah",
+                    "start": 31
+                },
+                {
+                    "end": 89,
+                    "rule": "madd_246",
+                    "start": 88
+                }
+            ]
+        },
+        {
+            "number": "49",
+            "text": "وَمِنَ الَّيْلِ فَسَبِّحْهُ وَاِدْبَارَ النُّجُوْمِ ࣖ",
+            "teksLatin": "wa minal-laili fa sabbiḥhu wa idbāran-nujūm(i).",
+            "teksIndonesia": "dan pada sebagian malam bertasbihlah kepada-Nya dan (juga) pada waktu terbenamnya bintang-bintang (pada waktu fajar).",
+            "tafsir": "Kemudian Allah dalam ayat ini memerintahkan kepada Muhammad saw supaya ia bertasbih kepada Allah dengan salat malam. Karena ibadah pada waktu itu berat melaksanakannya, dan jauh dari ria, dan supaya ia salat tatkala terbenamnya bintangbintang pada waktu subuh. Dalam ayat yang sama artinya Allah berfirman: \n\nDan pada sebagian malam, lakukanlah salat Tahajud (sebagai suatu ibadah) tambahan bagimu: mudah-mudahan Tuhanmu mengangkatmu ke tempat yang terpuji. (al-Isra'/17: 79) \n\nMakna membaca tasbih dalam ayat ini dapat berarti membaca tasbih seperti pada hadis di atas, juga dapat diartikan melaksanakan salat, baik salat Isya, salat malam maupun salat Subuh.",
+            "tajweed": [
+                {
+                    "end": 8,
+                    "rule": "hamzat_wasl",
+                    "start": 7
+                },
+                {
+                    "end": 34,
+                    "rule": "qalqalah",
+                    "start": 32
+                },
+                {
+                    "end": 37,
+                    "rule": "madd_2",
+                    "start": 36
+                },
+                {
+                    "end": 41,
+                    "rule": "hamzat_wasl",
+                    "start": 40
+                },
+                {
+                    "end": 42,
+                    "rule": "lam_shamsiyyah",
+                    "start": 41
+                },
+                {
+                    "end": 45,
+                    "rule": "ghunnah",
+                    "start": 42
+                },
+                {
+                    "end": 48,
+                    "rule": "madd_246",
+                    "start": 47
+                }
+            ]
+        }
+    ]
+}

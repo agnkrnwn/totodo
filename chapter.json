@@ -1,0 +1,916 @@
+{
+  "chapters": [
+    {
+      "id": "1",
+      "surah": "Al-Fatihah",
+      "ayaCount": 7,
+      "arabicName": "الفاتحة",
+      "type": "Mekah",
+      "arti": "Pembukaan"
+    },
+    {
+      "id": "2",
+      "surah": "Al-Baqarah",
+      "ayaCount": 286,
+      "arabicName": "البقرة",
+      "type": "Madinah",
+      "arti": "Sapi"
+    },
+    {
+      "id": "3",
+      "surah": "Ali 'Imran",
+      "ayaCount": 200,
+      "arabicName": "اٰل عمران",
+      "type": "Madinah",
+      "arti": "Keluarga Imran"
+    },
+    {
+      "id": "4",
+      "surah": "An-Nisa'",
+      "ayaCount": 176,
+      "arabicName": "النساۤء",
+      "type": "Madinah",
+      "arti": "Wanita"
+    },
+    {
+      "id": "5",
+      "surah": "Al-Ma'idah",
+      "ayaCount": 120,
+      "arabicName": "الماۤئدة",
+      "type": "Madinah",
+      "arti": "Hidangan"
+    },
+    {
+      "id": "6",
+      "surah": "Al-An'am",
+      "ayaCount": 165,
+      "arabicName": "الانعام",
+      "type": "Mekah",
+      "arti": "Binatang Ternak"
+    },
+    {
+      "id": "7",
+      "surah": "Al-A'raf",
+      "ayaCount": 206,
+      "arabicName": "الاعراف",
+      "type": "Mekah",
+      "arti": "Tempat Tertinggi"
+    },
+    {
+      "id": "8",
+      "surah": "Al-Anfal",
+      "ayaCount": 75,
+      "arabicName": "الانفال",
+      "type": "Madinah",
+      "arti": "Rampasan Perang"
+    },
+    {
+      "id": "9",
+      "surah": "At-Taubah",
+      "ayaCount": 129,
+      "arabicName": "التوبة",
+      "type": "Madinah",
+      "arti": "Pengampunan"
+    },
+    {
+      "id": "10",
+      "surah": "Yunus",
+      "ayaCount": 109,
+      "arabicName": "يونس",
+      "type": "Mekah",
+      "arti": "Yunus"
+    },
+    {
+      "id": "11",
+      "surah": "Hud",
+      "ayaCount": 123,
+      "arabicName": "هود",
+      "type": "Mekah",
+      "arti": "Hud"
+    },
+    {
+      "id": "12",
+      "surah": "Yusuf",
+      "ayaCount": 111,
+      "arabicName": "يوسف",
+      "type": "Mekah",
+      "arti": "Yusuf"
+    },
+    {
+      "id": "13",
+      "surah": "Ar-Ra'd",
+      "ayaCount": 43,
+      "arabicName": "الرّعد",
+      "type": "Madinah",
+      "arti": "Guruh"
+    },
+    {
+      "id": "14",
+      "surah": "Ibrahim",
+      "ayaCount": 52,
+      "arabicName": "ابرٰهيم",
+      "type": "Mekah",
+      "arti": "Ibrahim"
+    },
+    {
+      "id": "15",
+      "surah": "Al-Hijr",
+      "ayaCount": 99,
+      "arabicName": "الحجر",
+      "type": "Mekah",
+      "arti": "Hijr"
+    },
+    {
+      "id": "16",
+      "surah": "An-Nahl",
+      "ayaCount": 128,
+      "arabicName": "النحل",
+      "type": "Mekah",
+      "arti": "Lebah"
+    },
+    {
+      "id": "17",
+      "surah": "Al-Isra'",
+      "ayaCount": 111,
+      "arabicName": "الاسراۤء",
+      "type": "Mekah",
+      "arti": "Memperjalankan Malam Hari"
+    },
+    {
+      "id": "18",
+      "surah": "Al-Kahf",
+      "ayaCount": 110,
+      "arabicName": "الكهف",
+      "type": "Mekah",
+      "arti": "Goa"
+    },
+    {
+      "id": "19",
+      "surah": "Maryam",
+      "ayaCount": 98,
+      "arabicName": "مريم",
+      "type": "Mekah",
+      "arti": "Maryam"
+    },
+    {
+      "id": "20",
+      "surah": "Taha",
+      "ayaCount": 135,
+      "arabicName": "طٰهٰ",
+      "type": "Mekah",
+      "arti": "Taha"
+    },
+    {
+      "id": "21",
+      "surah": "Al-Anbiya'",
+      "ayaCount": 112,
+      "arabicName": "الانبياۤء",
+      "type": "Mekah",
+      "arti": "Para Nabi"
+    },
+    {
+      "id": "22",
+      "surah": "Al-Hajj",
+      "ayaCount": 78,
+      "arabicName": "الحج",
+      "type": "Madinah",
+      "arti": "Haji"
+    },
+    {
+      "id": "23",
+      "surah": "Al-Mu'minun",
+      "ayaCount": 118,
+      "arabicName": "المؤمنون",
+      "type": "Mekah",
+      "arti": "Orang-Orang Mukmin"
+    },
+    {
+      "id": "24",
+      "surah": "An-Nur",
+      "ayaCount": 64,
+      "arabicName": "النّور",
+      "type": "Madinah",
+      "arti": "Cahaya"
+    },
+    {
+      "id": "25",
+      "surah": "Al-Furqan",
+      "ayaCount": 77,
+      "arabicName": "الفرقان",
+      "type": "Mekah",
+      "arti": "Pembeda"
+    },
+    {
+      "id": "26",
+      "surah": "Asy-Syu'ara'",
+      "ayaCount": 227,
+      "arabicName": "الشعراۤء",
+      "type": "Mekah",
+      "arti": "Para Penyair"
+    },
+    {
+      "id": "27",
+      "surah": "An-Naml",
+      "ayaCount": 93,
+      "arabicName": "النمل",
+      "type": "Mekah",
+      "arti": "Semut-semut"
+    },
+    {
+      "id": "28",
+      "surah": "Al-Qasas",
+      "ayaCount": 88,
+      "arabicName": "القصص",
+      "type": "Mekah",
+      "arti": "Kisah-Kisah"
+    },
+    {
+      "id": "29",
+      "surah": "Al-'Ankabut",
+      "ayaCount": 69,
+      "arabicName": "العنكبوت",
+      "type": "Mekah",
+      "arti": "Laba-Laba"
+    },
+    {
+      "id": "30",
+      "surah": "Ar-Rum",
+      "ayaCount": 60,
+      "arabicName": "الرّوم",
+      "type": "Mekah",
+      "arti": "Romawi"
+    },
+    {
+      "id": "31",
+      "surah": "Luqman",
+      "ayaCount": 34,
+      "arabicName": "لقمٰن",
+      "type": "Mekah",
+      "arti": "Luqman"
+    },
+    {
+      "id": "32",
+      "surah": "As-Sajdah",
+      "ayaCount": 30,
+      "arabicName": "السّجدة",
+      "type": "Mekah",
+      "arti": "Sajdah"
+    },
+    {
+      "id": "33",
+      "surah": "Al-Ahzab",
+      "ayaCount": 73,
+      "arabicName": "الاحزاب",
+      "type": "Madinah",
+      "arti": "Golongan Yang Bersekutu"
+    },
+    {
+      "id": "34",
+      "surah": "Saba'",
+      "ayaCount": 54,
+      "arabicName": "سبأ",
+      "type": "Mekah",
+      "arti": "Saba'"
+    },
+    {
+      "id": "35",
+      "surah": "Fatir",
+      "ayaCount": 45,
+      "arabicName": "فاطر",
+      "type": "Mekah",
+      "arti": "Maha Pencipta"
+    },
+    {
+      "id": "36",
+      "surah": "Yasin",
+      "ayaCount": 83,
+      "arabicName": "يٰسۤ",
+      "type": "Mekah",
+      "arti": "Yasin"
+    },
+    {
+      "id": "37",
+      "surah": "As-Saffat",
+      "ayaCount": 182,
+      "arabicName": "الصّٰۤفّٰت",
+      "type": "Mekah",
+      "arti": "Barisan-Barisan"
+    },
+    {
+      "id": "38",
+      "surah": "Sad",
+      "ayaCount": 88,
+      "arabicName": "ص",
+      "type": "Mekah",
+      "arti": "Sad"
+    },
+    {
+      "id": "39",
+      "surah": "Az-Zumar",
+      "ayaCount": 75,
+      "arabicName": "الزمر",
+      "type": "Mekah",
+      "arti": "Rombongan"
+    },
+    {
+      "id": "40",
+      "surah": "Gafir",
+      "ayaCount": 85,
+      "arabicName": "غافر",
+      "type": "Mekah",
+      "arti": "Maha Pengampun"
+    },
+    {
+      "id": "41",
+      "surah": "Fussilat",
+      "ayaCount": 54,
+      "arabicName": "فصّلت",
+      "type": "Mekah",
+      "arti": "Yang Dijelaskan"
+    },
+    {
+      "id": "42",
+      "surah": "Asy-Syura",
+      "ayaCount": 53,
+      "arabicName": "الشورى",
+      "type": "Mekah",
+      "arti": "Musyawarah"
+    },
+    {
+      "id": "43",
+      "surah": "Az-Zukhruf",
+      "ayaCount": 89,
+      "arabicName": "الزخرف",
+      "type": "Mekah",
+      "arti": "Perhiasan"
+    },
+    {
+      "id": "44",
+      "surah": "Ad-Dukhan",
+      "ayaCount": 59,
+      "arabicName": "الدخان",
+      "type": "Mekah",
+      "arti": "Kabut"
+    },
+    {
+      "id": "45",
+      "surah": "Al-Jasiyah",
+      "ayaCount": 37,
+      "arabicName": "الجاثية",
+      "type": "Mekah",
+      "arti": "Berlutut"
+    },
+    {
+      "id": "46",
+      "surah": "Al-Ahqaf",
+      "ayaCount": 35,
+      "arabicName": "الاحقاف",
+      "type": "Mekah",
+      "arti": "Bukit Pasir"
+    },
+    {
+      "id": "47",
+      "surah": "Muhammad",
+      "ayaCount": 38,
+      "arabicName": "محمّد",
+      "type": "Madinah",
+      "arti": "Muhammad"
+    },
+    {
+      "id": "48",
+      "surah": "Al-Fath",
+      "ayaCount": 29,
+      "arabicName": "الفتح",
+      "type": "Madinah",
+      "arti": "Kemenangan"
+    },
+    {
+      "id": "49",
+      "surah": "Al-Hujurat",
+      "ayaCount": 18,
+      "arabicName": "الحجرٰت",
+      "type": "Madinah",
+      "arti": "Kamar-Kamar"
+    },
+    {
+      "id": "50",
+      "surah": "Qaf",
+      "ayaCount": 45,
+      "arabicName": "ق",
+      "type": "Mekah",
+      "arti": "Qaf"
+    },
+    {
+      "id": "51",
+      "surah": "Az-Zariyat",
+      "ayaCount": 60,
+      "arabicName": "الذّٰريٰت",
+      "type": "Mekah",
+      "arti": "Angin yang Menerbangkan"
+    },
+    {
+      "id": "52",
+      "surah": "At-Tur",
+      "ayaCount": 49,
+      "arabicName": "الطور",
+      "type": "Mekah",
+      "arti": "Bukit Tursina"
+    },
+    {
+      "id": "53",
+      "surah": "An-Najm",
+      "ayaCount": 62,
+      "arabicName": "النجم",
+      "type": "Mekah",
+      "arti": "Bintang"
+    },
+    {
+      "id": "54",
+      "surah": "Al-Qamar",
+      "ayaCount": 55,
+      "arabicName": "القمر",
+      "type": "Mekah",
+      "arti": "Bulan"
+    },
+    {
+      "id": "55",
+      "surah": "Ar-Rahman",
+      "ayaCount": 78,
+      "arabicName": "الرحمن",
+      "type": "Madinah",
+      "arti": "Maha Pengasih"
+    },
+    {
+      "id": "56",
+      "surah": "Al-Waqi'ah",
+      "ayaCount": 96,
+      "arabicName": "الواقعة",
+      "type": "Mekah",
+      "arti": "Hari Kiamat"
+    },
+    {
+      "id": "57",
+      "surah": "Al-Hadid",
+      "ayaCount": 29,
+      "arabicName": "الحديد",
+      "type": "Madinah",
+      "arti": "Besi"
+    },
+    {
+      "id": "58",
+      "surah": "Al-Mujadalah",
+      "ayaCount": 22,
+      "arabicName": "المجادلة",
+      "type": "Madinah",
+      "arti": "Gugatan"
+    },
+    {
+      "id": "59",
+      "surah": "Al-Hasyr",
+      "ayaCount": 24,
+      "arabicName": "الحشر",
+      "type": "Madinah",
+      "arti": "Pengusiran"
+    },
+    {
+      "id": "60",
+      "surah": "Al-Mumtahanah",
+      "ayaCount": 13,
+      "arabicName": "الممتحنة",
+      "type": "Madinah",
+      "arti": "Wanita Yang Diuji"
+    },
+    {
+      "id": "61",
+      "surah": "As-Saff",
+      "ayaCount": 14,
+      "arabicName": "الصّفّ",
+      "type": "Madinah",
+      "arti": "Barisan"
+    },
+    {
+      "id": "62",
+      "surah": "Al-Jumu'ah",
+      "ayaCount": 11,
+      "arabicName": "الجمعة",
+      "type": "Madinah",
+      "arti": "Jumat"
+    },
+    {
+      "id": "63",
+      "surah": "Al-Munafiqun",
+      "ayaCount": 11,
+      "arabicName": "المنٰفقون",
+      "type": "Madinah",
+      "arti": "Orang-Orang Munafik"
+    },
+    {
+      "id": "64",
+      "surah": "At-Tagabun",
+      "ayaCount": 18,
+      "arabicName": "التغابن",
+      "type": "Madinah",
+      "arti": "Pengungkapan Kesalahan"
+    },
+    {
+      "id": "65",
+      "surah": "At-Talaq",
+      "ayaCount": 12,
+      "arabicName": "الطلاق",
+      "type": "Madinah",
+      "arti": "Talak"
+    },
+    {
+      "id": "66",
+      "surah": "At-Tahrim",
+      "ayaCount": 12,
+      "arabicName": "التحريم",
+      "type": "Madinah",
+      "arti": "Pengharaman"
+    },
+    {
+      "id": "67",
+      "surah": "Al-Mulk",
+      "ayaCount": 30,
+      "arabicName": "الملك",
+      "type": "Mekah",
+      "arti": "Kerajaan"
+    },
+    {
+      "id": "68",
+      "surah": "Al-Qalam",
+      "ayaCount": 52,
+      "arabicName": "القلم",
+      "type": "Mekah",
+      "arti": "Pena"
+    },
+    {
+      "id": "69",
+      "surah": "Al-Haqqah",
+      "ayaCount": 52,
+      "arabicName": "الحاۤقّة",
+      "type": "Mekah",
+      "arti": "Hari Kiamat"
+    },
+    {
+      "id": "70",
+      "surah": "Al-Ma'arij",
+      "ayaCount": 44,
+      "arabicName": "المعارج",
+      "type": "Mekah",
+      "arti": "Tempat Naik"
+    },
+    {
+      "id": "71",
+      "surah": "Nuh",
+      "ayaCount": 28,
+      "arabicName": "نوح",
+      "type": "Mekah",
+      "arti": "Nuh"
+    },
+    {
+      "id": "72",
+      "surah": "Al-Jinn",
+      "ayaCount": 28,
+      "arabicName": "الجن",
+      "type": "Mekah",
+      "arti": "Jin"
+    },
+    {
+      "id": "73",
+      "surah": "Al-Muzzammil",
+      "ayaCount": 20,
+      "arabicName": "المزّمّل",
+      "type": "Mekah",
+      "arti": "Orang Yang Berselimut"
+    },
+    {
+      "id": "74",
+      "surah": "Al-Muddassir",
+      "ayaCount": 56,
+      "arabicName": "المدّثّر",
+      "type": "Mekah",
+      "arti": "Orang Yang Berkemul"
+    },
+    {
+      "id": "75",
+      "surah": "Al-Qiyamah",
+      "ayaCount": 40,
+      "arabicName": "القيٰمة",
+      "type": "Mekah",
+      "arti": "Hari Kiamat"
+    },
+    {
+      "id": "76",
+      "surah": "Al-Insan",
+      "ayaCount": 31,
+      "arabicName": "الانسان",
+      "type": "Madinah",
+      "arti": "Manusia"
+    },
+    {
+      "id": "77",
+      "surah": "Al-Mursalat",
+      "ayaCount": 50,
+      "arabicName": "المرسلٰت",
+      "type": "Mekah",
+      "arti": "Malaikat Yang Diutus"
+    },
+    {
+      "id": "78",
+      "surah": "An-Naba'",
+      "ayaCount": 40,
+      "arabicName": "النبأ",
+      "type": "Mekah",
+      "arti": "Berita Besar"
+    },
+    {
+      "id": "79",
+      "surah": "An-Nazi'at",
+      "ayaCount": 46,
+      "arabicName": "النّٰزعٰت",
+      "type": "Mekah",
+      "arti": "Malaikat Yang Mencabut"
+    },
+    {
+      "id": "80",
+      "surah": "'Abasa",
+      "ayaCount": 42,
+      "arabicName": "عبس",
+      "type": "Mekah",
+      "arti": "Bermuka Masam"
+    },
+    {
+      "id": "81",
+      "surah": "At-Takwir",
+      "ayaCount": 29,
+      "arabicName": "التكوير",
+      "type": "Mekah",
+      "arti": "Penggulungan"
+    },
+    {
+      "id": "82",
+      "surah": "Al-Infitar",
+      "ayaCount": 19,
+      "arabicName": "الانفطار",
+      "type": "Mekah",
+      "arti": "Terbelah"
+    },
+    {
+      "id": "83",
+      "surah": "Al-Mutaffifin",
+      "ayaCount": 36,
+      "arabicName": "المطفّفين",
+      "type": "Mekah",
+      "arti": "Orang-Orang Curang"
+    },
+    {
+      "id": "84",
+      "surah": "Al-Insyiqaq",
+      "ayaCount": 25,
+      "arabicName": "الانشقاق",
+      "type": "Mekah",
+      "arti": "Terbelah"
+    },
+    {
+      "id": "85",
+      "surah": "Al-Buruj",
+      "ayaCount": 22,
+      "arabicName": "البروج",
+      "type": "Mekah",
+      "arti": "Gugusan Bintang"
+    },
+    {
+      "id": "86",
+      "surah": "At-Tariq",
+      "ayaCount": 17,
+      "arabicName": "الطارق",
+      "type": "Mekah",
+      "arti": "Yang Datang Di Malam Hari"
+    },
+    {
+      "id": "87",
+      "surah": "Al-A'la",
+      "ayaCount": 19,
+      "arabicName": "الاعلى",
+      "type": "Mekah",
+      "arti": "Maha Tinggi"
+    },
+    {
+      "id": "88",
+      "surah": "Al-Gasyiyah",
+      "ayaCount": 26,
+      "arabicName": "الغاشية",
+      "type": "Mekah",
+      "arti": "Hari Kiamat"
+    },
+    {
+      "id": "89",
+      "surah": "Al-Fajr",
+      "ayaCount": 30,
+      "arabicName": "الفجر",
+      "type": "Mekah",
+      "arti": "Fajar"
+    },
+    {
+      "id": "90",
+      "surah": "Al-Balad",
+      "ayaCount": 20,
+      "arabicName": "البلد",
+      "type": "Mekah",
+      "arti": "Negeri"
+    },
+    {
+      "id": "91",
+      "surah": "Asy-Syams",
+      "ayaCount": 15,
+      "arabicName": "الشمس",
+      "type": "Mekah",
+      "arti": "Matahari"
+    },
+    {
+      "id": "92",
+      "surah": "Al-Lail",
+      "ayaCount": 21,
+      "arabicName": "الّيل",
+      "type": "Mekah",
+      "arti": "Malam"
+    },
+    {
+      "id": "93",
+      "surah": "Ad-Duha",
+      "ayaCount": 11,
+      "arabicName": "الضحى",
+      "type": "Mekah",
+      "arti": "Duha"
+    },
+    {
+      "id": "94",
+      "surah": "Asy-Syarh",
+      "ayaCount": 8,
+      "arabicName": "الشرح",
+      "type": "Mekah",
+      "arti": "Lapang"
+    },
+    {
+      "id": "95",
+      "surah": "At-Tin",
+      "ayaCount": 8,
+      "arabicName": "التين",
+      "type": "Mekah",
+      "arti": "Buah Tin"
+    },
+    {
+      "id": "96",
+      "surah": "Al-'Alaq",
+      "ayaCount": 19,
+      "arabicName": "العلق",
+      "type": "Mekah",
+      "arti": "Segumpal Darah"
+    },
+    {
+      "id": "97",
+      "surah": "Al-Qadr",
+      "ayaCount": 5,
+      "arabicName": "القدر",
+      "type": "Mekah",
+      "arti": "Kemuliaan"
+    },
+    {
+      "id": "98",
+      "surah": "Al-Bayyinah",
+      "ayaCount": 8,
+      "arabicName": "البيّنة",
+      "type": "Madinah",
+      "arti": "Bukti Nyata"
+    },
+    {
+      "id": "99",
+      "surah": "Az-Zalzalah",
+      "ayaCount": 8,
+      "arabicName": "الزلزلة",
+      "type": "Madinah",
+      "arti": "Guncangan"
+    },
+    {
+      "id": "100",
+      "surah": "Al-'Adiyat",
+      "ayaCount": 11,
+      "arabicName": "العٰديٰت",
+      "type": "Mekah",
+      "arti": "Kuda Yang Berlari Kencang"
+    },
+    {
+      "id": "101",
+      "surah": "Al-Qari'ah",
+      "ayaCount": 11,
+      "arabicName": "القارعة",
+      "type": "Mekah",
+      "arti": "Hari Kiamat"
+    },
+    {
+      "id": "102",
+      "surah": "At-Takasur",
+      "ayaCount": 8,
+      "arabicName": "التكاثر",
+      "type": "Mekah",
+      "arti": "Bermegah-Megahan"
+    },
+    {
+      "id": "103",
+      "surah": "Al-'Asr",
+      "ayaCount": 3,
+      "arabicName": "العصر",
+      "type": "Mekah",
+      "arti": "Masa"
+    },
+    {
+      "id": "104",
+      "surah": "Al-Humazah",
+      "ayaCount": 9,
+      "arabicName": "الهمزة",
+      "type": "Mekah",
+      "arti": "Pengumpat"
+    },
+    {
+      "id": "105",
+      "surah": "Al-Fil",
+      "ayaCount": 5,
+      "arabicName": "الفيل",
+      "type": "Mekah",
+      "arti": "Gajah"
+    },
+    {
+      "id": "106",
+      "surah": "Quraisy",
+      "ayaCount": 4,
+      "arabicName": "قريش",
+      "type": "Mekah",
+      "arti": "Quraisy"
+    },
+    {
+      "id": "107",
+      "surah": "Al-Ma'un",
+      "ayaCount": 7,
+      "arabicName": "الماعون",
+      "type": "Mekah",
+      "arti": "Barang Yang Berguna"
+    },
+    {
+      "id": "108",
+      "surah": "Al-Kausar",
+      "ayaCount": 3,
+      "arabicName": "الكوثر",
+      "type": "Mekah",
+      "arti": "Pemberian Yang Banyak"
+    },
+    {
+      "id": "109",
+      "surah": "Al-Kafirun",
+      "ayaCount": 6,
+      "arabicName": "الكٰفرون",
+      "type": "Mekah",
+      "arti": "Orang-Orang kafir"
+    },
+    {
+      "id": "110",
+      "surah": "An-Nasr",
+      "ayaCount": 3,
+      "arabicName": "النصر",
+      "type": "Madinah",
+      "arti": "Pertolongan"
+    },
+    {
+      "id": "111",
+      "surah": "Al-Lahab",
+      "ayaCount": 5,
+      "arabicName": "اللهب",
+      "type": "Mekah",
+      "arti": "Api Yang Bergejolak"
+    },
+    {
+      "id": "112",
+      "surah": "Al-Ikhlas",
+      "ayaCount": 4,
+      "arabicName": "الاخلاص",
+      "type": "Mekah",
+      "arti": "Ikhlas"
+    },
+    {
+      "id": "113",
+      "surah": "Al-Falaq",
+      "ayaCount": 5,
+      "arabicName": "الفلق",
+      "type": "Mekah",
+      "arti": "Subuh"
+    },
+    {
+      "id": "114",
+      "surah": "An-Nas",
+      "ayaCount": 6,
+      "arabicName": "الناس",
+      "type": "Mekah",
+      "arti": "Manusia"
+    }
+  ]
+}
