@@ -32,20 +32,33 @@ document.addEventListener('DOMContentLoaded', () => {
     async function performSearch() {
         const keyword = searchInput.value.toLowerCase();
         if (keyword.length < 3) {
-            alert('Mohon masukkan minimal 3 karakter.');
+            showNotification('Mohon masukkan minimal 3 karakter.', 'error');
             return;
         }
 
-        resultsDiv.innerHTML = 'Mencari...';
-        const results = await searchQuran(keyword);
+        resultsDiv.innerHTML = `
+            <p>Mencari di mulai...</p>
+            <div class="spinner"></div>
+            <div class="progress-bar" id="progressBar"></div>
+        `;
+        
+        const progressBar = document.getElementById('progressBar');
+        const startTime = Date.now();
+        const results = await searchQuran(keyword, progressBar);
+        const endTime = Date.now();
+        
+        const duration = ((endTime - startTime) / 1000).toFixed(2);
+        showNotification(`Pencarian selesai dalam ${duration} detik.`, 'success');
         displayResults(results, keyword);
     }
 
-    async function searchQuran(keyword) {
+    async function searchQuran(keyword, progressBar) {
         const results = [];
         const chapterData = await fetch('chapter.json').then(response => response.json());
+        const totalSurahs = 114;
+        let processedSurahs = 0;
 
-        for (let i = 1; i <= 114; i++) {
+        for (let i = 1; i <= totalSurahs; i++) {
             const surahNumber = i.toString().padStart(3, '0');
             try {
                 const surahData = await fetch(`quranupdate/${surahNumber}.json`).then(response => response.json());
@@ -66,14 +79,21 @@ document.addEventListener('DOMContentLoaded', () => {
             } catch (error) {
                 console.error(`Error loading surah ${surahNumber}:`, error);
             }
+
+            // Update progress bar
+            processedSurahs++;
+            const progress = Math.round((processedSurahs / totalSurahs) * 100);
+            progressBar.style.width = `${progress}%`;
         }
 
         return results;
     }
 
     function displayResults(results, keyword) {
+        resultsDiv.innerHTML = '';
+
         if (results.length === 0) {
-            resultsDiv.innerHTML = 'Tidak ditemukan hasil.';
+            resultsDiv.innerHTML = '<p>Tidak ditemukan hasil.</p>';
             return;
         }
 
@@ -106,27 +126,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return text.replace(regex, '<span class="bg-yellow-200 dark:bg-yellow-500">$1</span>');
     }
     
+    function showNotification(message, type) {
+        const notification = document.createElement('div');
+        notification.className = `notification ${type}`;
+        notification.innerText = message;
+        document.body.appendChild(notification);
+        setTimeout(() => notification.remove(), 3000);
+    }
 
     async function showAyahDetails(surahId, ayahNumber) {
         try {
             const surahData = await fetch(`quranupdate/${surahId}.json`).then(response => response.json());
             const ayahData = surahData.ayah.find(ayah => ayah.number === ayahNumber);
-    
+
             if (ayahData) {
-                // Find the corresponding Surah name and format the string
                 const surahNameFormatted = `${surahData.id}. ${surahData.name} : ${ayahNumber}`;
-    
+
                 surahName.innerText = surahNameFormatted;
                 ayahText.innerText = ayahData.text;
                 ayahLatin.innerText = ayahData.teksLatin;
                 ayahIndonesia.innerText = ayahData.teksIndonesia;
                 ayahTafsir.innerText = ayahData.tafsir || 'Tafsir tidak tersedia.';
-    
+
                 ayahModal.classList.remove('hidden');
             }
         } catch (error) {
             console.error('Error loading Ayah details:', error);
         }
     }
-    
 });
