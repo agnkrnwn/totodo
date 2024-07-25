@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Quran Reader</title>
+
+    <link rel="icon" href="/asset/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="/asset/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/asset/images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/asset/images/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/asset/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/asset/images/favicon-16x16.png">
+
+    <!-- Meta tags untuk SEO dan sharing -->
+    <meta name="description" content="Al-Quran Digital untuk membaca dan mempelajari Al-Quran secara online">
+    <meta name="keywords" content="Al-Quran, Digital Quran, Baca Quran, Islam">
+    <meta name="author" content="@agnkrnwn">
+    <meta property="og:title" content="Al-Quran Digital">
+    <meta property="og:description" content="Baca dan pelajari Al-Quran secara online">
+    <meta property="og:image" content="/asset/images/quran-thumbnail.jpg">
+    <meta property="og:url" content="https://sctr.netlify.app/">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/asset/css/quramin.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#E6F6FF',
+                            200: '#BAE3FF',
+                            300: '#7CC4FA',
+                            400: '#47A3F3',
+                            500: '#2186EB',
+                            600: '#0967D2',
+                            700: '#0552B5',
+                            800: '#03449E',
+                            900: '#01337D',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<html lang="ar" dir="rtl" class="h-full">
+
+<body class="h-full bg-amber-50 dark:bg-gray-800 transition-colors duration-200">
+    
+        <div class="bg-amber-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-6 ">
+            <div class="surah-header text-center relative">
+                <div class="ornament-frame">
+                    <img src="/asset/images/sura-frame.png" alt="Surah Frame" class="w-full">
+                    <h2 id="surahTitle" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-emerald-800 dark:text-emerald-200"></h2>
+                </div>
+                <button id="prevSurahButton" class="surah-nav-button">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="nextSurahButton" class="surah-nav-button">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div id="bismillah" class="text-center text-2xl font-semi-bold py-4 text-gray-800 dark:text-gray-200">
+                بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+            </div>
+            
+            <div id="quranPage" class="quran-page ">
+                <!-- Ayat-ayat akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    
+
+    <div dir="ltr" class="control-panel bg-amber-100 dark:bg-gray-800 transition-colors duration-200">
+        <div class="container mx-auto flex justify-center items-center gap-4">
+            <button id="tafsirButton" class="text-2xl text-gray-800 dark:text-gray-200"><i class="fas fa-book"></i></button>
+            <button id="showBookmarksButton" class="text-2xl text-gray-800 dark:text-gray-200"><i class="fas fa-list"></i></button>
+            <button id="playButton" class="text-2xl text-gray-800 dark:text-gray-200"><i class="fas fa-play"></i></button>
+            <button id="settingsButton" class="text-2xl text-gray-800 dark:text-gray-200"><i class="fas fa-cog"></i></button>
+            <button id="nightModeButton" class="text-2xl text-gray-800 dark:text-gray-200"><i class="fas fa-moon"></i></button>
+            
+            
+        </div>
+    </div>
+
+    <div id="settingsPopup" dir="ltr" class="hidden fixed inset-0 bg-black bg-opacity-50 dark:bg-opacity-80 flex items-center justify-center transition-colors duration-200 z-50">
+        <div class="bg-amber-50 dark:bg-gray-800 p-6 rounded-lg max-w-md w-full max-h-[90vh] overflow-y-auto transition-colors duration-200 shadow-xl">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-200">Pengaturan</h3>
+                <!-- <button id="nightModeButton"
+                    class="text-2xl text-gray-800 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 transition-colors duration-200">
+                    <i class="fas fa-moon"></i>
+                </button> -->
+            </div>
+    
+            <div class="space-y-4">
+                <!-- Existing settings -->
+                <div>
+                    <label for="surahSelect"
+                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Pilih Surah</label>
+                    <select id="surahSelect" dir="ltr"
+                        class="w-full p-2 border border-gray-300 rounded-md text-gray-800 dark:text-gray-200 dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></select>
+                </div>
+    
+                <div>
+                    <label for="reciterSelect"
+                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Pilih Qari</label>
+                    <select id="reciterSelect" dir="ltr"
+                        class="w-full p-2 border border-gray-300 rounded-md text-gray-800 dark:text-gray-200 dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></select>
+                </div>
+    
+                <div>
+                    <label for="fontSelect"
+                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Pilih Font</label>
+                    <select id="fontSelect" dir="ltr"
+                        class="w-full p-2 border border-gray-300 rounded-md text-gray-800 dark:text-gray-200 dark:bg-gray-700 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></select>
+                </div>
+                <div>
+                    <label for="tajweedToggleonoff"
+                        class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Tampilkan Warna
+                        Tajwid</label>
+                    <input type="checkbox" id="tajweedToggleonoff" class="form-checkbox h-5 w-5 text-blue-600">
+                </div>
+
+                <!-- Tajweed information -->
+                <div class="mt-6 pb-15">
+                    <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-3">Keterangan Warna Tajwid</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-idghaam_no_ghunnah shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Idghaam No Ghunnah</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-madd_munfasil shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Madd Munfasil</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-silent shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Silent</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-madd_6 shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Madd 6</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-ikhfa shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Ikhfa</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-lam_shamsiyyah shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Lam Shamsiyyah</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-ikhfa_shafawi shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Ikhfa Shafawi</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-ghunnah shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Ghunnah</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-madd_muttasil shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Madd Muttasil</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-idghaam_ghunnah shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Idghaam Ghunnah</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-iqlab shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Iqlab</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-madd_2 shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Madd 2</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-idghaam_shafawi shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Idghaam Shafawi</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-qalqalah shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Qalqalah</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-idghaam_mutajanisayn shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Idghaam Mutajanisayn</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-hamzat_wasl shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Hamzat Wasl</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-idghaam_mutaqaribayn shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Idghaam Mutaqaribayn</span>
+                        </div>
+                        <div class="flex items-center space-x-3 bg-gray-100 dark:bg-gray-700 p-2 rounded-lg">
+                            <span class="w-6 h-6 rounded-full bg-madd_246 shadow-inner"></span>
+                            <span class="text-gray-700 dark:text-gray-300 text-sm">Madd 246</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky bottom-0 left-0 right-0 p-4">
+                <button id="closeSettings" class="bg-amber-800 text-white px-4 py-2 rounded-md hover:bg-amber-600 w-full">Tutup</button>
+            </div>
+         </div>
+    </div>
+
+   
+
+
+    <script src="/asset/js/quran.js" defer></script>
+</body>
+
+</html>

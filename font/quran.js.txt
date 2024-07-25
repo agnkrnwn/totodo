@@ -1,0 +1,798 @@
+// main.js
+let chapters, reciters, fonts;
+let currentAudio = null;
+let currentAyah = 0;
+let isPlaying = false;
+let bookmarks = {};
+let settings = {
+    surahId: '1',
+    reciterLink: 'https://everyayah.com/data/AbdulSamad_64kbps_QuranExplorer.Com/',
+    fontId: 'hafs_uthmanic_v14_full',
+    showTajweed: true  /////////////////////////
+};
+let isNightMode = false;
+let virtualScroller;
+let currentHighlightedAyah = null;
+
+
+
+// Use a Web Worker for heavy computations
+const worker = new Worker('/asset/js/worker.js');
+
+// Lazy loading of surahs
+async function loadSurah(surahId) {
+    try {
+        const response = await fetch(`/api/everyayahapi/quranupdate/${surahId.padStart(3, '0')}.json`);
+        const surahData = await response.json();
+        console.log('Surah data received:', surahData);
+        return surahData.ayah;
+    } catch (error) {
+        console.error('Error loading surah:', error);
+        showErrorMessage('Failed to load surah. Please try again.');
+        return [];
+    }
+}
+
+// Virtual scrolling implementation
+class VirtualScroller {
+    constructor(container, itemHeight, loadMoreItems) {
+        this.container = container;
+        this.itemHeight = itemHeight;
+        this.loadMoreItems = loadMoreItems;
+        this.items = [];
+        this.lastScrollTop = 0;
+
+        this.container.addEventListener('scroll', this.onScroll.bind(this));
+    }
+
+    onScroll() {
+        const scrollTop = this.container.scrollTop;
+        if (scrollTop > this.lastScrollTop) {
+            const bottomBoundary = scrollTop + this.container.clientHeight;
+            const lastVisibleIndex = Math.floor(bottomBoundary / this.itemHeight);
+            if (lastVisibleIndex >= this.items.length - 10) {
+                this.loadMoreItems();
+            }
+        }
+        this.lastScrollTop = scrollTop;
+        this.updateVisibleItems();
+    }
+
+    updateVisibleItems() {
+        const scrollTop = this.container.scrollTop;
+        const visibleCount = Math.ceil(this.container.clientHeight / this.itemHeight);
+        const startIndex = Math.floor(scrollTop / this.itemHeight);
+        const endIndex = startIndex + visibleCount;
+
+        this.items.slice(startIndex, endIndex).forEach((item, index) => {
+            const top = (startIndex + index) * this.itemHeight;
+            item.style.transform = `translateY(${top}px)`;
+            item.style.display = 'block';
+        });
+
+        this.items.slice(0, startIndex).concat(this.items.slice(endIndex)).forEach(item => {
+            item.style.display = 'none';
+        });
+    }
+
+    setItems(items) {
+        this.items = items;
+        this.container.style.height = `${items.length * this.itemHeight}px`;
+        this.updateVisibleItems();
+    }
+}
+
+// Optimize font loading
+function loadFont(fontId) {
+    const fontData = fonts[fontId];
+    if (fontData) {
+        const fontFace = new FontFace(fontData.font, `url(${fontData.woff2})`, { display: 'swap' });
+        fontFace.load().then(loadedFace => {
+            document.fonts.add(loadedFace);
+            document.getElementById('quranPage').style.fontFamily = `'${fontData.font}', 'QuranFont', Arial, sans-serif`;
+        }).catch(error => {
+            console.error('Error loading font:', error);
+            showErrorMessage('Failed to load font. Using default font.');
+        });
+    }
+}
+
+// Use Intersection Observer for highlighting
+const highlightObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('bg-yellow-200', 'dark:bg-yellow-900');
+        } else {
+            entry.target.classList.remove('bg-yellow-200', 'dark:bg-yellow-900');
+        }
+    });
+}, { 
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5 
+});
+
+// Optimize localStorage usage
+const storage = {
+    get: (key, defaultValue) => {
+        const value = localStorage.getItem(key);
+        return value ? JSON.parse(value) : defaultValue;
+    },
+    set: (key, value) => {
+        localStorage.setItem(key, JSON.stringify(value));
+    }
+};
+
+// Main initialization function
+async function init() {
+    console.log('Initializing...');
+    try {
+        console.log('Fetching data...');
+        [chapters, reciters, fonts] = await Promise.all([
+            fetch('/api/everyayahapi/chapter.json').then(res => res.json()),
+            fetch('/api/everyayahapi/reciter.json').then(res => res.json()),
+            fetch('/api/font/fonts.json').then(res => res.json())
+        ]);
+        console.log('Data fetched successfully');
+
+        settings = storage.get('quranReaderSettings', {
+            surahId: '1',
+            reciterLink: 'https://everyayah.com/data/AbdulSamad_64kbps_QuranExplorer.Com/',
+            fontId: 'hafs_uthmanic_v14_full',
+            showTajweed: true
+        });
+
+        bookmarks = storage.get('quranBookmarksx22', {});
+        settings = storage.get('quranReaderSettings', settings);
+        isNightMode = storage.get('nightMode', false);
+
+        initializeUI();
+        console.log('UI initialized');
+        await loadAndDisplaySurah(settings.surahId);
+        console.log('Surah loaded and displayed');
+    } catch (error) {
+        console.error('Initialization error:', error);
+        showErrorMessage('Failed to initialize the application. Please refresh the page.');
+    }
+}
+
+function initializeUI() {
+    populateSelect('surahSelect', chapters.chapters, 'id', 'surah', true);
+    populateSelect('reciterSelect', reciters.reciters, 'link', 'judul');
+    populateSelect('fontSelect', Object.entries(fonts).map(([key, value]) => ({ id: key, name: value.font })), 'id', 'name');
+
+    document.getElementById('surahSelect').value = settings.surahId;
+    document.getElementById('reciterSelect').value = settings.reciterLink;
+    document.getElementById('fontSelect').value = settings.fontId;
+
+    document.getElementById('surahSelect').addEventListener('change', () => loadAndDisplaySurah(document.getElementById('surahSelect').value));
+    document.getElementById('fontSelect').addEventListener('change', applyFont);
+    document.getElementById('playButton').addEventListener('click', togglePlaySurah);
+    document.getElementById('settingsButton').addEventListener('click', openSettings);
+    document.getElementById('closeSettings').addEventListener('click', closeSettings);
+    // document.getElementById('bookmarkButton').addEventListener('click', toggleBookmark);
+    document.getElementById('showBookmarksButton').addEventListener('click', showBookmarks);
+    document.getElementById('nightModeButton').addEventListener('click', toggleNightMode);
+    document.getElementById('nextSurahButton').addEventListener('click', goToNextSurah);
+    document.getElementById('prevSurahButton').addEventListener('click', goToPreviousSurah);
+    document.getElementById('tafsirButton').addEventListener('click', showTafsir);
+
+    const tajweedToggle = document.getElementById('tajweedToggleonoff');
+    tajweedToggle.checked = settings.showTajweed;
+    tajweedToggle.addEventListener('change', toggleTajweed);
+
+    virtualScroller = new VirtualScroller(
+        document.getElementById('quranPage'),
+        50, // Estimated height of each ayah
+        loadMoreAyahs // Function to load more ayahs
+    );
+
+    updateNightModeButton();
+    document.documentElement.classList.toggle('dark', isNightMode);
+
+    // Use requestAnimationFrame for smooth animations
+    function animate() {
+        // Add any animations here
+        requestAnimationFrame(animate);
+    }
+    animate();
+}
+
+function loadAndDisplaySurah(surahId) {
+    console.log('Loading surah:', surahId);
+    currentHighlightedAyah = null; // Reset highlighted ayah
+    return loadSurah(surahId).then(ayahs => {
+        console.log('Ayahs loaded:', ayahs.length);
+        displaySurah(ayahs);
+    });
+}
+
+function showTafsir() {
+    const highlightedAyah = document.querySelector('.ayah.highlight');
+    if (highlightedAyah) {
+        const surahId = document.getElementById('surahSelect').value;
+        const ayahId = highlightedAyah.getAttribute('data-ayah');
+        displayTafsirPopup(surahId, ayahId);
+    } else {
+        showErrorMessage('Pilih ayat terlebih dahulu');
+    }
+}
+
+function displayTafsirPopup(surahId, ayahId) {
+    const ayahElement = document.querySelector(`.ayah[data-ayah="${ayahId}"]`);
+    if (!ayahElement) {
+        showErrorMessage('Data ayat tidak ditemukan');
+        return;
+    }
+
+    const teksLatin = ayahElement.getAttribute('data-latin');
+    const teksIndonesia = ayahElement.getAttribute('data-indonesia');
+    const tafsir = ayahElement.getAttribute('data-tafsir')
+        .replace(/\\n\\n/g, '</p><p class="mt-4">') // Menangani "\n\n" sebagai paragraph baru
+        .replace(/\\n/g, '<br>') // Menangani "\n" tunggal sebagai line break
+        .replace(/\n\n/g, '</p><p class="mt-4">') // Menangani "\n\n" literal sebagai paragraph baru
+        .replace(/\n/g, '<br>'); // Menangani "\n" literal sebagai line break
+
+    const popupContent = `
+        <div dir="ltr" class="bg-amber-50 dark:bg-gray-800 p-4 rounded-lg w-full max-w-2xl max-h-[80vh] overflow-y-auto relative">
+            <div class="pb-16"> <!-- Tambahkan padding bottom untuk memberikan ruang bagi tombol close -->
+                <h3 class="text-lg font-bold mb-4 text-gray-800 dark:text-gray-200">Surah ${surahId} - Ayat ${ayahId}</h3>
+                <div class="mb-4 space-y-4 text-gray-800 dark:text-gray-200">
+                    <p class="text-right text-2xl mb-2">${ayahElement.innerText}</p>
+                    <p><strong class="font-semibold">Latin:</strong> ${teksLatin}</p>
+                    <p><strong class="font-semibold">Terjemahan:</strong> ${teksIndonesia}</p>
+                    <div>
+                        <strong class="font-semibold">Tafsir:</strong>
+                        <div class="mt-2 text-justify">
+                            <p>${tafsir}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sticky bottom-0 left-0 right-0 p-4">
+                <button id="closeTafsir" class="bg-amber-800 text-white px-4 py-2 rounded-md hover:bg-amber-600 w-full">Tutup</button>
+            </div>
+        </div>
+    `;
+
+    const popupElement = document.createElement('div');
+    popupElement.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4';
+    popupElement.innerHTML = popupContent;
+    document.body.appendChild(popupElement);
+
+    document.getElementById('closeTafsir').addEventListener('click', () => {
+        document.body.removeChild(popupElement);
+    });
+}
+
+function showAyahBookmarkPopup(event, surahId, ayahId) {
+    event.stopPropagation();
+    const bookmarkKey = `${surahId}:${ayahId}`;
+    const isBookmarked = bookmarks[bookmarkKey];
+
+    const surahData = chapters.chapters.find(chapter => chapter.id === surahId);
+    const surahName = surahData ? surahData.surah : 'Surat tidak diketahui';
+
+    const popupContent = `
+        <div dir="ltr" class="bg-amber-50 dark:bg-gray-800 p-4 rounded-lg shadow-lg text-gray-800 dark:text-gray-200">
+            <h3 class="text-lg font-bold mb-3">${surahName} - Ayat ${ayahId}</h3>
+            <div class="flex justify-center space-x-2">
+                <button id="toggleBookmarkBtn" class="bg-gray-800 dark:bg-white text-white dark:text-gray-800 px-3 py-2 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-100 transition duration-300" title="${isBookmarked ? 'Hapus Bookmark' : 'Tambah Bookmark'}">
+                    <i class="fas ${isBookmarked ? 'fa-bookmark' : 'fa-bookmark'}"></i>
+                </button>
+                <button id="highlightBtn" class="bg-gray-800 dark:bg-white text-white dark:text-gray-800 px-3 py-2 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-100 transition duration-300" title="Pilih">
+                    <i class="fas fa-highlighter"></i>
+                </button>
+                <button id="closePopupBtn" class="bg-gray-800 dark:bg-white text-white dark:text-gray-800 px-3 py-2 rounded-lg hover:bg-gray-700 dark:hover:bg-gray-100 transition duration-300" title="Tutup">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    `;
+
+    const popupElement = document.createElement('div');
+    popupElement.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+    popupElement.innerHTML = popupContent;
+    document.body.appendChild(popupElement);
+
+    document.getElementById('toggleBookmarkBtn').addEventListener('click', () => {
+        toggleBookmark(surahId, ayahId);
+        document.body.removeChild(popupElement);
+    });
+
+    document.getElementById('highlightBtn').addEventListener('click', () => {
+        highlightAyah(ayahId, true);
+        document.body.removeChild(popupElement);
+    });
+
+    document.getElementById('closePopupBtn').addEventListener('click', () => {
+        document.body.removeChild(popupElement);
+    });
+}
+
+function displaySurah(ayahs) {
+    console.log('Displaying surah, ayahs:', ayahs.length);
+    const surahSelect = document.getElementById('surahSelect');
+    if (!surahSelect) {
+        console.error('Surah select element not found');
+        return;
+    }
+    const surahId = surahSelect.value;
+    const surahData = chapters.chapters.find(chapter => chapter.id === surahId);
+    
+    const surahTitleElement = document.getElementById('surahTitle');
+    if (surahTitleElement) {
+        surahTitleElement.textContent = `سورة ${surahData.arabicName}`;
+    } else {
+        console.warn('Surah title element not found');
+    }
+    
+    document.title = `${surahData.id}. ${surahData.surah} (${surahData.arabicName}) - ${surahData.arti}`;
+
+    const bismillahElement = document.getElementById('bismillah');
+    if (bismillahElement) {
+        bismillahElement.style.display = (surahId === '1' || surahId === '9') ? 'none' : 'block';
+    }
+
+    const ayahElements = ayahs.map(aya => {
+        if (aya.number === "0") return null;
+
+        const ayahSpan = document.createElement('span');
+        ayahSpan.className = 'ayah';
+        ayahSpan.setAttribute('data-ayah', aya.number);
+        ayahSpan.setAttribute('data-latin', aya.teksLatin);
+        ayahSpan.setAttribute('data-indonesia', aya.teksIndonesia);
+        ayahSpan.setAttribute('data-tafsir', aya.tafsir);
+        
+        let styledText = applyTajweedStyling(aya.text, aya.tajweed);
+        const ayahNumber = convertToArabicNumerals(aya.number);
+        styledText += ` <span class="ayah-number">${ayahNumber}</span> `;
+        
+        ayahSpan.innerHTML = styledText;
+        ayahSpan.addEventListener('click', (event) => showAyahBookmarkPopup(event, surahId, aya.number));
+        
+        return ayahSpan;
+    }).filter(Boolean);
+
+    console.log('Ayah elements created:', ayahElements.length);
+
+    const quranPage = document.getElementById('quranPage');
+    if (quranPage) {
+        quranPage.innerHTML = ''; // Clear existing content
+        ayahElements.forEach(el => quranPage.appendChild(el));
+        console.log('Ayah elements added to quranPage');
+    } else {
+        console.error('Quran page element not found');
+    }
+
+    const juzNumberElement = document.getElementById('juzNumber');
+    if (juzNumberElement) {
+        juzNumberElement.textContent = surahData.juzNumber || '';
+    }
+
+    const pageNumberElement = document.getElementById('pageNumber');
+    if (pageNumberElement) {
+        pageNumberElement.textContent = surahData.pageNumber || '';
+    }
+
+    resetAudio();
+    applyFont();
+    applyTajweedSetting();
+}
+
+// function displaySurah(ayahs) {
+//     console.log('Displaying surah, ayahs:', ayahs.length);
+//     const surahId = document.getElementById('surahSelect').value;
+//     const surahData = chapters.chapters.find(chapter => chapter.id === surahId);
+    
+//     document.getElementById('surahTitle').textContent = `${surahData.id}. ${surahData.surah} (${surahData.arabicName})`;
+//     document.getElementById('surahInfo').textContent = `${surahData.type} - ${surahData.ayaCount} Ayat - ${surahData.arti}`;
+//     document.title = `${surahData.id}. ${surahData.surah} (${surahData.arabicName}) - ${surahData.arti}`;
+
+//     const ayahElements = ayahs.map(aya => {
+//         if (aya.number === "0") return null;
+
+//         const ayahSpan = document.createElement('span');
+//         ayahSpan.className = 'ayah';
+//         ayahSpan.setAttribute('data-ayah', aya.number);
+//         ayahSpan.setAttribute('data-latin', aya.teksLatin);
+//         ayahSpan.setAttribute('data-indonesia', aya.teksIndonesia);
+//         ayahSpan.setAttribute('data-tafsir', aya.tafsir);
+        
+//         let styledText = applyTajweedStyling(aya.text, aya.tajweed);
+//         const ayahNumber = convertToArabicNumerals(aya.number);
+//         styledText += ` <span class="ayah-number">${ayahNumber}</span> `;
+        
+//         ayahSpan.innerHTML = styledText;
+//         ayahSpan.addEventListener('click', (event) => showAyahBookmarkPopup(event, surahId, aya.number));
+        
+//         return ayahSpan;
+//     }).filter(Boolean);
+
+//     console.log('Ayah elements created:', ayahElements.length);
+
+//     const quranPage = document.getElementById('quranPage');
+//     quranPage.innerHTML = ''; // Clear existing content
+//     ayahElements.forEach(el => quranPage.appendChild(el));
+
+//     console.log('Ayah elements added to quranPage');
+
+//     resetAudio();
+//     applyFont();
+//     applyTajweedSetting();
+// }
+
+
+function toggleTajweed() {
+    settings.showTajweed = !settings.showTajweed;
+    storage.set('quranReaderSettings', settings);
+    applyTajweedSetting();
+}
+
+function applyTajweedSetting() {
+    const quranPage = document.getElementById('quranPage');
+    if (settings.showTajweed) {
+        quranPage.classList.remove('no-tajweed');
+    } else {
+        quranPage.classList.add('no-tajweed');
+    }
+}
+
+function applyTajweedStyling(text, tajweedRules) {
+    const tajweedColors = {
+        'idghaam_no_ghunnah': '#0c56b3',
+        'madd_munfasil': '#9e3c43',
+        'silent': '#7ff907',
+        'madd_6': '#442648',
+        'ikhfa': '#dc16fb',
+        'lam_shamsiyyah': '#57ce16',
+        'ikhfa_shafawi': '#93d81a',
+        'ghunnah': '#a802f4',
+        'madd_muttasil': '#cd96ac',
+        'idghaam_ghunnah': '#f85210',
+        'iqlab': '#299ce8',
+        'madd_2': '#05b39e',
+        'idghaam_shafawi': '#a3199b',
+        'qalqalah': '#9900fff1',
+        'idghaam_mutajanisayn': '#518ba5',
+        'hamzat_wasl': '#77324f',
+        'idghaam_mutaqaribayn': '#d2cf37',
+        'madd_246': '#8dbe2a'
+    };
+
+    let stylingInfo = [];
+    tajweedRules.forEach(rule => {
+        stylingInfo.push({
+            index: rule.start,
+            action: 'start',
+            color: tajweedColors[rule.rule] || ''
+        });
+        stylingInfo.push({
+            index: rule.end,
+            action: 'end'
+        });
+    });
+
+    stylingInfo.sort((a, b) => a.index - b.index);
+
+    let styledText = '';
+    let currentIndex = 0;
+    let openSpans = 0;
+
+    stylingInfo.forEach(info => {
+        styledText += text.substring(currentIndex, info.index);
+        if (info.action === 'start' && info.color) {  // Hanya tambahkan span jika ada warna
+            styledText += `<span class="tajweed-span" style="color: ${info.color};">`;
+            openSpans++;
+        } else if (info.action === 'end' && openSpans > 0) {
+            styledText += '</span>';
+            openSpans--;
+        }
+        currentIndex = info.index;
+    });
+    
+
+    styledText += text.substring(currentIndex);
+    styledText += '</span>'.repeat(openSpans);
+
+    return styledText;
+}
+
+function loadMoreAyahs() {
+    // Implement logic to load more ayahs if needed
+    console.log('Loading more ayahs...');
+}
+
+function populateSelect(selectId, data, valueKey, textKey, includeSurahNumber = false) {
+    const select = document.getElementById(selectId);
+    select.innerHTML = '';
+    data.forEach(item => {
+        const option = document.createElement('option');
+        option.value = item[valueKey];
+        option.textContent = includeSurahNumber ? `${item[valueKey]} - ${item[textKey]}` : item[textKey];
+        select.appendChild(option);
+    });
+}
+
+function applyFont() {
+    const fontId = document.getElementById('fontSelect').value;
+    loadFont(fontId);
+}
+
+function togglePlaySurah() {
+    const playButton = document.getElementById('playButton');
+    if (isPlaying) {
+        pauseSurah();
+        playButton.innerHTML = '<i class="fas fa-play"></i>';
+    } else {
+        playSurah().catch(error => {
+            console.error('Error in playSurah:', error);
+            isPlaying = false;
+            playButton.innerHTML = '<i class="fas fa-play"></i>';
+        });
+        playButton.innerHTML = '<i class="fas fa-pause"></i>';
+    }
+}
+
+function pauseSurah() {
+    if (currentAudio) {
+        currentAudio.pause();
+    }
+    isPlaying = false;
+}
+
+async function playSurah() {
+    if (!isPlaying) {
+        isPlaying = true;
+
+        const surahId = document.getElementById('surahSelect').value;
+        const reciterLink = document.getElementById('reciterSelect').value;
+        const surahData = chapters.chapters.find(chapter => chapter.id === surahId);
+        const totalAyahs = parseInt(surahData.ayaCount);
+
+        // Mulai dari ayat yang di-highlight, di-bookmark, atau dari awal jika tidak ada
+        let startAyah = currentHighlightedAyah ? parseInt(currentHighlightedAyah) : 1;
+
+        for (let i = startAyah; i <= totalAyahs; i++) {
+            if (!isPlaying) break;
+            const audioUrl = `${reciterLink}${surahId.padStart(3, '0')}${String(i).padStart(3, '0')}.mp3`;
+            await playAyah(audioUrl, i);
+        }
+
+        isPlaying = false;
+        document.getElementById('playButton').innerHTML = '<i class="fas fa-play"></i>';
+    }
+}
+
+function playAyah(audioUrl, ayahNumber) {
+    return new Promise((resolve) => {
+        // Remove highlight from the previous ayah
+        if (currentAyah > 0) {
+            highlightAyah(currentAyah, false);
+        }
+        currentAudio = new Audio(audioUrl);
+        currentAudio.onended = () => {
+            highlightAyah(ayahNumber, false);
+            currentAyah = ayahNumber;
+            resolve();
+        };
+        currentAudio.onplay = () => {
+            highlightAyah(ayahNumber, true);
+        };
+        currentAudio.play().catch(error => {
+            console.error('Error playing audio:', error);
+            resolve();
+        });
+    });
+}
+
+function highlightAyah(ayahNumber, highlight) {
+    // Remove highlight from all ayahs
+    document.querySelectorAll('.ayah').forEach(ayah => {
+        ayah.classList.remove('highlight', 'animate-highlight');
+    });
+
+    const ayah = document.querySelector(`.ayah[data-ayah="${ayahNumber}"]`);
+    if (ayah && highlight) {
+        ayah.classList.add('highlight');
+        
+        // Create and add ripple effect
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple');
+        ayah.appendChild(ripple);
+
+        // Remove ripple after animation
+        setTimeout(() => {
+            ripple.remove();
+            ayah.classList.add('animate-highlight');
+        }, 1000);
+
+        ayah.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        currentHighlightedAyah = ayahNumber;
+    } else {
+        currentHighlightedAyah = null;
+    }
+}
+
+function resetAudio() {
+    if (currentAudio) {
+        currentAudio.pause();
+        currentAudio = null;
+    }
+    // Remove highlight from all ayahs
+    document.querySelectorAll('.ayah').forEach(ayah => {
+        ayah.classList.remove('bg-yellow-200', 'dark:bg-yellow-900');
+    });
+    currentAyah = 0;
+    isPlaying = false;
+    document.getElementById('playButton').innerHTML = '<i class="fas fa-play"></i>';
+}
+
+function toggleBookmark(surahId, ayahId) {
+    const bookmarkKey = `${surahId}:${ayahId}`;
+
+    if (bookmarks[bookmarkKey]) {
+        delete bookmarks[bookmarkKey];
+        showSuccessMessage('Bookmark dihapus');
+    } else {
+        const surahData = chapters.chapters.find(c => c.id === surahId);
+        bookmarks[bookmarkKey] = {
+            surahId,
+            ayahId,
+            surahName: surahData.surah,
+            timestamp: new Date().toISOString()
+        };
+        showSuccessMessage('Bookmark ditambahkan');
+    }
+
+    storage.set('quranBookmarksx22', bookmarks);
+}
+
+
+function showBookmarks() {
+    const bookmarksList = Object.values(bookmarks).sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+    
+    const bookmarksHTML = bookmarksList.map(bookmark => `
+        <div class="bookmark-item p-2 hover:bg-gray-100 dark:hover:bg-gray-700 flex justify-between items-center text-gray-800 dark:text-gray-200">
+            <div class="cursor-pointer" data-surah="${bookmark.surahId}" data-ayah="${bookmark.ayahId}">
+                <div class="font-bold">${bookmark.surahName}</div>
+                <div>Ayah ${bookmark.ayahId}</div>
+            </div>
+            <button class="delete-bookmark bg-red-500 text-white px-2 py-1 rounded-md hover:bg-red-600" data-key="${bookmark.surahId}:${bookmark.ayahId}">
+                Hapus
+            </button>
+        </div>
+    `).join('');
+
+    const popupContent = `
+        <div class="bg-amber-50 dark:bg-gray-800 p-4 rounded-lg max-w-md w-full">
+            <h3 class="text-lg font-bold mb-4 text-gray-800 dark:text-gray-200">Bookmarks</h3>
+            <div class="max-h-60 overflow-y-auto">
+                ${bookmarksHTML}
+            </div>
+            <button id="closeBookmarks" class="mt-4 bg-amber-800 text-white px-4 py-2 rounded-md hover:bg-amber-600 w-full">Close</button>
+        </div>
+    `;
+
+    const popupElement = document.createElement('div');
+    popupElement.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+    popupElement.innerHTML = popupContent;
+    document.body.appendChild(popupElement);
+
+    document.querySelectorAll('.bookmark-item > div').forEach(item => {
+        item.addEventListener('click', () => {
+            const surahId = item.dataset.surah;
+            const ayahId = item.dataset.ayah;
+            goToBookmark(surahId, ayahId);
+            document.body.removeChild(popupElement);
+        });
+    });
+
+    document.querySelectorAll('.delete-bookmark').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const key = event.target.dataset.key;
+        delete bookmarks[key];
+        storage.set('quranBookmarksx22', bookmarks);
+        event.target.closest('.bookmark-item').remove();
+        showSuccessMessage('Bookmark dihapus');
+    });
+});
+
+    document.getElementById('closeBookmarks').addEventListener('click', () => {
+        document.body.removeChild(popupElement);
+    });
+}
+
+function goToBookmark(surahId, ayahId) {
+    document.getElementById('surahSelect').value = surahId;
+    loadAndDisplaySurah(surahId).then(() => {
+        setTimeout(() => {
+            const ayahNumber = parseInt(ayahId);
+            highlightAyah(ayahNumber, true);
+            currentHighlightedAyah = ayahNumber;
+        }, 500);
+    });
+}
+
+function scrollToAyah(ayahId) {
+    const ayahElement = document.querySelector(`.ayah[data-ayah="${ayahId}"]`);
+    if (ayahElement) {
+        ayahElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+}
+function convertToArabicNumerals(number) {
+    const arabicNumerals = ['٠', '١', '٢', '٣', '٤', '٥', '٦', '٧', '٨', '٩'];
+    return number.split('').map(digit => arabicNumerals[parseInt(digit)]).join('');
+}
+
+function openSettings() {
+    document.getElementById('settingsPopup').classList.remove('hidden');
+}
+
+function closeSettings() {
+    document.getElementById('settingsPopup').classList.add('hidden');
+    
+    settings.surahId = document.getElementById('surahSelect').value;
+    settings.reciterLink = document.getElementById('reciterSelect').value;
+    settings.fontId = document.getElementById('fontSelect').value;
+    settings.showTajweed = document.getElementById('tajweedToggleonoff').checked;
+    storage.set('quranReaderSettings', settings);
+
+    applyTajweedSetting();
+    
+
+    loadAndDisplaySurah(settings.surahId);
+}
+
+function toggleNightMode() {
+    isNightMode = !isNightMode;
+    document.documentElement.classList.toggle('dark', isNightMode);
+    storage.set('nightMode', isNightMode);
+    updateNightModeButton();
+}
+
+function updateNightModeButton() {
+    const nightModeButton = document.getElementById('nightModeButton');
+    nightModeButton.innerHTML = isNightMode ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+}
+
+function goToNextSurah() {
+    const currentSurahId = parseInt(document.getElementById('surahSelect').value);
+    const nextSurahId = currentSurahId + 1;
+    if (nextSurahId <= chapters.chapters.length) {
+        document.getElementById('surahSelect').value = nextSurahId.toString();
+        loadAndDisplaySurah(nextSurahId.toString());
+    } else {
+        showErrorMessage('Anda sudah berada di surah terakhir');
+    }
+}
+
+function goToPreviousSurah() {
+    const currentSurahId = parseInt(document.getElementById('surahSelect').value);
+    const prevSurahId = currentSurahId - 1;
+    if (prevSurahId >= 1) {
+        document.getElementById('surahSelect').value = prevSurahId.toString();
+        loadAndDisplaySurah(prevSurahId.toString());
+    } else {
+        showErrorMessage('Anda sudah berada di surah pertama');
+    }
+}
+
+function showErrorMessage(message) {
+    const errorElement = document.createElement('div');
+    errorElement.textContent = message;
+    errorElement.className = 'bg-red-500 text-white p-4 rounded-md fixed top-4 right-4 z-50';
+    document.body.appendChild(errorElement);
+    setTimeout(() => errorElement.remove(), 5000);
+}
+
+function showSuccessMessage(message) {
+    const successElement = document.createElement('div');
+    successElement.textContent = message;
+    successElement.className = 'bg-green-500 text-white p-4 rounded-md fixed top-4 right-4 z-50';
+    document.body.appendChild(successElement);
+    setTimeout(() => successElement.remove(), 5000);
+}
+
+// Initialize the application
+init();

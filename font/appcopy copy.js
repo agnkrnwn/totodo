@@ -1,0 +1,138 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const resultsDiv = document.getElementById('results');
+    const ayahModal = document.getElementById('ayahModal');
+    const closeModal = document.getElementById('closeModal');
+    const surahName = document.getElementById('surahName');
+    const ayahText = document.getElementById('ayahText');
+    const ayahLatin = document.getElementById('ayahLatin');
+    const ayahIndonesia = document.getElementById('ayahIndonesia');
+    const tafsirSection = document.getElementById('tafsirSection');
+    const ayahTafsir = document.getElementById('ayahTafsir');
+    const toggleTafsir = document.getElementById('toggleTafsir');
+    const toggleDarkMode = document.getElementById('toggleDarkMode');
+
+    let chapterData = null;
+    let worker = null;
+
+    init();
+
+    function init() {
+        loadChapterData();
+        searchButton.addEventListener('click', performSearch);
+        closeModal.addEventListener('click', hideModal);
+        toggleTafsir.addEventListener('click', toggleTafsirSection);
+        toggleDarkMode.addEventListener('click', toggleDarkModeClass);
+
+        if (window.Worker) {
+            worker = new Worker('worker.js');
+            worker.onmessage = function(event) {
+                displayResults(event.data, searchInput.value);
+            };
+        } else {
+            console.error('Web Workers are not supported in this browser.');
+        }
+    }
+
+    function toggleDarkModeClass() {
+        document.documentElement.classList.toggle('dark');
+    }
+
+    async function loadChapterData() {
+        try {
+            chapterData = await fetch('chapter.json').then(response => response.json());
+        } catch (error) {
+            console.error('Error loading chapter data:', error);
+        }
+    }
+
+    function hideModal() {
+        ayahModal.classList.add('hidden');
+        tafsirSection.classList.add('hidden');
+        toggleTafsir.innerHTML = '<i class="fas fa-book"></i> Tampilkan Tafsir';
+    }
+
+    function toggleTafsirSection() {
+        tafsirSection.classList.toggle('hidden');
+        toggleTafsir.innerHTML = tafsirSection.classList.contains('hidden') ? '<i class="fas fa-book"></i> Tampilkan Tafsir' : '<i class="fas fa-book"></i> Sembunyikan Tafsir';
+    }
+
+    function getRandomDelay(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+
+    async function performSearch() {
+        const keyword = searchInput.value.toLowerCase().trim();
+        if (keyword.length < 3) {
+            alert('Mohon masukkan minimal 3 karakter.');
+            return;
+        }
+
+        resultsDiv.innerHTML = '<p>Mencari kata yang cocok...</p>';
+        await new Promise(resolve => setTimeout(resolve, getRandomDelay(2000, 5000)));
+
+        resultsDiv.innerHTML += '<div class="loading-dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>';
+
+        if (worker) {
+            worker.postMessage({ keyword, chapterData });
+        } else {
+            console.error('Web Worker is not initialized.');
+        }
+    }
+
+    function displayResults(results, keyword) {
+        if (results.length === 0) {
+            resultsDiv.innerHTML = 'Tidak ditemukan hasil.';
+            return;
+        }
+
+        resultsDiv.innerHTML += '<p>Selesai mencari kata yang cocok.</p>';
+        let html = `<h2 class="text-xl font-bold mb-4">Hasil Pencarian (${results.length} ayat ditemukan):</h2>`;
+        html += '<ul class="space-y-4">';
+        results.forEach(result => {
+            const highlightedText = highlightKeyword(result.text, keyword);
+            html += `
+                <li class="bg-white dark:bg-gray-700 p-4 rounded shadow cursor-pointer" data-surah="${result.surahId}" data-ayah="${result.ayahNumber}">
+                    <p class="font-bold">${result.surah} : ${result.ayahNumber}</p>
+                    <p>${highlightedText}</p>
+                </li>
+            `;
+        });
+        html += '</ul>';
+
+        resultsDiv.innerHTML = html;
+
+        document.querySelectorAll('#results li').forEach(item => {
+            item.addEventListener('click', () => {
+                const surahId = item.getAttribute('data-surah');
+                const ayahNumber = item.getAttribute('data-ayah');
+                showAyahDetails(surahId, ayahNumber);
+            });
+        });
+    }
+
+    function highlightKeyword(text, keyword) {
+        const regex = new RegExp(`(${keyword})`, 'gi');
+        return text.replace(regex, '<span class="bg-yellow-200 dark:bg-yellow-500">$1</span>');
+    }
+
+    async function showAyahDetails(surahId, ayahNumber) {
+        try {
+            const surahData = await fetch(`quranupdate/${surahId}.json`).then(response => response.json());
+            const ayahData = surahData.ayah.find(ayah => ayah.number === ayahNumber);
+
+            if (ayahData) {
+                const surahNameFormatted = `${surahData.id}. ${surahData.name} : ${ayahNumber}`;
+                surahName.innerText = surahNameFormatted;
+                ayahText.innerText = ayahData.text;
+                ayahLatin.innerText = ayahData.teksLatin;
+                ayahIndonesia.innerText = ayahData.teksIndonesia;
+                ayahTafsir.innerText = ayahData.tafsir || 'Tafsir tidak tersedia.';
+                ayahModal.classList.remove('hidden');
+            }
+        } catch (error) {
+            console.error('Error loading Ayah details:', error);
+        }
+    }
+});

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pencarian Al-Quran</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Traditional+Arabic&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="app.js" defer></script>
+    <script src="appcopy.js" defer></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -30,35 +31,14 @@
         }
     </script>
     <style>
-        .loading-dots {
-            display: inline-block;
-        }
-        .loading-dots span {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            margin-right: 4px;
-            background-color: #c90000;
-            border-radius: 50%;
-            animation: loading 1s infinite;
-        }
-        .loading-dots span:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-        .loading-dots span:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-        @keyframes loading {
-            0% {
-                transform: translateY(0);
-            }
-            50% {
-                transform: translateY(-8px);
-            }
-            100% {
-                transform: translateY(0);
-            }
-        }
+        @font-face {
+        font-family: 'QuranFont';
+        src: url('/asset/font/bazzi-v7-full.woff2') format('woff2');
+    }
+
+    #ayahtext{
+        font-family: 'Traditional Arabic', Arial, Helvetica, sans-serif;
+    }
     </style>
 </head>
 <body class="bg-gray-100 dark:bg-gray-900 dark:text-white">
